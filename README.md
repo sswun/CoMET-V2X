@@ -7,6 +7,9 @@
   Xi'an Jiaotong University
 </p>
 <p align="center">
+  <a href="https://doi.org/10.5281/zenodo.23999418"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23999418.svg" alt="Zenodo DOI for CoMET-V2X v0.1.0"></a>
+</p>
+<p align="center">
   <a href="paper/main.pdf"><strong>Manuscript (PDF)</strong></a> ·
   <a href="docs/PROTOCOL.md">Evaluation protocol</a> ·
   <a href="docs/FINDINGS.md">Results</a> ·
@@ -85,7 +88,7 @@ The archived verification covers **205,202 message updates** across five detecto
 
 ## Citation and permissions
 
-For authorized use, cite the software using GitHub's **Cite this repository** action or this BibTeX entry. The manuscript and software share the same three authors. [Citation metadata](CITATION.cff)
+For authorized use, cite the software using GitHub's **Cite this repository** action or this BibTeX entry. The version DOI identifies the archived v0.1.0 snapshot. Use the all-versions DOI to follow subsequent releases. [v0.1.0 archive](https://doi.org/10.5281/zenodo.23999418) · [All versions](https://doi.org/10.5281/zenodo.23999417) · [Citation metadata](CITATION.cff)
 
 ```bibtex
 @software{sun2026cometv2x,
@@ -93,7 +96,9 @@ For authorized use, cite the software using GitHub's **Cite this repository** ac
   title   = {{CoMET-V2X}: Tracking the Shared Pose Error of Roadside Messages for Asynchronous Vehicle--Infrastructure Cooperative 3D Detection},
   year    = {2026},
   version = {0.1.0},
-  url     = {https://github.com/sswun/CoMET-V2X}
+  publisher = {Zenodo},
+  doi     = {10.5281/zenodo.23999418},
+  url     = {https://doi.org/10.5281/zenodo.23999418}
 }
 ```
 

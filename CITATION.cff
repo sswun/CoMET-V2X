@@ -17,6 +17,11 @@ authors:
     orcid: "https://orcid.org/0000-0002-4985-0028"
 version: 0.1.0
 date-released: "2026-11-06"
+doi: 10.5281/zenodo.23999418
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23999417
+    description: All versions
 repository-code: "https://github.com/sswun/CoMET-V2X"
 license-url: "https://github.com/sswun/CoMET-V2X/blob/main/LICENSE"
 keywords:

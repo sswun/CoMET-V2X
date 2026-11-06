@@ -1,7 +1,7 @@
 {
   "title": "CoMET-V2X: Tracking the Shared Pose Error of Roadside Messages for Asynchronous Vehicle–Infrastructure Cooperative 3D Detection",
   "upload_type": "software",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "creators": [
     {
       "name": "Sun, Shuwei",
@@ -19,7 +19,7 @@
       "orcid": "0000-0002-4985-0028"
     }
   ],
-  "description": "<p>CoMET tracks the two-dimensional translation shared by all boxes in a roadside message. A causal Kalman filter uses objects detected by both agents to correct roadside-only detections under asynchronous vehicle–infrastructure cooperation. This archive contains the reference implementation, the signed manuscript, the V2X-Seq SPD evaluation protocol, research scripts, result tables and filter traces.</p><p>Copyright © 2026 Shuwei Sun, Jian Huang and Hui Cao. The authors require prior written permission to use the original code or experimental results, including for academic research, replication, benchmarking and commercial use. See the <a href=\"https://github.com/sswun/CoMET-V2X/blob/v0.1.0/LICENSE\">CoMET-V2X Permission Terms 1.0</a> and <a href=\"https://github.com/sswun/CoMET-V2X/issues/new\">contact the authors</a>.</p>",
+  "description": "<p>CoMET tracks the two-dimensional translation shared by all boxes in a roadside message. A causal Kalman filter uses objects detected by both agents to correct roadside-only detections under asynchronous vehicle–infrastructure cooperation. Version 0.2.0 adds CoMET-A for recovering large offsets, controlled tests of pose errors, and box-level fusion of CoMET and retrained TraF-Align detections. On 21 V2X-Seq SPD validation sequences the combination reaches 67.85 AP70 and 82.62 AP50. The archive includes the signed manuscript, source code, evaluation protocol, derived results and verification reports.</p><p>Copyright © 2026 Shuwei Sun, Jian Huang and Hui Cao. The authors require prior written permission to use the original code or experimental results, including for academic research, replication, benchmarking and commercial use. See the <a href=\"https://github.com/sswun/CoMET-V2X/blob/v0.2.0/LICENSE\">CoMET-V2X Permission Terms 1.0</a> and <a href=\"https://github.com/sswun/CoMET-V2X/issues/new\">contact the authors</a>.</p>",
   "access_right": "open",
   "license": "other-closed",
   "keywords": [

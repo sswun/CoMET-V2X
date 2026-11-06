@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "comet-v2x"
-version = "0.1.0"
+version = "0.2.0"
 description = "Causal common-mode error tracking for asynchronous V2X cooperative 3D detection"
 readme = "README.md"
 authors = [

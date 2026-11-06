@@ -69,6 +69,33 @@ TraF fine-tuned from the released e60 weights for 2000 updates (reader and backb
 * Other architectures, tier 2 − same-budget PUBLIC on val21: CoAlign AP70 +1.63 [1.20, 2.10], AP50 +1.75 [1.03, 2.62]; Where2comm AP70 +0.24 [−0.16, 0.54], AP50 +0.32 [−0.29, 0.84].
 * On both auxiliary references tier 2 − same-budget PUBLIC stays positive on val21 (AP70 +1.19 and +1.27, AP50 +1.79 and +2.29, intervals above zero) [`results/aux_gt/R6h_tier2/`].
 
+## 5. Extensions after v0.1.0 (lock acquisition, robustness, two-tier combination)
+
+Pre-registered, independently recomputed; details and files in [`results/research_v2/`](../results/research_v2/README.md).
+
+**CoMET-A: offsets beyond the association gate.** CoMET associates on the uncorrected geometry with a 2.5 m gate, so a stream whose offset exceeds the gate would never lock. CoMET-A detects a lost lock (five messages without any in-gate anchor) and votes ego–remote displacements of the last five messages for a coarse offset, then tracks the remainder as before [`comet/acquisition.py`]. With a known error injected into every remote box, val21 AP70 is:
+
+| Detector | Injected | CoMET | CoMET-A | Δ [95% CI] |
+|---|---:|---:|---:|---:|
+| author | 3 m | 62.70 | 65.63 | +2.93 [1.31, 4.83] |
+| author | 5 m | 61.84 | 66.29 | +4.45 [2.85, 6.16] |
+| strict60 | 3 m | 55.89 | 57.62 | +1.73 [0.71, 2.96] |
+| strict60 | 5 m | 55.15 | 58.62 | +3.48 [2.30, 4.73] |
+
+CoMET-A retains 97.7–99.5% of clean CoMET AP70. On real data it changes the five-detector val21 mean by −0.0006 and is bit-identical wherever it does not trigger. At 3 m it also adds +1.44, +1.44 and +1.97 AP70 for the two V2X-ViT seeds and Where2comm (intervals above zero).
+
+**Robustness of native fusion.** Feeding TraF the pose corrected by CoMET-A from the injected late-fusion boxes, instead of the injected pose, raises val21 AP70 by +2.15 to +2.74 for the same-budget PUBLIC fine-tune and +3.90 to +4.41 for tier 2 at 1–3 m. All six intervals are above zero for both AP70 and AP50.
+
+**Two-tier combination.** Tier 1 localises better and tier 2 recalls more. Pairing their boxes at BEV IoU ≥ 0.3 keeps the tier-1 box and the larger score, and down-weights unpaired tier-1 boxes by a calibration8 coefficient [`comet/fusion.py`]. On val21 the combination reaches **67.85 AP70 / 82.62 AP50**:
+
+* +1.23 [0.42, 2.06] AP70 over tier 1 and +1.36 [0.71, 2.18] over tier 2;
+* +1.18 [0.67, 1.70] AP50 over tier 2;
+* on mechanism_holdout14, 73.28 AP70 (+0.71 and +1.84 over the two tiers).
+
+**Training budget of tier 2 (R7d).** More updates do not help: A-tier TraF val21 AP70 is 66.49 at 2000 updates, 64.68 at 8000 and 60.55 at 20000. The same-budget PUBLIC fine-tune follows the same trend (65.68, 64.12, 60.10). 2000 is selected on calibration8 [`results/tier2/R7d_TraF_budget/`].
+
 ## Reference implementation check
 
 `comet/estimator.py` reproduces the reference per-message offsets, variances and anchor counts exactly (maximum absolute difference 0) for all five detectors on all four splits, 205,202 messages in total [`results/verification/verify_against_recipe.json`].
+
+`comet/acquisition.py`, `comet/stress.py` and `comet/fusion.py` reproduce the accepted CoMET-A states (15 real-data and 8 injected cases, maximum absolute difference 0) and the two-tier fused detections of every accepted seed [`results/verification/verify_research_v2.json`].

@@ -1,0 +1,140 @@
+{
+  "created_at": "2026-11-07T06:27:09+08:00",
+  "accepted_extension": true,
+  "checks": {
+    "tier1_val_gain_ge_point50": true,
+    "tier1_val_CI_positive": true,
+    "tier1_hold_same_sign": true,
+    "tier2_val_gain_ge_point50": true,
+    "tier2_val_CI_positive": true,
+    "tier2_hold_same_sign": true,
+    "val_AP50_ge_tier2_minus_point20": true
+  },
+  "panels": [
+    {
+      "role": "val21",
+      "threshold": 50,
+      "reference": "tier1",
+      "AP": 82.62103585379107,
+      "baseline_AP": 78.87478592014631,
+      "delta": 3.746249933644762,
+      "paired_CI95": [
+        2.2023329575508304,
+        5.340983938991457
+      ],
+      "replicates": 2000,
+      "seeds": 3,
+      "waits": 4
+    },
+    {
+      "role": "val21",
+      "threshold": 50,
+      "reference": "tier2",
+      "AP": 82.62103585379107,
+      "baseline_AP": 81.43688781936947,
+      "delta": 1.1841480344215967,
+      "paired_CI95": [
+        0.6695190469329354,
+        1.6953981812875107
+      ],
+      "replicates": 2000,
+      "seeds": 3,
+      "waits": 4
+    },
+    {
+      "role": "val21",
+      "threshold": 70,
+      "reference": "tier1",
+      "AP": 67.85363991996347,
+      "baseline_AP": 66.62807518598599,
+      "delta": 1.2255647339774782,
+      "paired_CI95": [
+        0.42323301851692746,
+        2.062947832149589
+      ],
+      "replicates": 2000,
+      "seeds": 3,
+      "waits": 4
+    },
+    {
+      "role": "val21",
+      "threshold": 70,
+      "reference": "tier2",
+      "AP": 67.85363991996347,
+      "baseline_AP": 66.49119521383899,
+      "delta": 1.362444706124478,
+      "paired_CI95": [
+        0.7065422674927163,
+        2.1788001405612625
+      ],
+      "replicates": 2000,
+      "seeds": 3,
+      "waits": 4
+    },
+    {
+      "role": "mechanism_holdout14",
+      "threshold": 50,
+      "reference": "tier1",
+      "AP": 90.01143454262059,
+      "baseline_AP": 86.98923338392807,
+      "delta": 3.022201158692525,
+      "paired_CI95": [
+        2.237400087434179,
+        4.001784588727068
+      ],
+      "replicates": 2000,
+      "seeds": 3,
+      "waits": 4
+    },
+    {
+      "role": "mechanism_holdout14",
+      "threshold": 50,
+      "reference": "tier2",
+      "AP": 90.01143454262059,
+      "baseline_AP": 89.59172016117526,
+      "delta": 0.41971438144533124,
+      "paired_CI95": [
+        -0.06303568131479693,
+        1.6265568280898035
+      ],
+      "replicates": 2000,
+      "seeds": 3,
+      "waits": 4
+    },
+    {
+      "role": "mechanism_holdout14",
+      "threshold": 70,
+      "reference": "tier1",
+      "AP": 73.28318967457587,
+      "baseline_AP": 72.5692288647541,
+      "delta": 0.7139608098217707,
+      "paired_CI95": [
+        0.4891012833039653,
+        1.0441371224876228
+      ],
+      "replicates": 2000,
+      "seeds": 3,
+      "waits": 4
+    },
+    {
+      "role": "mechanism_holdout14",
+      "threshold": 70,
+      "reference": "tier2",
+      "AP": 73.28318967457587,
+      "baseline_AP": 71.44769418579922,
+      "delta": 1.835495488776644,
+      "paired_CI95": [
+        0.2517294064658046,
+        2.528178453149497
+      ],
+      "replicates": 2000,
+      "seeds": 3,
+      "waits": 4
+    }
+  ],
+  "chosen": [
+    0.3,
+    false
+  ],
+  "original_failure_retained": true
+}

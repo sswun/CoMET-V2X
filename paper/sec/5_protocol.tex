@@ -32,5 +32,16 @@ Unless stated otherwise, results use the released TraF-Align boxes, the stronges
 \emph{Pose graph.} CoAlign~\cite{lu2023coalign} trained on V2X-Seq under our protocol with three seeds.
 In \cref{sec:geometry} we also show, as an upper reference that is not deployable, late fusion placed with the dataset offset, which uses annotations of the current frame.
 
+\paragraph{Controlled pose errors.}
+To study larger and changing errors on real data, we add a known planar translation to every remote box of a message before any processing, in one random direction per sequence that is shared by all methods and latency budgets; the ground truth is unchanged and no method has access to the injected value.
+We use constant translations of 0.5, 1, 2, 3 and 5\,m, a drift that grows linearly from 0 to 2\,m over the sequence, and a 2\,m step at the temporal midpoint of the sequence.
+For intermediate fusion the same translation is added to the relative pose given to the network.
+
+\paragraph{Specification in advance.}
+The lock-acquisition step of \cref{sec:acq} and the two-tier combination of \cref{sec:tier2} were specified, with their parameters and the criteria for adopting them, before the validation and held-out splits were evaluated.
+The acceptance criteria are given in \cref{app:criteria}.
+
 \paragraph{Reproducibility.}
-The estimator is re-implemented in a stand-alone package that reproduces the per-message offsets, variances and anchor counts behind all tables exactly (maximum absolute difference 0 over 205,202 messages, five detectors and four splits); the code, the protocol and all result tables are released.
+The estimator is re-implemented in a stand-alone package that reproduces the per-message offsets, variances and anchor counts behind all tables exactly (maximum absolute difference 0 over 205,202 messages, five detectors and four splits).
+The same package reproduces the lock-acquisition states of all real and injected-error runs and the combined detections of all 69,024 evaluated frames of the two-tier combination exactly.
+The code, the protocol and all result tables are released.

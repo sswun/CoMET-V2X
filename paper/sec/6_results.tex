@@ -86,14 +86,14 @@ On the held-out split the difference between the filter and per-message estimati
 
 \begin{table}[t]
   \centering
-  \caption{\textbf{Association and anchor choices.} \apseven (\%) averaged over the five detectors, three heads and four budgets. This diagnostic keeps each detector's earlier $q$ and $\tau_p$, so absolute values differ from \cref{tab:main}; the calibration column is the selection criterion. Prediction-gated: remote boxes are shifted by the current estimate before matching.}
+  \caption{\textbf{Association and anchor choices.} \apseven (\%) averaged over the five detectors, three heads and four budgets. All variants share one fixed setting of $q$ and $\tau_p$ per detector, which precedes the final per-detector selection, so absolute values differ from \cref{tab:main}; the calibration column is the selection criterion. Confident ego anchors: ego detections with score $\ge\tau_p$. Prediction-gated: remote boxes are shifted by the current estimate before matching.}
   \label{tab:ablation}
   \small
   \setlength{\tabcolsep}{4pt}
   \resizebox{\linewidth}{!}{%
-  \begin{tabular}{lllrrr}
+  \begin{tabular}{llrrr}
     \toprule
-    & Anchor candidates & Association & calibration & validation & held-out \\
+    Anchor candidates & Association & calibration & validation & held-out \\
     \midrule
     \tabinput{tables/ablation.tex}
     \bottomrule
@@ -103,20 +103,20 @@ On the held-out split the difference between the filter and per-message estimati
 \Cref{tab:ablation} varies the anchor set and the association while keeping the filter.
 Two findings matter.
 \emph{Use all ego detections.}
-Restricting anchors to confident ego detections (N0, U2, U3) loses evidence; with all ego boxes and hard mutual-nearest-neighbour matching (H1, the configuration used throughout) the calibration score is the highest of all variants.
+Restricting anchors to confident ego detections (first three rows) loses evidence; with all ego boxes and hard mutual-nearest-neighbour matching (last row, the configuration used throughout) the calibration score is the highest of all variants.
 Consistently, raising an anchor score threshold only lowers \apseven (\cref{tab:sensitivity}), and the result is flat for gates between 2.0 and 3.0\,m.
 \emph{Structure beats capacity.}
-Soft assignment with Sinkhorn normalisation~\cite{cuturi2013sinkhorn} at various widths (U0, U1, U5, U6) and a learned soft assignment trained end to end (N2) do not improve on hard matching: on the validation split all variants lie within 0.6 points of each other, on the calibration split hard assignment is the best, and on the held-out split it is within 0.03 points of the best.
-Gating the association with the filter prediction (H2, H3) is worse on the calibration and held-out splits: when the current offset is large, the prediction hides exactly the anchors that would reveal it.
+Soft assignment with Sinkhorn normalisation~\cite{cuturi2013sinkhorn} at various widths and a learned soft assignment trained end to end do not improve on hard matching: on the validation split all variants lie within 0.6 points of each other, on the calibration split hard assignment is the best, and on the held-out split it is within 0.03 points of the best.
+Gating the association with the filter prediction is worse on the calibration and held-out splits: when the current offset is large, the prediction hides exactly the anchors that would reveal it.
 We therefore keep the simplest configuration that wins on the calibration split.
 
 \begin{table}[t]
   \centering
-  \caption{\textbf{Sensitivity} (report only, never used for selection). Released TraF-Align boxes, validation \apseven. ``orig.'': the original high-score anchor rule.}
+  \caption{\textbf{Sensitivity} (report only, never used for selection). Released TraF-Align boxes, validation \apseven. Anchors are restricted to ego detections above the score threshold; ``all'' uses every ego detection.}
   \label{tab:sensitivity}
   \small
   \setlength{\tabcolsep}{4.5pt}
-  \begin{tabular}{l rrrrrrr}
+  \begin{tabular}{l rrrrrr}
     \toprule
     \tabinput{tables/sensitivity.tex}
     \bottomrule
@@ -164,7 +164,7 @@ A plausible reason is that per-frame registration from object graphs or local co
 
 CoAlign~\cite{lu2023coalign} optimises an agent--object pose graph in every frame before multi-scale feature fusion.
 Feeding \method's causal pose to the CoAlign fusion network instead of the pose-graph output improves \apseven by 1.11 points (57.70 against 56.59, consistently for all three seeds) and \apfive by 1.44 (\cref{tab:coalign}).
-The gain over an earlier version of our filter that used only confident ego detections as anchors is small (+0.10), which shows that for intermediate fusion the main benefit comes from tracking itself rather than from the choice of anchors.
+Restricting the anchors of \method to confident ego detections lowers this gain by only 0.10 points, so for intermediate fusion the main benefit comes from tracking itself rather than from the choice of anchors.
 CoAlign's per-frame graph cannot use evidence from earlier messages; \method can.
 
 \subsection{Robustness to the reference}
@@ -223,7 +223,7 @@ The conclusions of \cref{tab:main,tab:temporal} therefore do not depend on the l
 
 \begin{table}[t]
   \centering
-  \caption{\textbf{TraF-Align retrained from the released weights} (fusion and head fine-tuned for 2,000 updates, reader and backbone frozen, three seeds), validation, mean over budgets and seeds. Top: absolute AP. Bottom: tier 2 minus each alternative, with 95\% intervals.}
+  \caption{\textbf{TraF-Align retrained from the released weights} (fusion and head fine-tuned for 2,000 updates, reader and backbone frozen, three seeds), validation, mean over budgets and seeds. Top: absolute AP. Bottom: the second tier minus each alternative, with 95\% intervals.}
   \label{tab:tier2}
   \small
   \setlength{\tabcolsep}{5pt}
@@ -238,7 +238,7 @@ The conclusions of \cref{tab:main,tab:temporal} therefore do not depend on the l
   \vspace{2mm}
   \begin{tabular}{l ll}
     \toprule
-    Tier 2 minus & \apseven & \apfive \\
+    Second tier minus & \apseven & \apfive \\
     \midrule
     \tabinput{tables/tier2_ci.tex}
     \bottomrule
@@ -246,21 +246,21 @@ The conclusions of \cref{tab:main,tab:temporal} therefore do not depend on the l
 \end{table}
 
 \Cref{tab:tier2} retrains the fusion network and detection head of TraF-Align for a fixed budget, changing only the pose and, optionally, the training labels.
-Compared with retraining under the online pose, tier 2 improves validation \apseven by 0.81 and \apfive by 1.17 points, both with intervals above zero.
+Compared with retraining under the online pose, the second tier improves validation \apseven by 0.81 and \apfive by 1.17 points, both with intervals above zero.
 Its \apfive of 81.44 is the highest of all methods on the validation split, 2.56 points above \method{} without retraining.
 At \apseven the retrained network is on par with \method{} without retraining ($-0.14$, interval including zero), so retraining mainly adds recall.
-Retraining under a corrected pose accounts for most of the improvement over the online pose, and cleaned training labels add a further 0.25 \apseven (66.18 to 66.44 with the earlier anchor-gated pose); held-out results are in \cref{app:tier2}.
+Retraining under a corrected pose accounts for most of the improvement over the online pose, and cleaned training labels add a further 0.25 \apseven (66.18 to 66.44 with a \method pose whose anchors are restricted to confident ego detections); held-out results and the training budget are in \cref{app:tier2}.
 
 \begin{table}[t]
   \centering
-  \caption{\textbf{The same recipe on two more architectures}, validation, three seeds. \apseven / \apfive of the fusion network retrained with the online pose, with an earlier anchor-gated pose, and with \method poses and cleaned labels (tier 2); last two columns: tier 2 minus the online pose with 95\% intervals.}
+  \caption{\textbf{The same recipe on two more architectures}, validation, three seeds. \apseven / \apfive of the fusion network retrained with the online pose, with a \method pose whose anchors are restricted to confident ego detections, and with \method poses and cleaned labels (second tier); last two columns: second tier minus the online pose with 95\% intervals.}
   \label{tab:tier2cross}
   \small
   \setlength{\tabcolsep}{3.5pt}
   \resizebox{\linewidth}{!}{%
   \begin{tabular}{l lll ll}
     \toprule
-    Architecture & online & anchor-gated & tier 2 & $\Delta$\apseven & $\Delta$\apfive \\
+    Architecture & online & confident anchors & second tier & $\Delta$\apseven & $\Delta$\apfive \\
     \midrule
     \tabinput{tables/tier2_cross.tex}
     \bottomrule
@@ -268,8 +268,73 @@ Retraining under a corrected pose accounts for most of the improvement over the 
 \end{table}
 
 \Cref{tab:tier2cross} applies the same recipe to Where2comm and CoAlign.
-Tier 2 improves on retraining with online poses for both: clearly for CoAlign ($+1.63$ \apseven, $+1.75$ \apfive, intervals above zero) and slightly for Where2comm ($+0.24$, $+0.32$).
+The second tier improves on retraining with online poses for both: clearly for CoAlign ($+1.63$ \apseven, $+1.75$ \apfive, intervals above zero) and slightly for Where2comm ($+0.24$, $+0.32$).
 The second tier is thus a drop-in improvement for systems that retrain their fusion network anyway, while the first tier, which needs no retraining, remains the default.
+
+\subsection{Combining the two tiers}
+\label{sec:combo}
+
+\begin{table}[t]
+  \centering
+  \caption{\textbf{Box-level combination of the two tiers} (\cref{sec:tier2}). TraF-Align boxes; mean over four budgets and three heads (first tier) or three training seeds (second tier), paired by position. Bottom: paired differences with 95\% intervals.}
+  \label{tab:combo}
+  \small
+  \setlength{\tabcolsep}{3.5pt}
+  \resizebox{\linewidth}{!}{%
+  \begin{tabular}{l llll}
+    \toprule
+    & \multicolumn{2}{c}{validation} & \multicolumn{2}{c}{held-out} \\
+    \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+    & \apseven & \apfive & \apseven & \apfive \\
+    \midrule
+    \tabinput{tables/combination.tex}
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+The first tier is better at \apseven and the second at \apfive.
+\Cref{tab:combo} shows that the box-level combination of \cref{sec:tier2} is better than both on both metrics.
+On the validation split it reaches 67.85 \apseven and 82.62 \apfive, the highest values of all methods in this paper.
+This is 1.23 \apseven above the first tier and 1.36 above the second, and 1.18 \apfive above the second tier, all with intervals above zero.
+On the held-out split it improves \apseven over both tiers as well (73.28; $+0.71$ and $+1.84$).
+The combination needs no training beyond the two tiers.
+Its only fitted quantities are the two score factors: 1 for unpaired second-tier boxes and 0.39 for unpaired first-tier boxes, which down-weights first-tier boxes that the retrained network does not confirm.
+
+\subsection{Large and changing pose errors}
+\label{sec:stress}
+
+\begin{table}[t]
+  \centering
+  \caption{\textbf{Injected constant pose error} (\cref{sec:protocol}), validation \apseven (\%). Late fusion with the online pose, \method, and \method with lock acquisition (\cref{sec:acq}); paired difference of the last two with 95\% interval, and the share of \method's \apseven without injected error that is retained.}
+  \label{tab:acq}
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{l r rrr l r}
+    \toprule
+    Detector & Error & Online & \method & + acquisition & $\Delta$ & Retained \\
+    \midrule
+    \tabinput{tables/acquisition.tex}
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{fig/robustness.pdf}
+  \caption{\textbf{Validation \apseven under an injected constant translation of the roadside message.} (a)~Late fusion with the released (solid) and strictly retrained (dashed) TraF-Align boxes. Without acquisition, \method falls towards the online pose once the error exceeds the 2.5\,m association gate. (b)~TraF-Align retrained with online poses and the second-tier network, given the injected pose or the pose corrected by \method with lock acquisition (one training seed).}
+  \label{fig:robustness}
+\end{figure}
+
+The real offsets of V2X-Seq rarely exceed the association gate, so we inject known errors to test larger and changing ones (\cref{sec:protocol}).
+\Cref{fig:robustness}a shows that \method follows constant errors up to 1\,m, losing at most 0.44 \apseven.
+At 2\,m it loses 1.4--1.7 points as anchors start to fall outside the gate, and beyond the 2.5\,m gate it can no longer lock and falls nearly to the level of the online pose.
+With lock acquisition, the accuracy stays almost flat: at 3 and 5\,m the step adds 1.4--4.5 \apseven over \method for all five detectors, with intervals above zero, and retains 97.6--99.5\% of \method's accuracy without injected error (\cref{tab:acq}).
+Without injected error the step changes validation \apseven by less than 0.01 points for every detector; it is triggered nine times on the 420 validation streams of the five detectors and never on the held-out split.
+Changing errors are already followed by tracking: with a drift to 2\,m or a 2\,m step, \method loses at most 0.76 \apseven and lock acquisition adds 0.01--0.13.
+
+The corrected pose also protects intermediate fusion.
+Given the injected pose, the second-tier network reaches only 61.91--62.11 \apseven at 1--3\,m.
+Giving it instead the pose corrected by \method with lock acquisition, estimated from the late-fusion boxes of the same injected messages, improves \apseven by 3.90--4.41 points, and by 2.15--2.74 for the network retrained with online poses, with all intervals above zero (\cref{fig:robustness}b).
 
 \subsection{Controlled study on OPV2V}
 \label{sec:opv}

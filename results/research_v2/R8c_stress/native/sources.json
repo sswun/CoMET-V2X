@@ -1,0 +1,62 @@
+[
+  {
+    "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_native_statistics/PUBLIC_T1_1.0_uncorrected/terminal.json",
+    "sha256": "bf6ae3d723ffc2a5dea5c17ef05e5302da15c5e9b7b3507e644a40a57cbdb539",
+    "bytes": 913
+  },
+  {
+    "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_native_statistics/PUBLIC_T1_1.0_CoMET_A/terminal.json",
+    "sha256": "67a3066a8bc92ea7cb18c6f4f3e4405f2ee69e7c5938163fd8d283bcce60b85e",
+    "bytes": 901
+  },
+  {
+    "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_native_statistics/PUBLIC_T1_2.0_uncorrected/terminal.json",
+    "sha256": "f49a2d7f4e8d3d8dcb551ce3d8e89c2fc8e3cc9210505657002e3fd3d12137f5",
+    "bytes": 913
+  },
+  {
+    "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_native_statistics/PUBLIC_T1_2.0_CoMET_A/terminal.json",
+    "sha256": "a0d62a8da9d60d47fb1ef436f575a8e2500e2363b6b79e9592c04b56628d5570",
+    "bytes": 901
+  },
+  {
+    "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_native_statistics/PUBLIC_T1_3.0_uncorrected/terminal.json",
+    "sha256": "e4389d8027cabafd6ff12619f4d9ec9231c295e7840717b2dc66736e32adbaaf",
+    "bytes": 913
+  },
+  {
+    "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_native_statistics/PUBLIC_T1_3.0_CoMET_A/terminal.json",
+    "sha256": "e975b4f3b84ca9858e28bc1eaf4d47dc714e4e1977a36e4ee5582e32b77043db",
+    "bytes": 901
+  },
+  {
+    "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_native_statistics/A_T1_1.0_uncorrected/terminal.json",
+    "sha256": "054c5eedafa70c6e9d8d352d154ea32dd22f6eb677093a76def920cd18989afb",
+    "bytes": 900
+  },
+  {
+    "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_native_statistics/A_T1_1.0_CoMET_A/terminal.json",
+    "sha256": "9b8d2cf1db0735f64c02be5912d6c74a3037940f229b3875baf00c802ce4f3d8",
+    "bytes": 888
+  },
+  {
+    "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_native_statistics/A_T1_2.0_uncorrected/terminal.json",
+    "sha256": "8bf79198c0dc2d73f468d870db2e85b0d7b0cc0d23838314b8e1a341a1f4801e",
+    "bytes": 900
+  },
+  {
+    "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_native_statistics/A_T1_2.0_CoMET_A/terminal.json",
+    "sha256": "62cf6370b0d28fa64181f6ab05aab6ce5093ff84cc63c110bf58ad422ebb4f2b",
+    "bytes": 888
+  },
+  {
+    "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_native_statistics/A_T1_3.0_uncorrected/terminal.json",
+    "sha256": "473a3ce7e3b3946ad937be2fef88a02dcc4c8552d2ae714d3d58a6f63ece3767",
+    "bytes": 900
+  },
+  {
+    "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_native_statistics/A_T1_3.0_CoMET_A/terminal.json",
+    "sha256": "54dc12413340508b44276ee616d0f650bbe3c65f5898fc21403720c2b0212aed",
+    "bytes": 888
+  }
+]

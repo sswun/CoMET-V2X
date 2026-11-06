@@ -2,8 +2,8 @@
 \label{sec:method}
 
 \method runs on the receiver and treats both detectors as black boxes (\cref{fig:overview}, \cref{alg:comet}).
-It builds remote candidates at the decision time (\cref{sec:prop}), forms one anchor observation per message (\cref{sec:anchors}), tracks the common-mode offset with a causal filter (\cref{sec:kf}), transfers it to every remote box and ranks the merged candidates (\cref{sec:readout}).
-\Cref{sec:tier2} describes an optional second tier that retrains intermediate fusion with \method poses.
+It builds remote candidates at the decision time (\cref{sec:prop}), forms one anchor observation per message (\cref{sec:anchors}), tracks the common-mode offset with a causal filter (\cref{sec:kf}), re-acquires the offset when it leaves the association gate (\cref{sec:acq}), transfers it to every remote box and ranks the merged candidates (\cref{sec:readout}).
+\Cref{sec:tier2} describes an optional second tier that retrains intermediate fusion with \method poses, and a box-level combination of the two tiers.
 
 \subsection{Remote candidates at the decision time}
 \label{sec:prop}
@@ -96,6 +96,23 @@ This is the essential difference from per-frame registration, which returns no c
   $\mathcal D_t\leftarrow\mathcal E^+$ ranked by $1+s_k$, followed by $\mathcal C$ ranked by $u_c$\;
 \end{algorithm}
 
+\subsection{Re-acquiring a lost lock}
+\label{sec:acq}
+The gate $g$ makes the association robust, but it also bounds the offsets that \method can lock onto.
+If $\|\boldsymbol\delta_t\|$ exceeds $g$ when a stream starts, or jumps beyond it later, no co-visible pair falls inside the gate and the filter never receives an observation.
+A lock-acquisition step removes this limitation; its parameters are fixed in advance and are not tuned.
+
+A stream is declared \emph{lost} after $K=5$ consecutive messages in which both agents report at least three boxes but no anchor is found.
+The receiver then collects all ego--remote displacements $\mathbf x^{\text{ego}}_k-\tilde{\mathbf x}_j$ of norm at most 10\,m from the last $W=5$ messages and votes them into a two-dimensional histogram with 0.5\,m bins.
+The coarse offset $\mathbf c$ is the mean of the displacements within 1\,m of the highest bin.
+It is accepted only if at least six pairs from at least three messages support it, if $\|\mathbf c\|\ge2$\,m (smaller offsets are within reach of the gate), and if the peak holds at least 1.5 times the count of the highest non-adjacent bin; otherwise the vote is repeated with the next message.
+On acceptance the filter is reset to $\hat{\boldsymbol\delta}=\mathbf c$ and $p=0.25$\,m$^2$, and association continues on the remote centres shifted by the fixed $\mathbf c$, with observation $\mathbf c+\bar{\mathbf z}_t$ in \cref{eq:update}.
+Because $\mathbf c$ is held fixed instead of following the running estimate, the filter cannot hide the anchors that would correct it, which is the failure mode of prediction gating (\cref{sec:ablation}).
+A later loss of lock triggers a new acquisition.
+
+As long as no stream is lost, the step is inactive and \method is unchanged.
+On the real data of this paper it changes validation \apseven by less than 0.01 points for every detector (\cref{sec:stress}); unless stated otherwise, the reported results are those without it.
+
 \subsection{Late fusion and readout}
 \label{sec:readout}
 Correct geometry is necessary but not sufficient: a corrected box only helps if it outranks the false positives it competes with, and the scores of two detectors are not comparable.
@@ -118,3 +135,14 @@ When an intermediate-fusion model is retrained anyway, we change two things and 
 \emph{Training labels:} on placeholder messages of the fit split, the roadside-only ground truth is re-registered with the per-sequence linear interpolation of the non-zero dataset offsets, so that the network is not trained to reproduce the uncorrected projection; this uses labels and is applied to training only.
 We also tested a variant that additionally moves roadside-only labels on saturated axes to the median co-labelled displacement; the calibration split preferred the simpler variant (\cref{app:tier2}).
 Evaluation always uses the official ground truth.
+
+\paragraph{Combining the two tiers.}
+The two tiers err differently: the first places boxes more precisely, and the retrained network finds more objects (\cref{sec:tier2res}).
+A box-level combination keeps the strengths of both.
+Boxes of the two tiers are paired one-to-one by BEV IoU, greedily in decreasing IoU, if the IoU is at least 0.3.
+A pair keeps the first-tier box and the larger of the two scores.
+An unpaired box keeps its geometry, and its score is multiplied by a per-tier factor $\alpha$.
+Overlapping boxes are finally removed by BEV non-maximum suppression at IoU 0.15.
+The factor $\alpha$ is the least-squares scale that maps a tier's scores on the calibration split to their correctness at IoU 0.7, clipped to $[0,1]$; it is 0.39 for the first tier and 1 for the second, so first-tier boxes that the network does not confirm are down-weighted.
+The pairing threshold (0.3 or 0.5) and whether the scores are first calibrated by isotonic regression were chosen among four settings on the calibration split.
+The combination uses no ground truth at inference.

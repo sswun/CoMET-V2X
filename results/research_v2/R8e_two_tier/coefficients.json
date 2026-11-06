@@ -1,0 +1,43 @@
+{
+ "created_from": "R8e score_calibration.json (selected arm: no isotonic calibration)",
+ "tier1": "author frozen H1 late fusion, heads 2023/2024/2025",
+ "tier2": "TraF R7b A2000 seeds 20261101/02/03",
+ "coefficients": {
+  "20261101": [
+   {
+    "tier": 1,
+    "unmatched_coefficient_raw_scores": 0.3894531465921884,
+    "fit_role": "calibration8"
+   },
+   {
+    "tier": 2,
+    "unmatched_coefficient_raw_scores": 1.0,
+    "fit_role": "calibration8"
+   }
+  ],
+  "20261102": [
+   {
+    "tier": 1,
+    "unmatched_coefficient_raw_scores": 0.389300546858526,
+    "fit_role": "calibration8"
+   },
+   {
+    "tier": 2,
+    "unmatched_coefficient_raw_scores": 1.0,
+    "fit_role": "calibration8"
+   }
+  ],
+  "20261103": [
+   {
+    "tier": 1,
+    "unmatched_coefficient_raw_scores": 0.3893747319654156,
+    "fit_role": "calibration8"
+   },
+   {
+    "tier": 2,
+    "unmatched_coefficient_raw_scores": 1.0,
+    "fit_role": "calibration8"
+   }
+  ]
+ }
+}

@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-11-05T06:01:05+08:00",
+  "status": "accepted_preregistered_read",
+  "independent_pending": false,
+  "cal_selected_external": "cbm_median",
+  "selection_role": "calibration8",
+  "formal_role": "val21",
+  "H1_AP70": 66.62807518598599,
+  "external_AP70": 64.00381489324768,
+  "external_minus_H1": -2.624260292738313,
+  "threshold_pp": -0.3,
+  "weaken_claim": false,
+  "interpretation": "These existing registration modules plus the tested cal-selected robust temporal processing do not catch H1 in this setting; not a universal impossibility claim.",
+  "same_H1_weights_prefix": true,
+  "all_formal_arms_retained": true,
+  "no_formal_selection": true,
+  "independent_scope": "Upstream independent polygon matching/AP and established independent sequence2000CI. Shared detections, scores and module fitting; no complete external system attribution.",
+  "sources": {
+    "robust_external/calibration.json": {
+      "path": "artifacts/research_autopilot/status_audit_20261104_peer19/robust_external/calibration.json",
+      "sha256": "a261a3a4f9fca247aff3d0efd00ea77dc2714bab9a15c481f885396c9cf3c3c8",
+      "bytes": 1477
+    },
+    "robust_external/preregistered_read.json": {
+      "path": "artifacts/research_autopilot/status_audit_20261104_peer19/robust_external/preregistered_read.json",
+      "sha256": "850d85954e76e654086c216742fa7deb24b2cdc45c9ac626bde6c9d4841a5d2b",
+      "bytes": 350
+    },
+    "robust_external/identity.json": {
+      "path": "artifacts/research_autopilot/status_audit_20261104_peer19/robust_external/identity.json",
+      "sha256": "52d6ae2c3b0ea62b558ec8ad8e9c27007172e2d4f06af23535e982740641b9a4",
+      "bytes": 2811
+    },
+    "robust_external_independent/AP.json": {
+      "path": "artifacts/research_autopilot/status_audit_20261104_peer19/robust_external_independent/AP.json",
+      "sha256": "115cdaf4f6e7526e9340436d42ff0ab5dda5f20a765e552fb196a479909a4cdb",
+      "bytes": 71054
+    },
+    "robust_external_independent/bootstrap.json": {
+      "path": "artifacts/research_autopilot/status_audit_20261104_peer19/robust_external_independent/bootstrap.json",
+      "sha256": "8a1f56ae6753db025f5deb46d7ce7e3cf95760c3f884294d9051f0bc3947d2fd",
+      "bytes": 236522
+    },
+    "robust_external_independent/terminal.json": {
+      "path": "artifacts/research_autopilot/status_audit_20261104_peer19/robust_external_independent/terminal.json",
+      "sha256": "cc3e2ff00f94684cfe4f4dac40afd0dcc1a0d0fba24e2957a0dd7064a9649e2d",
+      "bytes": 627
+    },
+    "recipe_independent/author/AP.json": {
+      "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/author/AP.json",
+      "sha256": "e0e00f842818574d3db6c21dc18ee3bc676167830e0e08de13c69b44cc9fa85f",
+      "bytes": 307285
+    },
+    "recipe_independent/author/terminal.json": {
+      "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/author/terminal.json",
+      "sha256": "5b3f4c30ec8ac1c62c77999789832c39d17275ecc5d13c49d1019917953ba2d9",
+      "bytes": 727
+    },
+    "H1_paper_supplement/method_identity.json": {
+      "path": "artifacts/research_autopilot/status_audit_20261104_peer19/H1_paper_supplement/method_identity.json",
+      "sha256": "caf0e95841d9a16eeaef79e6ab2d3c42ee82a2e1509a6816b9e08a9c56c0a93a",
+      "bytes": 20345
+    }
+  },
+  "root_table_ledger_unchanged": true
+}

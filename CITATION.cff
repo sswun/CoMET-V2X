@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "For authorized use of CoMET-V2X, please cite this software. For permission to use the code or results, contact the authors as described in LICENSE."
+type: software
+title: "CoMET-V2X: Tracking the Shared Pose Error of Roadside Messages for Asynchronous Vehicle–Infrastructure Cooperative 3D Detection"
+authors:
+  - family-names: Sun
+    given-names: Shuwei
+    affiliation: "Xi'an Jiaotong University"
+    orcid: "https://orcid.org/0009-0009-4809-8557"
+  - family-names: Huang
+    given-names: Jian
+    affiliation: "Xi'an Jiaotong University"
+    orcid: "https://orcid.org/0009-0007-8958-5736"
+  - family-names: Cao
+    given-names: Hui
+    affiliation: "Xi'an Jiaotong University"
+    orcid: "https://orcid.org/0000-0002-4985-0028"
+version: 0.1.0
+date-released: "2026-11-06"
+repository-code: "https://github.com/sswun/CoMET-V2X"
+license-url: "https://github.com/sswun/CoMET-V2X/blob/main/LICENSE"
+keywords:
+  - cooperative perception
+  - vehicle-infrastructure communication
+  - 3D object detection
+  - pose alignment
+  - Kalman filtering

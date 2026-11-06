@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-11-06T12:05:43+08:00",
+  "links": [
+    {
+      "name": "tier2_R6h_2000_v1",
+      "manifest": {
+        "path": "docs/paper_draft_v0_20261103/final_tables_v3/aux_colabelled/tier2_R6h_2000_v1/manifest.json",
+        "sha256": "268d7d976a493488b1a353cbcce05b99bc3ee013bea9db8f11e52c07e5e87db2",
+        "bytes": 22447
+      },
+      "CSV": {
+        "path": "docs/paper_draft_v0_20261103/final_tables_v3/aux_colabelled/tier2_R6h_2000_v1/sensitivity.csv",
+        "sha256": "9806bafbf49e5c954b0b8ffe9ab654902d020e30ef397d4ed082f16b5d499586",
+        "bytes": 914496
+      },
+      "rows": 1440,
+      "no_copy": true
+    }
+  ],
+  "pending": [
+    "label_median_GT",
+    "tier2_R6h_selected_budget_v1"
+  ],
+  "GT_not_physical_truth": true,
+  "official_negative_results_retained": true,
+  "no_recalculation": true
+}

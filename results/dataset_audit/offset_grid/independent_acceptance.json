@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-11-05T09:19:08+08:00",
+  "review": {
+    "path": "artifacts/research_autopilot/status_audit_20261105_peer21/R6g_independent/review.json",
+    "sha256": "e87816ee7705ce24cf43e32f930be3b83d337c57802482fe454a42161887c9a9",
+    "bytes": 594
+  },
+  "accepted": {
+    "path": "artifacts/research_autopilot/status_audit_20261105_peer21/cycle09_publication_v1/R6g_accepted.json",
+    "sha256": "3b178f4d8bbe51a048a234d4bec037d461cd5e34e941bcf60b82117f40c8eed6",
+    "bytes": 1688
+  },
+  "independent_pending": false,
+  "original_sources_pending_flag_is_historical": true
+}

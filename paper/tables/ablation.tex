@@ -1,0 +1,11 @@
+N0 & confident ego anchors (score $\ge\tau_p$) & Hungarian + mutual NN & 66.39 & 64.15 & 68.94 \\
+U2 & confident ego anchors & Sinkhorn & 65.72 & 64.12 & 68.59 \\
+U3 & confident ego anchors & Hungarian, prediction-gated & 66.02 & 64.14 & 68.34 \\
+U0 & all ego boxes & Sinkhorn, $\sigma{=}1$\,m, centred on estimate & 66.12 & 64.40 & 68.79 \\
+U1 & all ego boxes & Sinkhorn, $\sigma{=}1$\,m, uncentred & 66.28 & 63.92 & 68.04 \\
+U5 & all ego boxes & Sinkhorn, $\sigma{=}0.5$\,m & 65.87 & 64.16 & 69.09 \\
+U6 & all ego boxes & Sinkhorn, $\sigma{=}2$\,m & 65.92 & 63.91 & 67.45 \\
+N2 & all ego boxes & learned soft assignment & 66.24 & 64.41 & 68.69 \\
+H2 & all ego boxes & Hungarian, prediction-gated (2.5\,m) & 66.24 & 64.41 & 68.40 \\
+H3 & all ego boxes & Hungarian, prediction-gated (1.5\,m) & 66.30 & 64.44 & 68.56 \\
+H1 & \textbf{all ego boxes} & \textbf{Hungarian + mutual NN} & 66.89 & 64.36 & 69.06 \\

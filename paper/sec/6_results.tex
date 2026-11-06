@@ -1,0 +1,299 @@
+\section{Results}
+\label{sec:results}
+
+\subsection{Main comparison}
+\label{sec:main}
+
+\begin{table}[t]
+  \centering
+  \caption{\textbf{V2X-Seq validation under strict arrival with online poses.} \apseven and \apfive (\%) per latency budget $d$ and their mean. $^\dagger$Box-level methods on the released TraF-Align boxes with the same readout as \method (three frozen heads). $^\ddagger$Temporal median of CBM's per-frame estimates; the best of six smoothed external variants on the calibration split.}
+  \label{tab:main}
+  \small
+  \setlength{\tabcolsep}{3.6pt}
+  \resizebox{\linewidth}{!}{%
+  \begin{tabular}{l rrrr r rrrr r}
+    \toprule
+    & \multicolumn{5}{c}{\apseven} & \multicolumn{5}{c}{\apfive} \\
+    \cmidrule(lr){2-6}\cmidrule(lr){7-11}
+    Method & 0 & 100 & 200 & 400 & mean & 0 & 100 & 200 & 400 & mean \\
+    \midrule
+    \tabinput{tables/main.tex}
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\Cref{tab:main} compares \method with intermediate fusion, late fusion and per-frame registration.
+Under online poses, intermediate fusion gains little: the three models range from 61.11 to 62.96 \apseven against 62.15 for the ego detector alone, although they do detect more objects at the loose threshold (up to 77.81 \apfive against 70.93).
+They find the hidden objects but cannot place them precisely enough.
+Late fusion with online poses behaves similarly at \apseven (63.18).
+Per-frame registration helps, confirming that geometry is the bottleneck, but each module re-estimates the pose in every frame from the current correspondences: the best (RoCo) reaches 64.36 \apseven, and smoothing the per-frame estimates over time does not close the gap (\cref{sec:robust}).
+
+\method reaches 67.37/66.88/66.54/65.72 \apseven at 0/100/200/400\,ms, 66.63 on average: 3.45 points above late fusion with the same readout and online poses, 3.67 above the best intermediate fusion and 2.27 above the best per-frame registration module.
+It also has the highest \apfive of the deployable methods in \cref{tab:main} (78.87 on average), so the gain is not bought by trading recall for precision.
+Relative to placing the boxes with the dataset's annotation-assisted offset (69.52, \cref{sec:geometry}), which is not available online, \method closes 54\% of the gap left by online poses without using any annotation.
+
+\subsection{Across detectors}
+\label{sec:detectors}
+
+\begin{table}[t]
+  \centering
+  \caption{\textbf{\method on five detectors.} \apseven (\%) of \method averaged over budgets and readout heads, and its paired difference to late fusion with the online pose (column: online) and to estimating the offset from the current message only (column: single), with the same readout. Every per-head 95\% interval of the difference to the online pose lies above zero; see \cref{tab:population} for intervals.}
+  \label{tab:detectors}
+  \small
+  \setlength{\tabcolsep}{5pt}
+  \begin{tabular}{l rrr rrr}
+    \toprule
+    & \multicolumn{3}{c}{validation} & \multicolumn{3}{c}{held-out} \\
+    \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+    Detector & \method & $-$online & $-$single & \method & $-$online & $-$single \\
+    \midrule
+    \tabinput{tables/cross_detector.tex}
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\Cref{tab:detectors} applies \method to the boxes of all five detectors, with $q$ and $\tau_p$ selected per detector on the calibration split and every other setting shared.
+On the validation split \method improves on late fusion with online poses by 2.2--3.5 \apseven and on per-message estimation by 0.3--0.6 for every detector; on the held-out split the improvements are larger (4.1--8.4 and 0.8--1.4).
+The improvement is not specific to one detector or architecture, and with V2X-ViT or Where2comm boxes \method reaches 65.0--66.1 \apseven, so the result in \cref{tab:main} does not stem from a stronger single-agent detector.
+
+\subsection{Why tracking: temporal aggregation}
+\label{sec:temporal}
+
+\begin{table}[t]
+  \centering
+  \caption{\textbf{How the per-message anchor evidence is aggregated over time.} Released TraF-Align boxes, same anchors and readout, mean over budgets and heads.}
+  \label{tab:temporal}
+  \small
+  \begin{tabular}{l rr rr}
+    \toprule
+    & \multicolumn{2}{c}{validation} & \multicolumn{2}{c}{held-out} \\
+    \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+    Estimator of $\boldsymbol\delta_t$ & \apseven & \apfive & \apseven & \apfive \\
+    \midrule
+    \tabinput{tables/temporal.tex}
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\Cref{tab:temporal} keeps the anchors fixed and changes only how they are aggregated.
+Using the current message alone, by its mean or median, gives 66.06 \apseven; holding the last observation through anchor-free messages does not help.
+Pooling over time helps on both splits, and the Kalman filter is the best or tied for best everywhere: it matches the sliding window on the validation split (66.63) and is ahead of it on the held-out split (72.57 against 72.07), where the exponential average is close (72.49).
+The filter is preferable to fixed windows for a second reason: its gain adapts to the number of anchors and to the time since the last one, which a window or a constant-gain average cannot do.
+On the held-out split the difference between the filter and per-message estimation reaches 1.38 \apseven.
+
+\subsection{Anchors, association and learned alternatives}
+\label{sec:ablation}
+
+\begin{table}[t]
+  \centering
+  \caption{\textbf{Association and anchor choices.} \apseven (\%) averaged over the five detectors, three heads and four budgets. This diagnostic keeps each detector's earlier $q$ and $\tau_p$, so absolute values differ from \cref{tab:main}; the calibration column is the selection criterion. Prediction-gated: remote boxes are shifted by the current estimate before matching.}
+  \label{tab:ablation}
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \resizebox{\linewidth}{!}{%
+  \begin{tabular}{lllrrr}
+    \toprule
+    & Anchor candidates & Association & calibration & validation & held-out \\
+    \midrule
+    \tabinput{tables/ablation.tex}
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\Cref{tab:ablation} varies the anchor set and the association while keeping the filter.
+Two findings matter.
+\emph{Use all ego detections.}
+Restricting anchors to confident ego detections (N0, U2, U3) loses evidence; with all ego boxes and hard mutual-nearest-neighbour matching (H1, the configuration used throughout) the calibration score is the highest of all variants.
+Consistently, raising an anchor score threshold only lowers \apseven (\cref{tab:sensitivity}), and the result is flat for gates between 2.0 and 3.0\,m.
+\emph{Structure beats capacity.}
+Soft assignment with Sinkhorn normalisation~\cite{cuturi2013sinkhorn} at various widths (U0, U1, U5, U6) and a learned soft assignment trained end to end (N2) do not improve on hard matching: on the validation split all variants lie within 0.6 points of each other, on the calibration split hard assignment is the best, and on the held-out split it is within 0.03 points of the best.
+Gating the association with the filter prediction (H2, H3) is worse on the calibration and held-out splits: when the current offset is large, the prediction hides exactly the anchors that would reveal it.
+We therefore keep the simplest configuration that wins on the calibration split.
+
+\begin{table}[t]
+  \centering
+  \caption{\textbf{Sensitivity} (report only, never used for selection). Released TraF-Align boxes, validation \apseven. ``orig.'': the original high-score anchor rule.}
+  \label{tab:sensitivity}
+  \small
+  \setlength{\tabcolsep}{4.5pt}
+  \begin{tabular}{l rrrrrrr}
+    \toprule
+    \tabinput{tables/sensitivity.tex}
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Per-frame registration with temporal smoothing}
+\label{sec:robust}
+
+\begin{table}[t]
+  \centering
+  \caption{\textbf{External registration modules with temporal processing.} Validation \apseven (\%), released TraF-Align boxes, same readout as \method. Median: temporal median over the last messages; gated KF: Kalman filter on the module's per-frame estimate with innovation gating. Window length and gate are selected on the calibration split. \method: 66.63.}
+  \label{tab:robust}
+  \small
+  \begin{tabular}{l rrr}
+    \toprule
+    Module & per frame & + temporal median & + gated KF \\
+    \midrule
+    \tabinput{tables/robust.tex}
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+One could argue that the advantage of \method comes from temporal smoothing alone, which could be added to any registration module.
+\Cref{tab:robust} tests this by smoothing the per-frame estimates of FreeAlign, RoCo and CBM with a temporal median or an innovation-gated Kalman filter, with parameters selected on the calibration split.
+Smoothing changes their \apseven by at most 0.4 points; the variant selected on the calibration split (CBM with a three-message median) reaches 64.00, 2.62 points below \method.
+A plausible reason is that per-frame registration from object graphs or local context fails grossly when few objects are shared, and smoothing a sequence that contains gross failures does not produce a good estimate, whereas the mutual-nearest-neighbour anchor observation of \method rarely fails grossly (\cref{sec:structure}).
+
+\subsection{\method as the pose of a pose-graph system}
+\label{sec:coalign}
+
+\begin{table}[t]
+  \centering
+  \caption{\textbf{CoAlign with different relative poses.} Full CoAlign fusion, three training seeds, common evaluation region. \apseven per budget and mean, and mean \apfive.}
+  \label{tab:coalign}
+  \small
+  \begin{tabular}{l rrrr r r}
+    \toprule
+    Relative pose & 0 & 100 & 200 & 400 & mean & \apfive \\
+    \midrule
+    \tabinput{tables/coalign.tex}
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+CoAlign~\cite{lu2023coalign} optimises an agent--object pose graph in every frame before multi-scale feature fusion.
+Feeding \method's causal pose to the CoAlign fusion network instead of the pose-graph output improves \apseven by 1.11 points (57.70 against 56.59, consistently for all three seeds) and \apfive by 1.44 (\cref{tab:coalign}).
+The gain over an earlier version of our filter that used only confident ego detections as anchors is small (+0.10), which shows that for intermediate fusion the main benefit comes from tracking itself rather than from the choice of anchors.
+CoAlign's per-frame graph cannot use evidence from earlier messages; \method can.
+
+\subsection{Robustness to the reference}
+\label{sec:reference}
+
+\begin{table}[t]
+  \centering
+  \caption{\textbf{Results by label-defined population}, validation \apseven, paired differences in points (mean over three heads). ``All'' is the official result; ``co-lab.'' are messages with a co-labelled object, on which the official ground truth of every object is registered; ``zero'' are placeholder messages, on which the official ground truth of roadside-only objects is the uncorrected projection.}
+  \label{tab:population}
+  \small
+  \setlength{\tabcolsep}{3.5pt}
+  \resizebox{\linewidth}{!}{%
+  \begin{tabular}{l rrr rrr}
+    \toprule
+    & \multicolumn{3}{c}{\method $-$ online pose} & \multicolumn{3}{c}{\method $-$ single message} \\
+    \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+    Detector & all & co-lab. & zero & all & co-lab. & zero \\
+    \midrule
+    \tabinput{tables/population.tex}
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\paragraph{Populations.}
+\Cref{tab:population} splits the official result.
+On messages with co-labelled objects, where the official ground truth of every object is registered, \method improves more than on all messages, by 2.9--4.5 points over online poses and 0.5--1.0 over per-message estimation, and all per-head intervals of both differences lie above zero for every detector.
+On placeholder messages the official ground truth of roadside-only objects is the uncorrected projection, so moving these boxes to where the objects are is counted as an error there; the auxiliary references below show that this effect is a label artefact.
+We therefore do not use any rule that withholds the correction on frames without anchors, which would gain on the official table only through the placeholder.
+
+\begin{table}[t]
+  \centering
+  \caption{\textbf{Auxiliary references} (sensitivity; not physical truth). \apseven differences with 95\% intervals, mean over three heads. Interpolated: placeholder messages re-registered with the per-sequence interpolation of non-zero offsets (released TraF-Align boxes). Label-median: messages with at least three co-labelled objects re-registered with their median displacement.}
+  \label{tab:auxgt}
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \resizebox{\linewidth}{!}{%
+  \begin{tabular}{ll lll}
+    \toprule
+    & & interpolated & \multicolumn{2}{c}{label-median} \\
+    \cmidrule(lr){3-3}\cmidrule(lr){4-5}
+    Split & Difference & TraF-Align (released) & TraF-Align (released) & TraF-Align (strict) \\
+    \midrule
+    \tabinput{tables/aux_gt.tex}
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\paragraph{Auxiliary references.}
+\Cref{tab:auxgt} repeats the main comparisons under the two auxiliary references.
+With either reference the improvement over online poses grows (validation: $+4.0$ and $+3.9$ for the released TraF-Align boxes) and the improvement over per-message estimation stays positive with intervals above zero on both splits and both detectors ($+0.35$ to $+1.58$).
+On placeholder messages the sign reverses: once the roadside-only objects there are registered, \method is better than the online pose (released $+0.83$, strict $+0.38$ on validation, both intervals above zero; \cref{tab:auxfull}), confirming that the official penalty on these messages is a label artefact.
+The conclusions of \cref{tab:main,tab:temporal} therefore do not depend on the label artefacts.
+
+\subsection{Second tier: retraining intermediate fusion}
+\label{sec:tier2res}
+
+\begin{table}[t]
+  \centering
+  \caption{\textbf{TraF-Align retrained from the released weights} (fusion and head fine-tuned for 2,000 updates, reader and backbone frozen, three seeds), validation, mean over budgets and seeds. Top: absolute AP. Bottom: tier 2 minus each alternative, with 95\% intervals.}
+  \label{tab:tier2}
+  \small
+  \setlength{\tabcolsep}{5pt}
+  \begin{tabular}{l rr}
+    \toprule
+    Training and test pose / training labels & \apseven & \apfive \\
+    \midrule
+    \tabinput{tables/tier2_abs.tex}
+    \bottomrule
+  \end{tabular}
+
+  \vspace{2mm}
+  \begin{tabular}{l ll}
+    \toprule
+    Tier 2 minus & \apseven & \apfive \\
+    \midrule
+    \tabinput{tables/tier2_ci.tex}
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\Cref{tab:tier2} retrains the fusion network and detection head of TraF-Align for a fixed budget, changing only the pose and, optionally, the training labels.
+Compared with retraining under the online pose, tier 2 improves validation \apseven by 0.81 and \apfive by 1.17 points, both with intervals above zero.
+Its \apfive of 81.44 is the highest of all methods on the validation split, 2.56 points above \method{} without retraining.
+At \apseven the retrained network is on par with \method{} without retraining ($-0.14$, interval including zero), so retraining mainly adds recall.
+Retraining under a corrected pose accounts for most of the improvement over the online pose, and cleaned training labels add a further 0.25 \apseven (66.18 to 66.44 with the earlier anchor-gated pose); held-out results are in \cref{app:tier2}.
+
+\begin{table}[t]
+  \centering
+  \caption{\textbf{The same recipe on two more architectures}, validation, three seeds. \apseven / \apfive of the fusion network retrained with the online pose, with an earlier anchor-gated pose, and with \method poses and cleaned labels (tier 2); last two columns: tier 2 minus the online pose with 95\% intervals.}
+  \label{tab:tier2cross}
+  \small
+  \setlength{\tabcolsep}{3.5pt}
+  \resizebox{\linewidth}{!}{%
+  \begin{tabular}{l lll ll}
+    \toprule
+    Architecture & online & anchor-gated & tier 2 & $\Delta$\apseven & $\Delta$\apfive \\
+    \midrule
+    \tabinput{tables/tier2_cross.tex}
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\Cref{tab:tier2cross} applies the same recipe to Where2comm and CoAlign.
+Tier 2 improves on retraining with online poses for both: clearly for CoAlign ($+1.63$ \apseven, $+1.75$ \apfive, intervals above zero) and slightly for Where2comm ($+0.24$, $+0.32$).
+The second tier is thus a drop-in improvement for systems that retrain their fusion network anyway, while the first tier, which needs no retraining, remains the default.
+
+\subsection{Controlled study on OPV2V}
+\label{sec:opv}
+
+\begin{table}[t]
+  \centering
+  \caption{\textbf{OPV2V with controlled partner pose error.} \apseven (\%), mean over three readout heads. Stale: remote boxes placed with the perturbed pose; oracle: the true pose.}
+  \label{tab:opv}
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{l rrr rrr}
+    \toprule
+    & \multicolumn{3}{c}{$d=0$} & \multicolumn{3}{c}{$d=400$\,ms} \\
+    \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+    Pose error & stale & \method & oracle & stale & \method & oracle \\
+    \midrule
+    \tabinput{tables/opv.tex}
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+In simulation we can choose the error.
+\Cref{tab:opv} perturbs the partner pose of OPV2V~\cite{xu2022opv2v} in three ways.
+With a structured error whose statistics are fitted to V2X-Seq, \method recovers 8.9 of the 11.9 \apseven points lost at $d=0$ and 3.8 of 7.7 at 400\,ms.
+With independent per-frame noise, which has no persistent component, the stale boxes are already close to the oracle and \method still adds 0.6 and 1.8 points.
+With an ego-pose timing error, which produces a persistent offset during motion, \method recovers 2.7--5.8 points at $d=0$.
+\method helps in proportion to how persistent and how shared the error is.

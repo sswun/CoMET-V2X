@@ -1,0 +1,175 @@
+{
+  "created_at": "2026-11-05T12:10:53+08:00",
+  "consumer": {
+    "path": "preexperiment/research_autopilot/consume_peer19_R1_independent_CI_v1_20261104.py",
+    "sha256": "7b1cf71f2e043f30ddf174327ed1188ba2d6930818fbd74df91d8b2fb90b5287",
+    "bytes": 4125
+  },
+  "sources": {
+    "author": {
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/author/bootstrap.json",
+        "sha256": "025112aec6bf582e88bff384c8a859055d7a2300af259e8b04106fc6e49984bb",
+        "bytes": 432794
+      },
+      "review": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/author/terminal.json",
+        "sha256": "5b3f4c30ec8ac1c62c77999789832c39d17275ecc5d13c49d1019917953ba2d9",
+        "bytes": 727
+      }
+    },
+    "strict60": {
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent_resource_recovery_v5/strict60/bootstrap.json",
+        "sha256": "beb9394ea6819df1e00b4de55083c496b2432ed1504b4fd4e335b446ac93b5bd",
+        "bytes": 429934
+      },
+      "review": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent_resource_recovery_v5/strict60/terminal.json",
+        "sha256": "feb07a029020437370764b06dc5f8cd564e0f3a042ae40f4a7315caf0d923cb9",
+        "bytes": 773
+      }
+    },
+    "v2xvit_seed2024": {
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/v2xvit_seed2024/bootstrap.json",
+        "sha256": "89f2c49207e7dbe00b83512e33a1a8235b7df3ea24818f81c320a3b8ca7e1140",
+        "bytes": 442400
+      },
+      "review": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/v2xvit_seed2024/terminal.json",
+        "sha256": "b3e96aef418f48de6541a5a5e27b6358f664b340830b17416cc11b3b961fda49",
+        "bytes": 746
+      }
+    },
+    "v2xvit_seed2025": {
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/v2xvit_seed2025/bootstrap.json",
+        "sha256": "88aafe8d7a3c548f4f14465df8d470c6c0cb68e99d3366437a81e349a11f6e95",
+        "bytes": 443137
+      },
+      "review": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/v2xvit_seed2025/terminal.json",
+        "sha256": "4e06908cde28be162db83fa84791efb4be9557826b2b6ff7bad21a71f6986889",
+        "bytes": 746
+      }
+    },
+    "where2comm": {
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/where2comm/bootstrap.json",
+        "sha256": "0ecca2704d748239a10c94858e2c3c9d4fc6aa21b58c85093b59a4c362aec99f",
+        "bytes": 437834
+      },
+      "review": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/where2comm/terminal.json",
+        "sha256": "ebddf4702a4a030edfd43264db6bf7a86214b08e8238dd3d21854dd84cad6fd4",
+        "bytes": 736
+      }
+    }
+  },
+  "checks": [
+    {
+      "domain": "author",
+      "rows": 1020,
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/author/bootstrap.json",
+        "sha256": "025112aec6bf582e88bff384c8a859055d7a2300af259e8b04106fc6e49984bb",
+        "bytes": 432794
+      },
+      "review": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/author/terminal.json",
+        "sha256": "5b3f4c30ec8ac1c62c77999789832c39d17275ecc5d13c49d1019917953ba2d9",
+        "bytes": 727
+      },
+      "CSV": {
+        "path": "docs/paper_draft_v0_20261103/final_tables_v3/R1_independent_CI/author.csv",
+        "sha256": "7050a90956b67362a646ce10b56092d27cdf1490acedcc6b6439e54e341676c3",
+        "bytes": 650718
+      },
+      "roundtrip_exact": true
+    },
+    {
+      "domain": "strict60",
+      "rows": 1020,
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent_resource_recovery_v5/strict60/bootstrap.json",
+        "sha256": "beb9394ea6819df1e00b4de55083c496b2432ed1504b4fd4e335b446ac93b5bd",
+        "bytes": 429934
+      },
+      "review": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent_resource_recovery_v5/strict60/terminal.json",
+        "sha256": "feb07a029020437370764b06dc5f8cd564e0f3a042ae40f4a7315caf0d923cb9",
+        "bytes": 773
+      },
+      "CSV": {
+        "path": "docs/paper_draft_v0_20261103/final_tables_v3/R1_independent_CI/strict60.csv",
+        "sha256": "e700998219e0f6a67156f09e46bccddffe9443ea261cebc031beb6b1b16b2942",
+        "bytes": 694778
+      },
+      "roundtrip_exact": true
+    },
+    {
+      "domain": "v2xvit_seed2024",
+      "rows": 1020,
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/v2xvit_seed2024/bootstrap.json",
+        "sha256": "89f2c49207e7dbe00b83512e33a1a8235b7df3ea24818f81c320a3b8ca7e1140",
+        "bytes": 442400
+      },
+      "review": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/v2xvit_seed2024/terminal.json",
+        "sha256": "b3e96aef418f48de6541a5a5e27b6358f664b340830b17416cc11b3b961fda49",
+        "bytes": 746
+      },
+      "CSV": {
+        "path": "docs/paper_draft_v0_20261103/final_tables_v3/R1_independent_CI/v2xvit_seed2024.csv",
+        "sha256": "18185e1041d1a5780c3354cc9c074ac39b1d68218e507c112a78b117a06e9ad3",
+        "bytes": 678684
+      },
+      "roundtrip_exact": true
+    },
+    {
+      "domain": "v2xvit_seed2025",
+      "rows": 1020,
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/v2xvit_seed2025/bootstrap.json",
+        "sha256": "88aafe8d7a3c548f4f14465df8d470c6c0cb68e99d3366437a81e349a11f6e95",
+        "bytes": 443137
+      },
+      "review": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/v2xvit_seed2025/terminal.json",
+        "sha256": "4e06908cde28be162db83fa84791efb4be9557826b2b6ff7bad21a71f6986889",
+        "bytes": 746
+      },
+      "CSV": {
+        "path": "docs/paper_draft_v0_20261103/final_tables_v3/R1_independent_CI/v2xvit_seed2025.csv",
+        "sha256": "5e1aaecdd7ba4eb9195ff5062ccde299ea85b7d80bfcff4aa905e33f72e7a22d",
+        "bytes": 679421
+      },
+      "roundtrip_exact": true
+    },
+    {
+      "domain": "where2comm",
+      "rows": 1020,
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/where2comm/bootstrap.json",
+        "sha256": "0ecca2704d748239a10c94858e2c3c9d4fc6aa21b58c85093b59a4c362aec99f",
+        "bytes": 437834
+      },
+      "review": {
+        "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/where2comm/terminal.json",
+        "sha256": "ebddf4702a4a030edfd43264db6bf7a86214b08e8238dd3d21854dd84cad6fd4",
+        "bytes": 736
+      },
+      "CSV": {
+        "path": "docs/paper_draft_v0_20261103/final_tables_v3/R1_independent_CI/where2comm.csv",
+        "sha256": "ce5fefc9317a7ffa69498bb337a9af8b681c3689f2fd7f13ad6e8d9760be348b",
+        "bytes": 663918
+      },
+      "roundtrip_exact": true
+    }
+  ],
+  "no_new_AP_or_bootstrap": true,
+  "not_independent_detection_training": true,
+  "root_numeric_ledger_not_modified": true
+}

@@ -1,0 +1,31 @@
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{Cooperative 3D detection.}
+Cooperative perception exchanges raw point clouds (early fusion), intermediate features, or detected boxes (late fusion).
+Intermediate fusion dominates recent work: F-Cooper~\cite{chen2019fcooper} max-pools voxel features, V2VNet~\cite{wang2020v2vnet} aggregates them with a graph network, DiscoNet~\cite{li2021disconet} distils an early-fusion teacher, V2X-ViT~\cite{xu2022v2xvit} and CoBEVT~\cite{xu2022cobevt} attend across agents, and When2com~\cite{liu2020when2com} and Where2comm~\cite{hu2022where2comm} reduce bandwidth through selective communication.
+Benchmarks include OPV2V~\cite{xu2022opv2v} in simulation, DAIR-V2X~\cite{yu2022dairv2x} and V2X-Seq~\cite{yu2023v2xseq} for real V2I, and V2V4Real~\cite{xu2023v2v4real} for real V2V.
+Late fusion suits scarce bandwidth and heterogeneous detectors but is generally considered weaker~\cite{yu2022dairv2x}.
+We find that, once the shared geometric error is tracked, box-level fusion outperforms the intermediate-fusion models we test at the strict IoU threshold, and that the same pose estimate also helps when intermediate fusion is retrained.
+
+\paragraph{Asynchrony and latency.}
+A partner's message is captured at another time and arrives with delay.
+SyncNet~\cite{lei2022syncnet} compensates latency with a feature-level temporal model, CoBEVFlow~\cite{wei2023cobevflow} transports BEV features along estimated object flow, FFNet~\cite{yu2023ffnet} transmits feature flow so that the receiver can predict the roadside feature at the ego time, How2comm~\cite{yang2023how2comm} couples flow-guided compensation with communication selection, TraF-Align~\cite{song2025trafalign} aligns features along predicted trajectories, and CoDynTrust~\cite{xu2025codyntrust} modulates features with a dynamic trust estimate.
+These methods model the \emph{motion} between capture and use and assume a correct relative pose.
+On real V2I data with online poses we find the larger error to be geometric and persistent; \method addresses it at the box level and is complementary to motion compensation.
+
+\paragraph{Pose errors in cooperative perception.}
+V2X-ViT~\cite{xu2022v2xvit} learns robustness to injected pose noise; CoAlign~\cite{lu2023coalign} optimises an agent--object pose graph built from predicted boxes and their uncertainties in every frame; FreeAlign~\cite{lei2024freealign} matches salient-object graphs to recover the relative pose without external localisation; RoCo~\cite{huang2024roco} alternates object matching and pose adjustment; CBM~\cite{song2023cbm} matches objects through their local context; LET-VIC~\cite{yang2024letvic} compensates calibration errors inside a BEV cross-attention module for end-to-end V2I tracking.
+Apart from the learned LET-VIC module, these methods estimate the relative pose \emph{from the current frame}, and they are mostly evaluated with independent Gaussian perturbations of synchronous poses.
+\method instead exploits the temporal persistence of the error, accumulates evidence over the message stream with a causal filter, and transfers the estimate to objects without any correspondence in the current frame.
+We compare with FreeAlign, RoCo and CBM, with and without temporal smoothing of their outputs, under an identical readout, and we feed \method poses to CoAlign.
+
+\paragraph{Temporal filtering and online calibration.}
+Kalman filtering~\cite{kalman1960} underlies tracking-by-detection~\cite{weng2020ab3dmot,yin2021centerpoint}, where each object carries its own state. Iterative registration~\cite{besl1992icp} recovers a rigid transform from dense correspondences between a single pair of scans.
+\method filters a single \emph{shared} state per partner, the offset common to all of its objects, which is closer in spirit to online extrinsic calibration than to object tracking, and it estimates this state from sparse, noisy correspondences accumulated over time.
+It needs neither raw point clouds nor calibration targets: everyday traffic seen by both agents serves as the calibration target.
+
+\paragraph{Reference quality of cooperative benchmarks.}
+Cooperative datasets provide calibration and pose refinements that are produced offline, and models are commonly trained and evaluated with them~\cite{yu2022dairv2x,yu2023v2xseq,xu2023v2v4real}.
+We are not aware of an audit of how such refinements are generated and how they enter the cooperative ground truth.
+Our analysis of V2X-Seq shows that both questions matter for evaluating any method that corrects geometry online.

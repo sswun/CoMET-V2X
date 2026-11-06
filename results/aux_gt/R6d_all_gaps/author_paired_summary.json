@@ -1,0 +1,314 @@
+[
+  {
+    "role": "val21",
+    "tier": "gap1s",
+    "threshold": 50,
+    "comparison": "H1_minus_PUBLIC",
+    "delta_pp": 4.734763129116036,
+    "CI95": [
+      2.386117876279718,
+      7.316929296173518
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "val21",
+    "tier": "gap1s",
+    "threshold": 70,
+    "comparison": "H1_minus_PUBLIC",
+    "delta_pp": 3.660974659622932,
+    "CI95": [
+      1.9257387329854718,
+      5.4761342179232075
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "val21",
+    "tier": "gap1s",
+    "threshold": 50,
+    "comparison": "H1_minus_single_mean",
+    "delta_pp": 0.7261723889591423,
+    "CI95": [
+      0.17745311260491042,
+      1.3571085775514415
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "val21",
+    "tier": "gap1s",
+    "threshold": 70,
+    "comparison": "H1_minus_single_mean",
+    "delta_pp": 0.6029763153167238,
+    "CI95": [
+      0.055019491387527625,
+      1.125982734065998
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "val21",
+    "tier": "gap3s",
+    "threshold": 50,
+    "comparison": "H1_minus_PUBLIC",
+    "delta_pp": 4.734763129116036,
+    "CI95": [
+      2.386117876279718,
+      7.316929296173518
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "val21",
+    "tier": "gap3s",
+    "threshold": 70,
+    "comparison": "H1_minus_PUBLIC",
+    "delta_pp": 3.660974659622932,
+    "CI95": [
+      1.9257387329854718,
+      5.4761342179232075
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "val21",
+    "tier": "gap3s",
+    "threshold": 50,
+    "comparison": "H1_minus_single_mean",
+    "delta_pp": 0.7261723889591423,
+    "CI95": [
+      0.17745311260491042,
+      1.3571085775514415
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "val21",
+    "tier": "gap3s",
+    "threshold": 70,
+    "comparison": "H1_minus_single_mean",
+    "delta_pp": 0.6029763153167238,
+    "CI95": [
+      0.055019491387527625,
+      1.125982734065998
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "threshold": 50,
+    "comparison": "H1_minus_PUBLIC",
+    "delta_pp": 5.239510883225382,
+    "CI95": [
+      3.0845068466824546,
+      7.643897070156014
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "threshold": 70,
+    "comparison": "H1_minus_PUBLIC",
+    "delta_pp": 4.000963300769406,
+    "CI95": [
+      2.4054377200423254,
+      5.685198808757465
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "threshold": 50,
+    "comparison": "H1_minus_single_mean",
+    "delta_pp": 1.2166239973333113,
+    "CI95": [
+      0.7792238576713114,
+      1.7252683475932045
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "threshold": 70,
+    "comparison": "H1_minus_single_mean",
+    "delta_pp": 0.9397939511126374,
+    "CI95": [
+      0.5792172354140821,
+      1.327542681764383
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "gap1s",
+    "threshold": 50,
+    "comparison": "H1_minus_PUBLIC",
+    "delta_pp": 11.476362011887204,
+    "CI95": [
+      1.870757095274454,
+      17.086872329108743
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "gap1s",
+    "threshold": 70,
+    "comparison": "H1_minus_PUBLIC",
+    "delta_pp": 8.426446975941989,
+    "CI95": [
+      1.7984765604820618,
+      12.410866548227144
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "gap1s",
+    "threshold": 50,
+    "comparison": "H1_minus_single_mean",
+    "delta_pp": 1.133179782260438,
+    "CI95": [
+      -0.0383699489444134,
+      1.8500782564982148
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "gap1s",
+    "threshold": 70,
+    "comparison": "H1_minus_single_mean",
+    "delta_pp": 1.4316707141975265,
+    "CI95": [
+      -0.15167230431780848,
+      2.5319899313095733
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "gap3s",
+    "threshold": 50,
+    "comparison": "H1_minus_PUBLIC",
+    "delta_pp": 11.511106836501526,
+    "CI95": [
+      1.9951919511970786,
+      17.104535989365726
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "gap3s",
+    "threshold": 70,
+    "comparison": "H1_minus_PUBLIC",
+    "delta_pp": 8.451934052108946,
+    "CI95": [
+      1.8868972989479071,
+      12.446635295593884
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "gap3s",
+    "threshold": 50,
+    "comparison": "H1_minus_single_mean",
+    "delta_pp": 1.1590689789918898,
+    "CI95": [
+      0.01735399712076635,
+      1.8643829380407058
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "gap3s",
+    "threshold": 70,
+    "comparison": "H1_minus_single_mean",
+    "delta_pp": 1.4504348672539855,
+    "CI95": [
+      -0.11114592031292876,
+      2.5470663226170807
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "threshold": 50,
+    "comparison": "H1_minus_PUBLIC",
+    "delta_pp": 11.890973424768788,
+    "CI95": [
+      2.85693819218497,
+      17.261979365365644
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "threshold": 70,
+    "comparison": "H1_minus_PUBLIC",
+    "delta_pp": 8.732507754653094,
+    "CI95": [
+      2.506506540909626,
+      12.52127044746895
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "threshold": 50,
+    "comparison": "H1_minus_single_mean",
+    "delta_pp": 1.3494227891733175,
+    "CI95": [
+      0.3815538238468217,
+      1.939154223512778
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "threshold": 70,
+    "comparison": "H1_minus_single_mean",
+    "delta_pp": 1.5760647446513865,
+    "CI95": [
+      0.18196386290823616,
+      2.5841729387249437
+    ],
+    "replicates": 2000,
+    "scope": "author detector three readout heads, original fixed ROI; label sensitivity, not physical truth"
+  }
+]

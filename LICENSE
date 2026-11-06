@@ -1,0 +1,51 @@
+CoMET-V2X Permission Terms, version 1.0
+Copyright (c) 2026 Shuwei Sun, Jian Huang and Hui Cao. All rights reserved.
+
+1. Materials covered
+
+These terms cover the authors' original source code, research scripts,
+documentation, manuscript, figures and experimental results in this
+repository. Results include the released tables, statistics, filter traces,
+verification records and their compilations. These terms apply to the
+extent the authors hold rights in the materials.
+
+2. Prior written permission
+
+Contact the authors and obtain their express written permission before
+using the code or experimental results, including for academic research,
+teaching, replication, evaluation, benchmarking or commercial purposes.
+Permission is also required to copy, execute, modify, integrate, redistribute
+or publish any covered materials, including reproducing figures or result
+tables in another work, subject to section 5.
+
+3. Requests and scope
+
+Contact Shuwei Sun (@sswun) through the repository's issue tracker:
+https://github.com/sswun/CoMET-V2X/issues/new
+Identify the materials, intended use and any planned publication or
+redistribution. Permission takes effect only upon express written approval
+from the authors and applies only to the recipient, materials and purpose
+specified in that approval. Further uses require separate written approval.
+A request, silence or citation alone does not confer permission.
+
+4. Attribution
+
+Users who receive permission must retain the copyright and permission
+notices and credit the authors using CITATION.cff when reporting work based
+on the materials. Any additional conditions in the written approval apply.
+
+5. Platform, third-party and statutory rights
+
+GitHub and its users retain the rights granted under GitHub's Terms of
+Service, including viewing and forking public repositories within GitHub.
+Applicable statutory rights and exceptions are preserved. These terms
+govern only rights the authors can license. Third-party datasets, models,
+software and cited works remain subject to their own terms (see NOTICE).
+The authors reserve all other rights, including patent and trademark rights.
+
+6. Warranty and liability
+
+The materials are provided as is. To the extent permitted by law, the
+authors disclaim all warranties, including merchantability, fitness for a
+particular purpose and noninfringement, and all liability for loss or
+damage arising from the materials or their use.

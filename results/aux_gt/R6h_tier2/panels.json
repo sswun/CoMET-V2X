@@ -1,0 +1,6242 @@
+[
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 82.97593012159298,
+    "CI95": [
+      79.66331699370599,
+      86.17289189944381
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 80.88991074426785,
+    "CI95": [
+      77.64422815313846,
+      84.1471118204917
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 79.84399696739838,
+    "CI95": [
+      75.42827022870114,
+      84.3503392781869
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 82.08513143158633,
+    "CI95": [
+      78.59631061593495,
+      85.46366075001772
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 80.24388155466875,
+    "CI95": [
+      76.83845354755651,
+      83.62881390586276
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 79.43401016167758,
+    "CI95": [
+      74.94995769233395,
+      84.08040974763887
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 81.7454989748692,
+    "CI95": [
+      78.16538211067493,
+      85.16844808053256
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 79.86711749977808,
+    "CI95": [
+      76.31622382049659,
+      83.33344589164268
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 79.11213872375504,
+    "CI95": [
+      74.6560406736971,
+      83.70221385900578
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 80.84586993980317,
+    "CI95": [
+      76.84226178555319,
+      84.63771932971767
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 79.4826966259837,
+    "CI95": [
+      75.83138521619682,
+      83.11777969579401
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 78.24948540384999,
+    "CI95": [
+      73.74248854225394,
+      83.02365927777564
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 81.91310761696292,
+    "CI95": [
+      78.44314617529069,
+      85.30441885920948
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 80.1209016061746,
+    "CI95": [
+      76.68740991956027,
+      83.51022908751787
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 79.15990781417024,
+    "CI95": [
+      74.71372394634612,
+      83.81061465712395
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 67.13387855031999,
+    "CI95": [
+      62.1898376379728,
+      72.11305387648505
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 65.67504881382125,
+    "CI95": [
+      61.02368872324021,
+      70.26408756409894
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 67.57172004716055,
+    "CI95": [
+      62.40139619513625,
+      72.86182251524411
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 66.75150287608692,
+    "CI95": [
+      61.894692623952196,
+      71.69784957052167
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 65.77510514253406,
+    "CI95": [
+      61.09110377716007,
+      70.57215920152069
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 67.0094087265643,
+    "CI95": [
+      61.79529907039799,
+      72.40645779918114
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 66.75756919962193,
+    "CI95": [
+      61.92821375960639,
+      71.57054437529133
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 65.55545975714456,
+    "CI95": [
+      60.84627618127271,
+      70.34618333046333
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 66.69199974341917,
+    "CI95": [
+      61.49072118171493,
+      72.10777549013986
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 66.67076796199025,
+    "CI95": [
+      61.806151250519285,
+      71.52647224614955
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 65.55884759422662,
+    "CI95": [
+      60.90350943491727,
+      70.25229380741338
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 65.87059716263242,
+    "CI95": [
+      60.59597681081861,
+      71.32318655308313
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 66.82842964700477,
+    "CI95": [
+      61.98262836683845,
+      71.72456649381986
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 65.64111532693163,
+    "CI95": [
+      60.97127481396891,
+      70.37247063604131
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 66.7859314199441,
+    "CI95": [
+      61.546007294617965,
+      72.18430244189005
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 86.67929033831818,
+    "CI95": [
+      80.78786706925318,
+      91.40243463545144
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 85.37619524864556,
+    "CI95": [
+      78.96196739069505,
+      90.82180032707782
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 83.86723514829653,
+    "CI95": [
+      76.95361291662941,
+      89.72450491178878
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 86.57906994062729,
+    "CI95": [
+      80.57398140475011,
+      91.27315065266195
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 85.27616201983959,
+    "CI95": [
+      78.81783287093741,
+      90.68469717672008
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 83.8300243239678,
+    "CI95": [
+      76.91606409742515,
+      89.66893776390867
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 86.64524934723657,
+    "CI95": [
+      80.65947438820874,
+      91.3039257921477
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 85.17915098813249,
+    "CI95": [
+      78.6795997968412,
+      90.57114306778911
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 83.76582922830102,
+    "CI95": [
+      76.79583657018354,
+      89.67775492968796
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 86.58409025439805,
+    "CI95": [
+      80.37469492978482,
+      91.2830419328766
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 85.13496756641192,
+    "CI95": [
+      78.64051843359675,
+      90.56005944278795
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 84.02277637129046,
+    "CI95": [
+      76.90789823234265,
+      89.90637173640542
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 86.62192497014503,
+    "CI95": [
+      80.64165698376321,
+      91.30449177216533
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 85.24161895575739,
+    "CI95": [
+      78.77319214553938,
+      90.641678740253
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 83.87146626796395,
+    "CI95": [
+      76.87908168159304,
+      89.73668018482586
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 75.96025444185248,
+    "CI95": [
+      67.27700532876217,
+      82.98256574219096
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 74.73576717291192,
+    "CI95": [
+      65.81259946991223,
+      82.48326334556864
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 73.54298283945703,
+    "CI95": [
+      64.43500846378005,
+      81.40492277649777
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 75.56601948573888,
+    "CI95": [
+      67.05471927620917,
+      82.71856313052034
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 74.78239476075214,
+    "CI95": [
+      65.89513533096637,
+      82.51216195672954
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 73.04179551304394,
+    "CI95": [
+      63.83414414146622,
+      81.16117766579504
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 75.86662299126725,
+    "CI95": [
+      67.24593123988343,
+      82.89031646547222
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 74.8528280290805,
+    "CI95": [
+      66.03284843384918,
+      82.55206831116581
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 73.18018722989349,
+    "CI95": [
+      64.06176932821026,
+      81.20446538740337
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 75.98319483126855,
+    "CI95": [
+      67.24872804612927,
+      82.99926014463685
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 74.86888479173085,
+    "CI95": [
+      66.13238659276935,
+      82.54490871686698
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 73.45345910096059,
+    "CI95": [
+      64.24649198401535,
+      81.35585049539606
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 75.8440229375318,
+    "CI95": [
+      67.18780872651375,
+      82.87205992616771
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 74.80996868861885,
+    "CI95": [
+      65.95367609692171,
+      82.47201034848683
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 73.30460617083875,
+    "CI95": [
+      64.19404614924444,
+      81.30405798588833
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 82.50797514198474,
+    "CI95": [
+      79.10004395630013,
+      85.86308503101168
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 80.25146176863062,
+    "CI95": [
+      77.17438587089511,
+      83.44595053429198
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 79.19688455966372,
+    "CI95": [
+      74.79311119203479,
+      83.93741679027164
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 81.46735459108137,
+    "CI95": [
+      77.81966227005795,
+      85.1628658925928
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 79.51153912153882,
+    "CI95": [
+      76.11230349884339,
+      82.95783221704863
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 78.73386589116805,
+    "CI95": [
+      74.26808397753014,
+      83.54056886321825
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 81.05944750224826,
+    "CI95": [
+      77.38577377854877,
+      84.79109114721454
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 79.08331536839877,
+    "CI95": [
+      75.49399707422997,
+      82.61956846102342
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 78.36827385199162,
+    "CI95": [
+      73.96599313057335,
+      83.15611359457999
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 79.99492922786027,
+    "CI95": [
+      75.86197154841939,
+      84.10802741600745
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 78.63151611738245,
+    "CI95": [
+      74.9213835417824,
+      82.34384030295794
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 77.32226335264683,
+    "CI95": [
+      72.83337109574106,
+      82.29655914417334
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 81.25742661579366,
+    "CI95": [
+      77.5977361276245,
+      84.94771902355778
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 79.36945809398766,
+    "CI95": [
+      75.97403177894203,
+      82.78205466837613
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 78.40532191386755,
+    "CI95": [
+      73.950131046748,
+      83.21813746478567
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 65.78048026328996,
+    "CI95": [
+      61.18517232779554,
+      70.66664760266565
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 64.25696583419301,
+    "CI95": [
+      59.87977933398875,
+      68.85810325434042
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 66.6261666156878,
+    "CI95": [
+      61.47259183119693,
+      71.93139384851258
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 65.39833786993034,
+    "CI95": [
+      60.776116252257374,
+      70.26356511424216
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 64.36760940433332,
+    "CI95": [
+      60.01349165988393,
+      69.06949388091492
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 66.05281630209437,
+    "CI95": [
+      60.86768140489597,
+      71.42167801187499
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 65.35909679755561,
+    "CI95": [
+      60.80781450496529,
+      70.13038912171568
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 64.09866354930023,
+    "CI95": [
+      59.65660410492598,
+      68.87544657244895
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 65.67336928970792,
+    "CI95": [
+      60.48608737177469,
+      71.0986283063828
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 65.22991777484923,
+    "CI95": [
+      60.61947702169675,
+      70.01179358625443
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 64.09168045402866,
+    "CI95": [
+      59.7196020514536,
+      68.77313952598747
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 64.6847325149836,
+    "CI95": [
+      59.320226757320285,
+      70.20028950094621
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 65.44195817640629,
+    "CI95": [
+      60.834926820655554,
+      70.26409829901448
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 64.20372981046381,
+    "CI95": [
+      59.81087598114196,
+      68.91443251244654
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 65.75927118061841,
+    "CI95": [
+      60.59602081059103,
+      71.10514696900496
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 82.31522932348737,
+    "CI95": [
+      78.92780677162014,
+      85.70124772068519
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 80.0889264509563,
+    "CI95": [
+      77.04342872237443,
+      83.31849302461815
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 79.03771699025901,
+    "CI95": [
+      74.63929014893269,
+      83.80978454488954
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 81.29198578864008,
+    "CI95": [
+      77.65015585147219,
+      85.03418527482268
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 79.35398812986496,
+    "CI95": [
+      75.9705881165632,
+      82.90405112544688
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 78.57592188858695,
+    "CI95": [
+      74.17923728736177,
+      83.38781240468732
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 80.88340138241698,
+    "CI95": [
+      77.2223521440504,
+      84.62996723216973
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 78.92920567163797,
+    "CI95": [
+      75.39465606360807,
+      82.458160843613
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 78.21744781707663,
+    "CI95": [
+      73.86369343861324,
+      83.02060175845901
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 79.83901263366138,
+    "CI95": [
+      75.75390913910029,
+      83.97435024526659
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 78.48576255036113,
+    "CI95": [
+      74.85135776723428,
+      82.15957389675565
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 77.18935276160676,
+    "CI95": [
+      72.69037018969199,
+      82.18939163771836
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 81.08240728205146,
+    "CI95": [
+      77.42534055124925,
+      84.80411472763383
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 79.21447070070509,
+    "CI95": [
+      75.86361937741125,
+      82.70008569830918
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 78.25510986438233,
+    "CI95": [
+      73.8472295810672,
+      83.1009899078843
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 65.60752280403483,
+    "CI95": [
+      60.97637945267263,
+      70.50590947812229
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 64.10263914618713,
+    "CI95": [
+      59.73648551738618,
+      68.72158108415307
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 66.45053864897666,
+    "CI95": [
+      61.24389029827669,
+      71.8308550055244
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 65.22849455655202,
+    "CI95": [
+      60.53256671488428,
+      70.18214244581037
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 64.21396092484872,
+    "CI95": [
+      59.831880419428806,
+      68.97486901117219
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 65.88228774135688,
+    "CI95": [
+      60.61053437083024,
+      71.32344185795004
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 65.18380900309673,
+    "CI95": [
+      60.547462120840926,
+      70.06634135829098
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 63.944193782644724,
+    "CI95": [
+      59.48302101500609,
+      68.6731296517195
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 65.50063474455159,
+    "CI95": [
+      60.22372914399947,
+      70.97059428027062
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 65.06268683107884,
+    "CI95": [
+      60.403666082141996,
+      69.92807095232821
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 63.942251387265124,
+    "CI95": [
+      59.559462989267345,
+      68.65312036259405
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 64.52142261088608,
+    "CI95": [
+      59.100215226067846,
+      70.03947311287331
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 65.27062829869061,
+    "CI95": [
+      60.58776965977301,
+      70.20074478388584
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 64.05076131023642,
+    "CI95": [
+      59.67699786316996,
+      68.77199580580766
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 65.5887209364428,
+    "CI95": [
+      60.31995058768098,
+      71.05432406340833
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 82.8268209169781,
+    "CI95": [
+      79.39406614661405,
+      86.00960692514651
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 80.14617861087179,
+    "CI95": [
+      76.6879105747698,
+      83.61759106294389
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 79.7688420511718,
+    "CI95": [
+      75.33138810206981,
+      84.30331495529333
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 81.99184659863683,
+    "CI95": [
+      78.37427642480482,
+      85.37020034310315
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 79.77696090294661,
+    "CI95": [
+      76.22606710070045,
+      83.27107687348358
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 79.3979543095494,
+    "CI95": [
+      74.90895163898972,
+      84.01845012768723
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 81.73696889224072,
+    "CI95": [
+      78.0517049167662,
+      85.09560812808594
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 79.34662283153408,
+    "CI95": [
+      75.7122406856784,
+      82.92861214718268
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 79.06679859677601,
+    "CI95": [
+      74.532889031725,
+      83.73225705381465
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 80.92207252328554,
+    "CI95": [
+      76.93822156622237,
+      84.58020964277732
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 79.03328568971845,
+    "CI95": [
+      75.30960151630073,
+      82.65020196661636
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 78.21497216341716,
+    "CI95": [
+      73.66737357426432,
+      82.97347169624074
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 81.8694272327853,
+    "CI95": [
+      78.24463794965298,
+      85.25812203574068
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 79.57576200876774,
+    "CI95": [
+      76.05646666880531,
+      83.08247088314052
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 79.1121417802286,
+    "CI95": [
+      74.62274878504323,
+      83.75604751671179
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 67.17642757970252,
+    "CI95": [
+      62.39080443862304,
+      71.94629063575344
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 65.49425478682429,
+    "CI95": [
+      60.86773748625361,
+      70.10810417510217
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 67.48306031411904,
+    "CI95": [
+      62.37395972711152,
+      72.52111751253423
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 66.71073015175277,
+    "CI95": [
+      61.876764536104574,
+      71.53628554004155
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 65.62134457755822,
+    "CI95": [
+      60.99244073843984,
+      70.27305632464677
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 66.90147210682743,
+    "CI95": [
+      61.78950609932117,
+      72.1875341413198
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 66.70207465034585,
+    "CI95": [
+      61.94288753648013,
+      71.39470973355034
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 65.42837023760752,
+    "CI95": [
+      60.72148818363326,
+      70.05465686130955
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 66.51406192319818,
+    "CI95": [
+      61.353208077145744,
+      71.85789924797487
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 66.50160694536078,
+    "CI95": [
+      61.620922187197785,
+      71.28593525247955
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 65.47026706770657,
+    "CI95": [
+      60.81033657478316,
+      70.17337308615015
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 65.56852328058154,
+    "CI95": [
+      60.349344568040394,
+      70.94400373439467
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 66.77270983179048,
+    "CI95": [
+      61.97411799391683,
+      71.51730639995355
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 65.50355916742414,
+    "CI95": [
+      60.875231041517154,
+      70.152971224602
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 66.61677940618155,
+    "CI95": [
+      61.488745436743955,
+      71.89575536211633
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 86.67929033831818,
+    "CI95": [
+      80.78786706925318,
+      91.40243463545144
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 85.37619524864556,
+    "CI95": [
+      78.96196739069505,
+      90.82180032707782
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 83.86723514829653,
+    "CI95": [
+      76.95361291662941,
+      89.72450491178878
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 86.57906994062729,
+    "CI95": [
+      80.57398140475011,
+      91.27315065266195
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 85.27616201983959,
+    "CI95": [
+      78.81783287093741,
+      90.68469717672008
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 83.8300243239678,
+    "CI95": [
+      76.91606409742515,
+      89.66893776390867
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 86.64524934723657,
+    "CI95": [
+      80.65947438820874,
+      91.3039257921477
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 85.17915098813249,
+    "CI95": [
+      78.6795997968412,
+      90.57114306778911
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 83.76582922830102,
+    "CI95": [
+      76.79583657018354,
+      89.67775492968796
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 86.58409025439805,
+    "CI95": [
+      80.37469492978482,
+      91.2830419328766
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 85.13496756641192,
+    "CI95": [
+      78.64051843359675,
+      90.56005944278795
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 84.02277637129046,
+    "CI95": [
+      76.90789823234265,
+      89.90637173640542
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 86.62192497014503,
+    "CI95": [
+      80.64165698376321,
+      91.30449177216533
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 85.24161895575739,
+    "CI95": [
+      78.77319214553938,
+      90.641678740253
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 83.87146626796395,
+    "CI95": [
+      76.87908168159304,
+      89.73668018482586
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 75.96025444185248,
+    "CI95": [
+      67.27700532876217,
+      82.98256574219096
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 74.73576717291192,
+    "CI95": [
+      65.81259946991223,
+      82.48326334556864
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 73.54298283945703,
+    "CI95": [
+      64.43500846378005,
+      81.40492277649777
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 75.56601948573888,
+    "CI95": [
+      67.05471927620917,
+      82.71856313052034
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 74.78239476075214,
+    "CI95": [
+      65.89513533096637,
+      82.51216195672954
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 73.04179551304394,
+    "CI95": [
+      63.83414414146622,
+      81.16117766579504
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 75.86662299126725,
+    "CI95": [
+      67.24593123988343,
+      82.89031646547222
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 74.8528280290805,
+    "CI95": [
+      66.03284843384918,
+      82.55206831116581
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 73.18018722989349,
+    "CI95": [
+      64.06176932821026,
+      81.20446538740337
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 75.98319483126855,
+    "CI95": [
+      67.24872804612927,
+      82.99926014463685
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 74.86888479173085,
+    "CI95": [
+      66.13238659276935,
+      82.54490871686698
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 73.45345910096059,
+    "CI95": [
+      64.24649198401535,
+      81.35585049539606
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 75.8440229375318,
+    "CI95": [
+      67.18780872651375,
+      82.87205992616771
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 74.80996868861885,
+    "CI95": [
+      65.95367609692171,
+      82.47201034848683
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 73.30460617083875,
+    "CI95": [
+      64.19404614924444,
+      81.30405798588833
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 82.33170014809586,
+    "CI95": [
+      78.84537404191421,
+      85.70789327340685
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 79.37596408965113,
+    "CI95": [
+      76.11862071769264,
+      82.63986936763237
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 79.1070012672361,
+    "CI95": [
+      74.68761163985165,
+      83.77865232033106
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 81.35708536382693,
+    "CI95": [
+      77.6106167102284,
+      85.09256357305131
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 78.96204979270699,
+    "CI95": [
+      75.493134430613,
+      82.3891062397527
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 78.6900115705357,
+    "CI95": [
+      74.26252400919016,
+      83.45179918373844
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 81.04883859255646,
+    "CI95": [
+      77.21059390834588,
+      84.79737429946225
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 78.47079643061205,
+    "CI95": [
+      74.83677423076315,
+      82.00435401201186
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 78.31374064582396,
+    "CI95": [
+      73.83138708700338,
+      83.13147052679169
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 80.08544023645197,
+    "CI95": [
+      75.93396379646734,
+      84.07562450607625
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 78.10296674699747,
+    "CI95": [
+      74.40317704179135,
+      81.65609528808686
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 77.28160624562014,
+    "CI95": [
+      72.70689536818053,
+      82.22278779822291
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 81.20576608523281,
+    "CI95": [
+      77.46520981210509,
+      84.90195219118092
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 78.72794426499192,
+    "CI95": [
+      75.23267085396597,
+      82.1751436231941
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 78.34808993230398,
+    "CI95": [
+      73.8947063284856,
+      83.15397185963911
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 65.82825418989384,
+    "CI95": [
+      61.345855667787,
+      70.54441858178602
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 64.04378522236858,
+    "CI95": [
+      59.707340948398134,
+      68.58130431885786
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 66.51623605035645,
+    "CI95": [
+      61.690938979225706,
+      71.47623366590605
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 65.34874051446877,
+    "CI95": [
+      60.77187143663306,
+      70.09022360230765
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 64.18687908417196,
+    "CI95": [
+      59.86682422665927,
+      68.84889252777239
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 65.91895843801673,
+    "CI95": [
+      60.955284437725865,
+      71.06402066938116
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 65.29278065969731,
+    "CI95": [
+      60.8314059676618,
+      69.94500549411053
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 63.948827523945305,
+    "CI95": [
+      59.63252487025034,
+      68.58451733180537
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 65.45894820175154,
+    "CI95": [
+      60.40473796862417,
+      70.69282208255179
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 65.030498511869,
+    "CI95": [
+      60.342613837034385,
+      69.82620829147659
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 63.98574841204075,
+    "CI95": [
+      59.646446430567245,
+      68.63348534455372
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 64.32367546707515,
+    "CI95": [
+      59.20649247405892,
+      69.62694020182641
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 65.37506846898224,
+    "CI95": [
+      60.844331722115065,
+      70.07852218629306
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 64.04131006063164,
+    "CI95": [
+      59.689295577246575,
+      68.64401044776872
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 65.55445453929997,
+    "CI95": [
+      60.54478833599382,
+      70.74398225469606
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 82.14001580119772,
+    "CI95": [
+      78.68408082723802,
+      85.52311148411412
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 79.21833697857356,
+    "CI95": [
+      76.01854949061725,
+      82.49349657628557
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 78.94836845375816,
+    "CI95": [
+      74.53928269770623,
+      83.64021591316559
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 81.18239702644667,
+    "CI95": [
+      77.48754433524115,
+      84.84147877992667
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 78.8076093236743,
+    "CI95": [
+      75.40223131571969,
+      82.26005401836714
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 78.53226762813934,
+    "CI95": [
+      74.11665564423309,
+      83.3226859618716
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 80.87282300608416,
+    "CI95": [
+      77.0495109455943,
+      84.59855172914271
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 78.32021113869679,
+    "CI95": [
+      74.70558570328649,
+      81.88454744823073
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 78.16318510015331,
+    "CI95": [
+      73.71332124651497,
+      83.01204399321283
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 79.92905924501122,
+    "CI95": [
+      75.82697581805303,
+      83.95898300493042
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 77.96029361249423,
+    "CI95": [
+      74.30804496759801,
+      81.54584876384126
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 77.14886747300191,
+    "CI95": [
+      72.64127430433452,
+      82.11683144567571
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 81.03107376968494,
+    "CI95": [
+      77.28463154400823,
+      84.76148698041649
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 78.57661276335972,
+    "CI95": [
+      75.10116461518749,
+      81.99093507026267
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 78.19817216376319,
+    "CI95": [
+      73.77750823020024,
+      83.03758135126715
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 65.65491419101782,
+    "CI95": [
+      61.12496148602635,
+      70.36807493573986
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 63.89072020279614,
+    "CI95": [
+      59.5641765316757,
+      68.4472411064321
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 66.34125318805873,
+    "CI95": [
+      61.41855657231863,
+      71.39123912338187
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 65.17915302326534,
+    "CI95": [
+      60.55308754736727,
+      70.04842013531234
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 64.03438077899257,
+    "CI95": [
+      59.669193285220096,
+      68.70625606155023
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 65.74919573677941,
+    "CI95": [
+      60.75690626190825,
+      70.98456154173009
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 65.1178845724976,
+    "CI95": [
+      60.53608209365859,
+      69.8784909413068
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 63.7953309921861,
+    "CI95": [
+      59.40798393864323,
+      68.49415482176425
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 65.28762475915332,
+    "CI95": [
+      60.24807365775468,
+      70.59833787786172
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 64.86454906689066,
+    "CI95": [
+      60.13965746186297,
+      69.70645159255129
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 63.8369382194272,
+    "CI95": [
+      59.43766073495342,
+      68.54060747841802
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 64.16289774170316,
+    "CI95": [
+      58.96301143719203,
+      69.5236830816426
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 65.20412521341785,
+    "CI95": [
+      60.52485554664833,
+      70.0272897265768
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 63.889342548350506,
+    "CI95": [
+      59.5511045047218,
+      68.58532479702481
+    ]
+  },
+  {
+    "role": "val21",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 65.38524285642366,
+    "CI95": [
+      60.3896628530877,
+      70.68870761101509
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 91.04165064872878,
+    "CI95": [
+      85.00208992214178,
+      93.6383983160913
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 88.18236416674335,
+    "CI95": [
+      84.00732647402229,
+      90.10181589516445
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 87.34537010396194,
+    "CI95": [
+      82.21711405542256,
+      89.95362806030928
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 90.23866935851582,
+    "CI95": [
+      83.8617550303803,
+      93.06635349914536
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 87.66205314156794,
+    "CI95": [
+      83.07874243985371,
+      89.83774091811135
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 87.49664291318116,
+    "CI95": [
+      81.98594067377557,
+      90.1863762019879
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 89.47583089862756,
+    "CI95": [
+      83.04687622895997,
+      92.39678276698547
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 87.1354758407215,
+    "CI95": [
+      82.3174166308081,
+      89.41579080255495
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 87.25668833966692,
+    "CI95": [
+      81.4343210179939,
+      90.09879734526741
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 88.37341557121083,
+    "CI95": [
+      82.52586239086234,
+      91.10197664138585
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 86.53112826624185,
+    "CI95": [
+      81.56993074239291,
+      88.92572639836325
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 86.60206436987112,
+    "CI95": [
+      80.55377831996928,
+      89.51952921598861
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 89.78239161927075,
+    "CI95": [
+      83.59934507190454,
+      92.54548481276437
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 87.37775535381866,
+    "CI95": [
+      82.77181649707632,
+      89.55773475875512
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 87.17519143167029,
+    "CI95": [
+      81.56119590775683,
+      89.9441733262021
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 73.28203792185481,
+    "CI95": [
+      66.41922763989301,
+      77.94340710803318
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 67.69527335933067,
+    "CI95": [
+      63.2051393538069,
+      75.54176644777063
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 73.77364593654589,
+    "CI95": [
+      67.19683613802636,
+      77.87885296135448
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 71.91961720179633,
+    "CI95": [
+      64.80518051363116,
+      77.14488227363263
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 68.38442786378697,
+    "CI95": [
+      63.61541420732629,
+      75.80722736741846
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 73.42463084358985,
+    "CI95": [
+      66.68081610731616,
+      77.5541020391495
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 71.12496555141699,
+    "CI95": [
+      64.39439947160737,
+      76.73582718698519
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 68.16621862916055,
+    "CI95": [
+      63.18089485756317,
+      75.62604316952611
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 72.65619701453079,
+    "CI95": [
+      65.87914589313553,
+      77.02135275572967
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 69.70201035451096,
+    "CI95": [
+      63.95342038907249,
+      76.78113708769165
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 68.07611212432893,
+    "CI95": [
+      63.109578748360455,
+      75.85745623835683
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 70.67068253361147,
+    "CI95": [
+      65.02108811593092,
+      75.83035489686834
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 71.50715775739476,
+    "CI95": [
+      64.91388118686298,
+      77.10557453011535
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 68.08050799415177,
+    "CI95": [
+      63.294796312034876,
+      75.66769535897858
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 72.6312890820695,
+    "CI95": [
+      66.20009158461431,
+      76.98248597323693
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 84.0447403759756,
+    "CI95": [
+      67.27238624230264,
+      90.39953792015557
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 84.19873990190725,
+    "CI95": [
+      68.01038723880792,
+      89.30807103597695
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 85.13310819972777,
+    "CI95": [
+      68.9566294500404,
+      91.18457583796935
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 84.31739073264366,
+    "CI95": [
+      67.64709162264947,
+      90.49130175118304
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 84.11972380250312,
+    "CI95": [
+      67.54874665714249,
+      89.31401878844207
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 85.10716901894644,
+    "CI95": [
+      68.64544653015525,
+      91.24696535814755
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 84.11641582143176,
+    "CI95": [
+      67.3130187424158,
+      90.31450004001073
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 84.13492262254783,
+    "CI95": [
+      67.09366207979663,
+      89.47566121732743
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 85.24502232184632,
+    "CI95": [
+      68.99283939366055,
+      91.34450845150515
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 84.20225482135524,
+    "CI95": [
+      67.4183762162467,
+      90.38031022941661
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 84.07824289904424,
+    "CI95": [
+      67.16058261752421,
+      89.45073985663254
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 85.11111797206824,
+    "CI95": [
+      68.83431556041411,
+      91.17718422306577
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 84.17020043785158,
+    "CI95": [
+      67.47974992579988,
+      90.40121669189692
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 84.13290730650061,
+    "CI95": [
+      67.38678079856871,
+      89.3937451318411
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 85.1491043781472,
+    "CI95": [
+      68.85519563909102,
+      91.24856490266247
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 71.62261376764764,
+    "CI95": [
+      48.846627606239814,
+      78.61501243566259
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 70.84959707968572,
+    "CI95": [
+      48.022621258788774,
+      77.39795055886543
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 72.5204071948991,
+    "CI95": [
+      52.34990955738855,
+      78.74368507796599
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 71.4004816304854,
+    "CI95": [
+      48.40776945052171,
+      78.18208738053276
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 70.93505837512949,
+    "CI95": [
+      48.587683602044784,
+      77.37198565972612
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 72.458038880974,
+    "CI95": [
+      52.39851420461371,
+      78.5835047810976
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 71.1280548494318,
+    "CI95": [
+      47.83721492402827,
+      77.905624473419
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 70.94859242710982,
+    "CI95": [
+      48.4071191589917,
+      77.55444374659251
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 72.3791587380212,
+    "CI95": [
+      52.2665361765739,
+      78.53528164574588
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 71.21082956110219,
+    "CI95": [
+      47.92432861248615,
+      78.03112251468696
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 70.96543368187791,
+    "CI95": [
+      49.1198835483351,
+      77.29230437465368
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 72.21429220610453,
+    "CI95": [
+      51.87506036757785,
+      78.38871947741045
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 71.34049495216675,
+    "CI95": [
+      48.17062995853321,
+      78.18329764083336
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 70.92467039095074,
+    "CI95": [
+      48.600298913576694,
+      77.41270941448914
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 72.3929742549997,
+    "CI95": [
+      52.25144168332999,
+      78.55676767928345
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 91.79214731395469,
+    "CI95": [
+      86.07780499055023,
+      94.17731041321947
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 88.65112218405761,
+    "CI95": [
+      84.5931312081449,
+      90.56469373375977
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 87.7653691474156,
+    "CI95": [
+      82.83166218000453,
+      90.37211550189856
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 90.89622230431301,
+    "CI95": [
+      84.80204399715257,
+      93.60951090138886
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 88.08973280145733,
+    "CI95": [
+      83.56063428157438,
+      90.38181205829719
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 87.94974770439175,
+    "CI95": [
+      82.62056138714179,
+      90.6457153354118
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 90.07966592594757,
+    "CI95": [
+      83.83907695467546,
+      92.8544425860826
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 87.50919793608112,
+    "CI95": [
+      82.7916924896308,
+      89.90019164544528
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 87.68340517989078,
+    "CI95": [
+      81.97143073790784,
+      90.5500959870857
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 88.86293842472809,
+    "CI95": [
+      83.21836692854197,
+      91.60729964408142
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 86.84116697041152,
+    "CI95": [
+      81.9769588337538,
+      89.28424973814371
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 86.99742986271542,
+    "CI95": [
+      81.02787899355651,
+      89.9632493965512
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 90.40774349223584,
+    "CI95": [
+      84.54857484274142,
+      93.0488677325645
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 87.7728049730019,
+    "CI95": [
+      83.26759406532489,
+      90.02289227326362
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 87.59898797360339,
+    "CI95": [
+      82.10829240786013,
+      90.37503872973795
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 73.519807868528,
+    "CI95": [
+      66.45140899917935,
+      79.56273867683593
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 67.51407746153072,
+    "CI95": [
+      62.9160984680553,
+      76.97734445443488
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 74.0522974072223,
+    "CI95": [
+      67.13140525397094,
+      78.80747444103902
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 72.0476366131194,
+    "CI95": [
+      64.6230038081522,
+      78.52582107310712
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 68.24037834700557,
+    "CI95": [
+      63.30850685570946,
+      77.2155771600414
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 73.6825633795144,
+    "CI95": [
+      66.6796273307901,
+      78.44472033699769
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 71.20374983819437,
+    "CI95": [
+      64.2141318016169,
+      78.13899488897671
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 68.00211479316802,
+    "CI95": [
+      62.94275711744551,
+      76.89684400452718
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 72.84880810577073,
+    "CI95": [
+      65.7356872300335,
+      77.70108732615309
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 69.64361342706154,
+    "CI95": [
+      63.88565385860373,
+      78.16948546514874
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 67.89121811427025,
+    "CI95": [
+      62.77023491494579,
+      77.07733702764811
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 70.68142821979113,
+    "CI95": [
+      64.82789535936604,
+      76.64927626224694
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 71.60370193672583,
+    "CI95": [
+      64.77673118788931,
+      78.5606271335647
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 67.91194717899364,
+    "CI95": [
+      63.01507746623913,
+      77.04252849025842
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 72.81627427807464,
+    "CI95": [
+      66.13603851870421,
+      77.81628638948511
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 91.60203777162666,
+    "CI95": [
+      85.7183690482982,
+      94.04659969465918
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 88.49241975948654,
+    "CI95": [
+      84.48903098070033,
+      90.36898286255553
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 87.62417689640199,
+    "CI95": [
+      82.70687008473678,
+      90.20335746660297
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 90.71414921452208,
+    "CI95": [
+      84.58351928098564,
+      93.44105245657609
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 87.93894636439546,
+    "CI95": [
+      83.41641828096175,
+      90.13446649303513
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 87.80639199603088,
+    "CI95": [
+      82.46979315032225,
+      90.46286781155646
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 89.90049532498597,
+    "CI95": [
+      83.62614754692069,
+      92.73717699629088
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 87.36267917378943,
+    "CI95": [
+      82.67086381658396,
+      89.64287136814482
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 87.54238730129786,
+    "CI95": [
+      81.84176397317907,
+      90.34993267297615
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 88.6963369065693,
+    "CI95": [
+      83.0509245232685,
+      91.41745770993916
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 86.71158172332686,
+    "CI95": [
+      81.85322563160851,
+      89.07789610017245
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 86.86194117750374,
+    "CI95": [
+      80.86489010476414,
+      89.78969100621214
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 90.228254804426,
+    "CI95": [
+      84.27030486043681,
+      92.90656504903183
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 87.62640675524958,
+    "CI95": [
+      83.10700601308025,
+      89.79080866944908
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 87.45872434280862,
+    "CI95": [
+      81.9542394518792,
+      90.18722822805923
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 73.40913533717219,
+    "CI95": [
+      66.42007051382564,
+      79.01559460006094
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 67.43925524124829,
+    "CI95": [
+      62.889915951893855,
+      76.67378070332327
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 73.95045157284893,
+    "CI95": [
+      67.06557531203042,
+      78.5357493126588
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 71.95043259912426,
+    "CI95": [
+      64.5562448819446,
+      78.19050702427928
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 68.16682364664847,
+    "CI95": [
+      63.2497799258025,
+      76.99433673721407
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 73.58276610504362,
+    "CI95": [
+      66.58725776811433,
+      78.17505821516419
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 71.10970458429475,
+    "CI95": [
+      64.1810994704637,
+      77.74489035304505
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 67.92795994419032,
+    "CI95": [
+      62.89105760984178,
+      76.71449221591317
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 72.75510047440982,
+    "CI95": [
+      65.71265648119191,
+      77.49926901596922
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 69.56312662370425,
+    "CI95": [
+      63.88718636778993,
+      77.7215152518694
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 67.82714966457253,
+    "CI95": [
+      62.804501419375676,
+      76.76437278849667
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 70.60369199347305,
+    "CI95": [
+      64.82138418860578,
+      76.43266674586717
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 71.50809978607387,
+    "CI95": [
+      64.69353284955606,
+      78.12714570978689
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 67.8402971241649,
+    "CI95": [
+      62.983620750539686,
+      76.81731856032202
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "all_gaps",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 72.72300253644384,
+    "CI95": [
+      66.11289541114216,
+      77.53465274935658
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 90.55517620695541,
+    "CI95": [
+      85.05136105891513,
+      92.81887178846354
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 86.51418626442864,
+    "CI95": [
+      82.65856121080691,
+      88.91713616697423
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 87.3753720772819,
+    "CI95": [
+      82.09945831016734,
+      90.03828189297381
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 89.5904990162894,
+    "CI95": [
+      83.8596758280299,
+      92.09303133358151
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 86.01166720695547,
+    "CI95": [
+      81.85512166156462,
+      88.66752250717926
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 87.14534608794834,
+    "CI95": [
+      81.72876334511164,
+      89.85257524116425
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 88.74118851915539,
+    "CI95": [
+      83.05636679594518,
+      91.24777609357692
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 85.61845518244525,
+    "CI95": [
+      81.37800252906548,
+      88.30326655155655
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 86.84742191405361,
+    "CI95": [
+      81.26467228774594,
+      89.6074866962144
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 87.3866063664352,
+    "CI95": [
+      82.43338009386248,
+      90.01474265439725
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 85.11851099756447,
+    "CI95": [
+      80.83442067845507,
+      87.74438172454411
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 85.88851543152647,
+    "CI95": [
+      80.29465777607892,
+      88.74439102027964
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 89.06836752720885,
+    "CI95": [
+      83.61741315938927,
+      91.47276991498107
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 85.81570491284845,
+    "CI95": [
+      81.71469517086915,
+      88.37360277173936
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 86.81416387770257,
+    "CI95": [
+      81.36638676599404,
+      89.52685081975889
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 73.9057354190954,
+    "CI95": [
+      66.68849575897671,
+      78.33499337385949
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 67.39511788077043,
+    "CI95": [
+      63.103581664821895,
+      75.7571827573559
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 74.71854310042805,
+    "CI95": [
+      67.22842073825346,
+      78.79833946497219
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 72.04483449941948,
+    "CI95": [
+      64.96020808671416,
+      77.19413879431583
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 67.87364243826362,
+    "CI95": [
+      63.39721807234601,
+      75.78653846431732
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 74.17431702320737,
+    "CI95": [
+      66.76043878672166,
+      78.26576331770603
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 71.34213088895426,
+    "CI95": [
+      64.79665032604049,
+      76.86445568420935
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 67.69428200471759,
+    "CI95": [
+      62.94016793170886,
+      75.54421805974597
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 73.21876164911008,
+    "CI95": [
+      66.00522873547052,
+      77.33306737244206
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 69.44974770621859,
+    "CI95": [
+      64.19526949671284,
+      76.88037548893908
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 67.76063804792513,
+    "CI95": [
+      62.98416026687765,
+      75.84839083024741
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 70.70561209172196,
+    "CI95": [
+      65.14911430991143,
+      75.9031622078879
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 71.68561212842194,
+    "CI95": [
+      65.2106461834633,
+      77.25241648896676
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 67.6809200929192,
+    "CI95": [
+      63.13063848408714,
+      75.65518081243009
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "all",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 73.20430846611686,
+    "CI95": [
+      66.28009930743966,
+      77.37471062297682
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 84.0447403759756,
+    "CI95": [
+      67.27238624230264,
+      90.39953792015557
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 84.19873990190725,
+    "CI95": [
+      68.01038723880792,
+      89.30807103597695
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 85.13310819972777,
+    "CI95": [
+      68.9566294500404,
+      91.18457583796935
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 84.31739073264366,
+    "CI95": [
+      67.64709162264947,
+      90.49130175118304
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 84.11972380250312,
+    "CI95": [
+      67.54874665714249,
+      89.31401878844207
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 85.10716901894644,
+    "CI95": [
+      68.64544653015525,
+      91.24696535814755
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 84.11641582143176,
+    "CI95": [
+      67.3130187424158,
+      90.31450004001073
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 84.13492262254783,
+    "CI95": [
+      67.09366207979663,
+      89.47566121732743
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 85.24502232184632,
+    "CI95": [
+      68.99283939366055,
+      91.34450845150515
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 84.20225482135524,
+    "CI95": [
+      67.4183762162467,
+      90.38031022941661
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 84.07824289904424,
+    "CI95": [
+      67.16058261752421,
+      89.45073985663254
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 85.11111797206824,
+    "CI95": [
+      68.83431556041411,
+      91.17718422306577
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 84.17020043785158,
+    "CI95": [
+      67.47974992579988,
+      90.40121669189692
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 84.13290730650061,
+    "CI95": [
+      67.38678079856871,
+      89.3937451318411
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 85.1491043781472,
+    "CI95": [
+      68.85519563909102,
+      91.24856490266247
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 71.62261376764764,
+    "CI95": [
+      48.846627606239814,
+      78.61501243566259
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 70.84959707968572,
+    "CI95": [
+      48.022621258788774,
+      77.39795055886543
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 72.5204071948991,
+    "CI95": [
+      52.34990955738855,
+      78.74368507796599
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 71.4004816304854,
+    "CI95": [
+      48.40776945052171,
+      78.18208738053276
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 70.93505837512949,
+    "CI95": [
+      48.587683602044784,
+      77.37198565972612
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 72.458038880974,
+    "CI95": [
+      52.39851420461371,
+      78.5835047810976
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 71.1280548494318,
+    "CI95": [
+      47.83721492402827,
+      77.905624473419
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 70.94859242710982,
+    "CI95": [
+      48.4071191589917,
+      77.55444374659251
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 72.3791587380212,
+    "CI95": [
+      52.2665361765739,
+      78.53528164574588
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 71.21082956110219,
+    "CI95": [
+      47.92432861248615,
+      78.03112251468696
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 70.96543368187791,
+    "CI95": [
+      49.1198835483351,
+      77.29230437465368
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 72.21429220610453,
+    "CI95": [
+      51.87506036757785,
+      78.38871947741045
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 71.34049495216675,
+    "CI95": [
+      48.17062995853321,
+      78.18329764083336
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 70.92467039095074,
+    "CI95": [
+      48.600298913576694,
+      77.41270941448914
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "zero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 72.3929742549997,
+    "CI95": [
+      52.25144168332999,
+      78.55676767928345
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 91.26049157304,
+    "CI95": [
+      86.02470933429956,
+      93.45903736128082
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 86.83023217779017,
+    "CI95": [
+      83.2906538682239,
+      89.90562878925944
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 87.79951779852104,
+    "CI95": [
+      82.78460278231974,
+      90.42899341965361
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 90.18742893386775,
+    "CI95": [
+      84.81255708147184,
+      92.81560136015477
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 86.28622860795132,
+    "CI95": [
+      82.22786301000052,
+      89.79078878957114
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 87.55951860337086,
+    "CI95": [
+      82.35862981040484,
+      90.21646844730651
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 89.27658886556895,
+    "CI95": [
+      83.93789548914168,
+      91.84040125615266
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 85.85248272602318,
+    "CI95": [
+      81.72381319837315,
+      89.22542441737617
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 87.22887502193139,
+    "CI95": [
+      81.83512351753781,
+      89.9668711950639
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 87.78458658408103,
+    "CI95": [
+      83.11391586451313,
+      90.74693195118824
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 85.29916921929514,
+    "CI95": [
+      81.12485075970575,
+      88.2697585778219
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 86.2037791255774,
+    "CI95": [
+      80.69848858578032,
+      89.00176785574544
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 89.62727398913943,
+    "CI95": [
+      84.48892648883363,
+      92.18987319769509
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 86.06702818276496,
+    "CI95": [
+      82.13435244202499,
+      89.25091806381992
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 87.19792263735017,
+    "CI95": [
+      81.9329632531154,
+      89.90466100819071
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 74.19725901580779,
+    "CI95": [
+      66.76243478233796,
+      79.99331435828945
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 67.1867720786289,
+    "CI95": [
+      62.947289738887584,
+      77.21697493782972
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 75.1019132791817,
+    "CI95": [
+      67.4062959078294,
+      79.60917774380455
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 72.18240029026198,
+    "CI95": [
+      64.78663979774684,
+      78.6794661885935
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 67.68390933728797,
+    "CI95": [
+      63.10270526025503,
+      77.19188222620473
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 74.51678678854758,
+    "CI95": [
+      66.8232414253308,
+      79.10886112881147
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 71.43959124182014,
+    "CI95": [
+      64.61569280823684,
+      78.25721593715491
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 67.48841509612426,
+    "CI95": [
+      62.64083373660465,
+      76.93320704905175
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 73.47541623733744,
+    "CI95": [
+      65.86021915068913,
+      78.1881950224716
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 69.36895756721096,
+    "CI95": [
+      64.10552418670298,
+      78.19433679739285
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 67.5481767539812,
+    "CI95": [
+      62.714575983893056,
+      77.12653136081518
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 70.72203258798184,
+    "CI95": [
+      64.93546713932778,
+      76.86748887387661
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 71.79705202877521,
+    "CI95": [
+      65.04238813700289,
+      78.7798624721699
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 67.47681831650557,
+    "CI95": [
+      62.80235693843736,
+      77.0433030712083
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "colabelled",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 73.45403722326213,
+    "CI95": [
+      66.25688388901915,
+      78.23505057632735
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 91.07387984002037,
+    "CI95": [
+      85.82804244683484,
+      93.22346325944734
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 86.68332827715157,
+    "CI95": [
+      83.1924779897158,
+      89.39201787962008
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 87.6579751707665,
+    "CI95": [
+      82.61899651650569,
+      90.25537757690925
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 90.01005602313359,
+    "CI95": [
+      84.56558475867267,
+      92.50828372905865
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 86.14723437191765,
+    "CI95": [
+      82.10215267817152,
+      89.2745383878866
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 87.41897027749759,
+    "CI95": [
+      82.20818106513167,
+      90.0393887190912
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 89.10275411849635,
+    "CI95": [
+      83.75665277773261,
+      91.57314329508229
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 85.71662395155168,
+    "CI95": [
+      81.61561660359783,
+      88.69087963376985
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 87.09111722654865,
+    "CI95": [
+      81.70160413971779,
+      89.80349512069824
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 87.6251226948671,
+    "CI95": [
+      82.96071582197047,
+      90.37702758853034
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 85.17923621937224,
+    "CI95": [
+      81.03810633941033,
+      87.9103942956333
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 86.07406777589476,
+    "CI95": [
+      80.57909645983291,
+      88.84821872308477
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 89.45295316912936,
+    "CI95": [
+      84.3424498927831,
+      91.8633106966961
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 85.93160570499829,
+    "CI95": [
+      81.9900579385267,
+      88.80723129761743
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 50,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 87.06053261267688,
+    "CI95": [
+      81.76039878787526,
+      89.73249093333357
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "A",
+    "AP": 74.08250857788208,
+    "CI95": [
+      66.66770515163367,
+      79.25334479218637
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "PUBLIC",
+    "AP": 67.11418486869525,
+    "CI95": [
+      62.857694254036296,
+      76.74520984652285
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 0,
+    "method": "H1",
+    "AP": 74.99248185112481,
+    "CI95": [
+      67.30595640718941,
+      79.311349857751
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "A",
+    "AP": 72.08446760242265,
+    "CI95": [
+      64.77655846858782,
+      78.19867276354942
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "PUBLIC",
+    "AP": 67.6138918421343,
+    "CI95": [
+      63.0376135774848,
+      76.87243147039125
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 100,
+    "method": "H1",
+    "AP": 74.41087299762397,
+    "CI95": [
+      66.77244511366294,
+      78.87319688864815
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "A",
+    "AP": 71.34415121127648,
+    "CI95": [
+      64.5218623943981,
+      77.8123195800684
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "PUBLIC",
+    "AP": 67.41747436817943,
+    "CI95": [
+      62.623109413860675,
+      76.56164087573849
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 200,
+    "method": "H1",
+    "AP": 73.377107053146,
+    "CI95": [
+      65.81638086090302,
+      78.01987223630627
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "A",
+    "AP": 69.29021116293343,
+    "CI95": [
+      64.01999006872265,
+      77.79823002421823
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "PUBLIC",
+    "AP": 67.48620303732582,
+    "CI95": [
+      62.662858287040144,
+      76.88422709143745
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": 400,
+    "method": "H1",
+    "AP": 70.64391218325841,
+    "CI95": [
+      64.90096274445055,
+      76.61278260995235
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "A",
+    "AP": 71.70033463862866,
+    "CI95": [
+      65.00482928227929,
+      78.27400556720742
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "PUBLIC",
+    "AP": 67.40793852908371,
+    "CI95": [
+      62.78635750115303,
+      76.66358358601829
+    ]
+  },
+  {
+    "role": "mechanism_holdout14",
+    "tier": "label_median",
+    "population": "nonzero",
+    "threshold": 70,
+    "wait_ms": "four_wait_mean",
+    "method": "H1",
+    "AP": 73.3560935212883,
+    "CI95": [
+      66.16081531909091,
+      77.98647392667102
+    ]
+  }
+]

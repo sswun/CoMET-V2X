@@ -1,0 +1,54 @@
+{
+  "created_at": "2026-11-04T15:53:34+08:00",
+  "selected_global": "cbm_median",
+  "choices": {
+    "freealign_median": {
+      "param": 3,
+      "AP70": 66.54468327278282
+    },
+    "freealign_gated_KF": {
+      "param": 4.0,
+      "AP70": 65.93613819245896
+    },
+    "roco_median": {
+      "param": 3,
+      "AP70": 66.85292761217761
+    },
+    "roco_gated_KF": {
+      "param": 16.0,
+      "AP70": 66.40536031539493
+    },
+    "cbm_median": {
+      "param": 3,
+      "AP70": 67.31555271109708
+    },
+    "cbm_gated_KF": {
+      "param": 4.0,
+      "AP70": 66.01384189860966
+    }
+  },
+  "kind": "frozen",
+  "q": 0.05,
+  "tau": 0.5,
+  "heads": {
+    "2023": {
+      "path": "artifacts/research_autopilot/status_audit_20261103_peer16/E7_readout_v3/no_position_seed2023/direct_u.pth",
+      "sha256": "d0f59ed5acceae880dbeb070bb030ee44e33a509551a92e2c96b517c04b02d3f",
+      "bytes": 6885
+    },
+    "2024": {
+      "path": "artifacts/research_autopilot/status_audit_20261103_peer16/E7_readout_v3/no_position_seed2024/direct_u.pth",
+      "sha256": "e669413a555ae1d7fd9b740e699f80149b8931568a228d22a5e83cc2fac02cc9",
+      "bytes": 6885
+    },
+    "2025": {
+      "path": "artifacts/research_autopilot/status_audit_20261103_peer16/E7_readout_v3/no_position_seed2025/direct_u.pth",
+      "sha256": "7fc7f9273181701586a6450579b0f8d6dd46122228887a0a2880f8f455e35985",
+      "bytes": 6885
+    }
+  },
+  "selection_roles": [
+    "calibration8"
+  ],
+  "no_formal_selection": true
+}

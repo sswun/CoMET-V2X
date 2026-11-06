@@ -1,0 +1,198 @@
+\begin{thebibliography}{29}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Besl and McKay(1992)]{besl1992icp}
+Paul~J. Besl and Neil~D. McKay.
+\newblock A method for registration of {3-D} shapes.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 14\penalty0 (2):\penalty0 239--256, 1992.
+
+\bibitem[Chen et~al.(2019)Chen, Ma, Tang, Guo, Yang, and Fu]{chen2019fcooper}
+Qi~Chen, Xu~Ma, Sihai Tang, Jingda Guo, Qing Yang, and Song Fu.
+\newblock {F-Cooper}: Feature based cooperative perception for autonomous
+  vehicle edge computing system using {3D} point clouds.
+\newblock In \emph{ACM/IEEE Symposium on Edge Computing}, 2019.
+
+\bibitem[Cuturi(2013)]{cuturi2013sinkhorn}
+Marco Cuturi.
+\newblock Sinkhorn distances: Lightspeed computation of optimal transport.
+\newblock In \emph{NeurIPS}, 2013.
+
+\bibitem[Efron and Tibshirani(1993)]{efron1993bootstrap}
+Bradley Efron and Robert~J. Tibshirani.
+\newblock \emph{An Introduction to the Bootstrap}.
+\newblock Chapman \& Hall, 1993.
+
+\bibitem[Hu et~al.(2022)Hu, Fang, Lei, Zhong, and Chen]{hu2022where2comm}
+Yue Hu, Shaoheng Fang, Zixing Lei, Yiqi Zhong, and Siheng Chen.
+\newblock {Where2comm}: Communication-efficient collaborative perception via
+  spatial confidence maps.
+\newblock In \emph{NeurIPS}, 2022.
+
+\bibitem[Huang et~al.(2024)Huang, Wang, Wang, Li, Li, and Wang]{huang2024roco}
+Zhe Huang, Shuo Wang, Yongcai Wang, Wanting Li, Deying Li, and Lei Wang.
+\newblock {RoCo}: Robust cooperative perception by iterative object matching
+  and pose adjustment.
+\newblock In \emph{ACM Multimedia}, 2024.
+
+\bibitem[Kalman(1960)]{kalman1960}
+Rudolph~Emil Kalman.
+\newblock A new approach to linear filtering and prediction problems.
+\newblock \emph{Journal of Basic Engineering}, 82\penalty0 (1):\penalty0
+  35--45, 1960.
+
+\bibitem[Kuhn(1955)]{kuhn1955hungarian}
+Harold~W. Kuhn.
+\newblock The {H}ungarian method for the assignment problem.
+\newblock \emph{Naval Research Logistics Quarterly}, 2\penalty0
+  (1--2):\penalty0 83--97, 1955.
+
+\bibitem[Lei et~al.(2022)Lei, Ren, Hu, Zhang, and Chen]{lei2022syncnet}
+Zixing Lei, Shunli Ren, Yue Hu, Wenjun Zhang, and Siheng Chen.
+\newblock Latency-aware collaborative perception.
+\newblock In \emph{ECCV}, 2022.
+
+\bibitem[Lei et~al.(2024)Lei, Ni, Han, Tang, Feng, Chen, and
+  Wang]{lei2024freealign}
+Zixing Lei, Zhenyang Ni, Ruize Han, Shuo Tang, Chen Feng, Siheng Chen, and
+  Yanfeng Wang.
+\newblock Robust collaborative perception without external localization and
+  clock devices.
+\newblock In \emph{ICRA}, 2024.
+
+\bibitem[Li et~al.(2021)Li, Ren, Wu, Chen, Feng, and Zhang]{li2021disconet}
+Yiming Li, Shunli Ren, Pengxiang Wu, Siheng Chen, Chen Feng, and Wenjun Zhang.
+\newblock Learning distilled collaboration graph for multi-agent perception.
+\newblock In \emph{NeurIPS}, 2021.
+
+\bibitem[Liu et~al.(2020)Liu, Tian, Glaser, and Kira]{liu2020when2com}
+Yen-Cheng Liu, Junjiao Tian, Nathaniel Glaser, and Zsolt Kira.
+\newblock {When2com}: Multi-agent perception via communication graph grouping.
+\newblock In \emph{CVPR}, 2020.
+
+\bibitem[Lu et~al.(2023)Lu, Li, Liu, Dianati, Feng, Chen, and
+  Wang]{lu2023coalign}
+Yifan Lu, Quanhao Li, Baoan Liu, Mehrdad Dianati, Chen Feng, Siheng Chen, and
+  Yanfeng Wang.
+\newblock Robust collaborative {3D} object detection in presence of pose
+  errors.
+\newblock In \emph{ICRA}, 2023.
+
+\bibitem[Song et~al.(2023)Song, Wen, Zhang, and Li]{song2023cbm}
+Zhiying Song, Fuxi Wen, Hailiang Zhang, and Jun Li.
+\newblock A cooperative perception system robust to localization errors.
+\newblock In \emph{IEEE Intelligent Vehicles Symposium}, 2023.
+
+\bibitem[Song et~al.(2025)Song, Yang, Wen, and Li]{song2025trafalign}
+Zhiying Song, Lei Yang, Fuxi Wen, and Jun Li.
+\newblock {TraF-Align}: Trajectory-aware feature alignment for asynchronous
+  multi-agent perception.
+\newblock In \emph{CVPR}, 2025.
+
+\bibitem[Wang et~al.(2020)Wang, Manivasagam, Liang, Yang, Zeng, and
+  Urtasun]{wang2020v2vnet}
+Tsun-Hsuan Wang, Sivabalan Manivasagam, Ming Liang, Bin Yang, Wenyuan Zeng, and
+  Raquel Urtasun.
+\newblock {V2VNet}: Vehicle-to-vehicle communication for joint perception and
+  prediction.
+\newblock In \emph{ECCV}, 2020.
+
+\bibitem[Wei et~al.(2023)Wei, Wei, Hu, Lu, Zhong, Chen, and
+  Zhang]{wei2023cobevflow}
+Sizhe Wei, Yuxi Wei, Yue Hu, Yifan Lu, Yiqi Zhong, Siheng Chen, and Ya~Zhang.
+\newblock Asynchrony-robust collaborative perception via bird's eye view flow.
+\newblock In \emph{NeurIPS}, 2023.
+
+\bibitem[Weng et~al.(2020)Weng, Wang, Held, and Kitani]{weng2020ab3dmot}
+Xinshuo Weng, Jianren Wang, David Held, and Kris Kitani.
+\newblock {3D} multi-object tracking: A baseline and new evaluation metrics.
+\newblock In \emph{IROS}, 2020.
+
+\bibitem[Xu et~al.(2022{\natexlab{a}})Xu, Tu, Xiang, Shao, Zhou, and
+  Ma]{xu2022cobevt}
+Runsheng Xu, Zhengzhong Tu, Hao Xiang, Wei Shao, Bolei Zhou, and Jiaqi Ma.
+\newblock {CoBEVT}: Cooperative bird's eye view semantic segmentation with
+  sparse transformers.
+\newblock In \emph{CoRL}, 2022{\natexlab{a}}.
+
+\bibitem[Xu et~al.(2022{\natexlab{b}})Xu, Xiang, Tu, Xia, Yang, and
+  Ma]{xu2022v2xvit}
+Runsheng Xu, Hao Xiang, Zhengzhong Tu, Xin Xia, Ming-Hsuan Yang, and Jiaqi Ma.
+\newblock {V2X-ViT}: Vehicle-to-everything cooperative perception with vision
+  transformer.
+\newblock In \emph{ECCV}, 2022{\natexlab{b}}.
+
+\bibitem[Xu et~al.(2022{\natexlab{c}})Xu, Xiang, Xia, Han, Li, and
+  Ma]{xu2022opv2v}
+Runsheng Xu, Hao Xiang, Xin Xia, Xu~Han, Jinlong Li, and Jiaqi Ma.
+\newblock {OPV2V}: An open benchmark dataset and fusion pipeline for perception
+  with vehicle-to-vehicle communication.
+\newblock In \emph{ICRA}, 2022{\natexlab{c}}.
+
+\bibitem[Xu et~al.(2023)Xu, Xia, Li, Li, Zhang, Tu, Meng, Xiang, Dong, Song,
+  Yu, Zhou, and Ma]{xu2023v2v4real}
+Runsheng Xu, Xin Xia, Jinlong Li, Hanzhao Li, Shuo Zhang, Zhengzhong Tu,
+  Zonglin Meng, Hao Xiang, Xiaoyu Dong, Rui Song, Hongkai Yu, Bolei Zhou, and
+  Jiaqi Ma.
+\newblock {V2V4Real}: A real-world large-scale dataset for vehicle-to-vehicle
+  cooperative perception.
+\newblock In \emph{CVPR}, 2023.
+
+\bibitem[Xu et~al.(2025)Xu, Li, Wang, Yang, Wu, Chen, and
+  Wang]{xu2025codyntrust}
+Yunjiang Xu, Lingzhi Li, Jin Wang, Benyuan Yang, Zhiwen Wu, Xinhong Chen, and
+  Jianping Wang.
+\newblock {CoDynTrust}: Robust asynchronous collaborative perception via
+  dynamic feature trust modulus.
+\newblock In \emph{ICRA}, 2025.
+
+\bibitem[Yang et~al.(2023)Yang, Yang, Wang, Liu, Xu, Yin, Zhai, and
+  Zhang]{yang2023how2comm}
+Dingkang Yang, Kun Yang, Yuzheng Wang, Jing Liu, Zhi Xu, Rongbin Yin, Peng
+  Zhai, and Lihua Zhang.
+\newblock {How2comm}: Communication-efficient and collaboration-pragmatic
+  multi-agent perception.
+\newblock In \emph{NeurIPS}, 2023.
+
+\bibitem[Yang et~al.(2024)Yang, Mao, Yang, Ai, Kong, Yu, and
+  Zhang]{yang2024letvic}
+Zhenwei Yang, Jilei Mao, Wenxian Yang, Yibo Ai, Yu~Kong, Haibao Yu, and Weidong
+  Zhang.
+\newblock {LiDAR}-based end-to-end temporal perception for
+  vehicle-infrastructure cooperation.
+\newblock \emph{arXiv preprint arXiv:2411.14927}, 2024.
+
+\bibitem[Yin et~al.(2021)Yin, Zhou, and Kr{\"a}henb{\"u}hl]{yin2021centerpoint}
+Tianwei Yin, Xingyi Zhou, and Philipp Kr{\"a}henb{\"u}hl.
+\newblock Center-based {3D} object detection and tracking.
+\newblock In \emph{CVPR}, 2021.
+
+\bibitem[Yu et~al.(2022)Yu, Luo, Shu, Huo, Yang, Shi, Guo, Li, Hu, Yuan, and
+  Nie]{yu2022dairv2x}
+Haibao Yu, Yizhen Luo, Mao Shu, Yiyi Huo, Zebang Yang, Yifeng Shi, Zhenglong
+  Guo, Hanyu Li, Xing Hu, Jirui Yuan, and Zaiqing Nie.
+\newblock {DAIR-V2X}: A large-scale dataset for vehicle-infrastructure
+  cooperative {3D} object detection.
+\newblock In \emph{CVPR}, 2022.
+
+\bibitem[Yu et~al.(2023{\natexlab{a}})Yu, Tang, Xie, Mao, Luo, and
+  Nie]{yu2023ffnet}
+Haibao Yu, Yingjuan Tang, Enze Xie, Jilei Mao, Ping Luo, and Zaiqing Nie.
+\newblock Flow-based feature fusion for vehicle-infrastructure cooperative {3D}
+  object detection.
+\newblock In \emph{NeurIPS}, 2023{\natexlab{a}}.
+
+\bibitem[Yu et~al.(2023{\natexlab{b}})Yu, Yang, Ruan, Yang, Tang, Gao, Hao,
+  Shi, Pan, Sun, Song, Yuan, Luo, and Nie]{yu2023v2xseq}
+Haibao Yu, Wenxian Yang, Hongzhi Ruan, Zhenwei Yang, Yingjuan Tang, Xu~Gao, Xin
+  Hao, Yifeng Shi, Yifeng Pan, Ning Sun, Juan Song, Jirui Yuan, Ping Luo, and
+  Zaiqing Nie.
+\newblock {V2X-Seq}: A large-scale sequential dataset for
+  vehicle-infrastructure cooperative perception and forecasting.
+\newblock In \emph{CVPR}, 2023{\natexlab{b}}.
+
+\end{thebibliography}

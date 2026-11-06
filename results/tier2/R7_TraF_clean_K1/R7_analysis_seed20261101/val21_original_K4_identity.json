@@ -1,0 +1,17 @@
+{
+  "source": {
+    "path": "artifacts/research_autopilot/status_audit_20261101_peer10_tournament_v1/k4_eval_online_k1/terminal.json",
+    "sha256": "1289d15159c8f6b966fea691646238201bc5481f4a4e6a2b3256fcce427f6e7f",
+    "bytes": 661
+  },
+  "records": {
+    "path": "artifacts/research_autopilot/status_audit_20261101_peer10_tournament_v1/k4_eval_online_k1/records.json",
+    "sha256": "27e88ed06035e3ea4e2e4cf16e510c6be9c53da07a4863b11d13661e2a7e5f45",
+    "bytes": 4663445
+  },
+  "seed": 20261101,
+  "input": "ONLINE_K1",
+  "model": "original_K4",
+  "GT_join": true,
+  "ROI": "original official common"
+}

@@ -1,0 +1,13 @@
+{
+  "inputs": {
+    "path": "artifacts/research_autopilot/status_audit_20261105_peer21/R6g/inputs.json",
+    "sha256": "86727801c2d05afc43cf0526f2f59606cd0b189baff5345071463a2920be6725",
+    "bytes": 14167
+  },
+  "results": {
+    "path": "artifacts/research_autopilot/status_audit_20261105_peer21/R6g/results.json",
+    "sha256": "9c0c2625da4f9d1c1b8bc6cb6981e96aa6121d259e82c6ff8b8f61acc987ddf1",
+    "bytes": 328513
+  },
+  "independent_pending": true
+}

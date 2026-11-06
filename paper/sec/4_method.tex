@@ -1,0 +1,120 @@
+\section{\method: Common-Mode Error Tracking}
+\label{sec:method}
+
+\method runs on the receiver and treats both detectors as black boxes (\cref{fig:overview}, \cref{alg:comet}).
+It builds remote candidates at the decision time (\cref{sec:prop}), forms one anchor observation per message (\cref{sec:anchors}), tracks the common-mode offset with a causal filter (\cref{sec:kf}), transfers it to every remote box and ranks the merged candidates (\cref{sec:readout}).
+\Cref{sec:tier2} describes an optional second tier that retrains intermediate fusion with \method poses.
+
+\subsection{Remote candidates at the decision time}
+\label{sec:prop}
+A message $m_\tau$ carries boxes $\mathbf b_j=(\mathbf x_j,l_j,w_j,h_j,\theta_j,s_j)$ in the roadside frame.
+After per-message non-maximum suppression, the receiver associates $m_\tau$ with the previous admissible message $m_{\tau'}$ in world coordinates and propagates every associated box to the decision time,
+\begin{equation}
+  \tilde{\mathbf x}_j=\mathbf T_{e\leftarrow i}(t)\big(\mathbf x_j^{\tau}+\mathbf v_j\,(t-\tau)\big),\qquad
+  \mathbf v_j=\frac{\mathbf x_j^{\tau}-\mathbf x_{a(j)}^{\tau'}}{\tau-\tau'},
+  \label{eq:prop}
+\end{equation}
+where $a(j)$ is the associated box of the previous message and unassociated boxes keep $\mathbf v_j=\mathbf 0$.
+In \cref{eq:prop} we use the heading-constrained velocity $(\mathbf h_j^{\top}\mathbf v_j)\,\mathbf h_j$, with $\mathbf h_j=(\cos\theta_j,\sin\theta_j)^{\top}$, which suppresses lateral velocity noise.
+Only past messages are used.
+
+\subsection{Anchors and the per-message observation}
+\label{sec:anchors}
+Every ego detection is an anchor candidate; we apply no score threshold (\cref{sec:ablation} shows that thresholds only remove evidence).
+Let $\mathbf X^{\text{ego}}$ be the ego box centres and $\tilde{\mathbf X}$ the propagated remote centres of the current message.
+We solve the assignment $\pi^\star=\arg\min_\pi\sum_k\|\mathbf x^{\text{ego}}_k-\tilde{\mathbf x}_{\pi(k)}\|$ with the Hungarian algorithm~\cite{kuhn1955hungarian} and keep a pair only if it is within a gate $g$ and the two boxes are each other's nearest neighbour:
+\begin{equation}
+  \mathcal A_t=\big\{(k,j):\ j=\pi^\star(k),\ j=\mathrm{NN}(k),\ k=\mathrm{NN}(j),\ \|\mathbf x^{\text{ego}}_k-\tilde{\mathbf x}_j\|\le g\big\}.
+  \label{eq:anchors}
+\end{equation}
+By \cref{eq:model}, an anchor residual observes the common mode directly,
+\begin{equation}
+  \mathbf z_{kj}=\mathbf x^{\text{ego}}_k-\tilde{\mathbf x}_j=\boldsymbol\delta_t+\boldsymbol\eta_{kj},\qquad\boldsymbol\eta_{kj}\sim\mathcal N(\mathbf 0,r^2\mathbf I),
+  \label{eq:obs}
+\end{equation}
+where $\boldsymbol\eta_{kj}$ lumps the ego and remote object-specific errors.
+For $n_t=|\mathcal A_t|$ anchors, the mean residual $\bar{\mathbf z}_t$ is a sufficient statistic, $\bar{\mathbf z}_t\sim\mathcal N(\boldsymbol\delta_t,\tfrac{r^2}{n_t}\mathbf I)$.
+Matching is done on the propagated centres \emph{before} any correction, so a large current error cannot be hidden by a wrong prediction; using the filter prediction to gate the association (``prediction gating'') is worse in our experiments (\cref{tab:ablation}).
+The mutual-nearest-neighbour test removes most ambiguous pairs in dense traffic.
+
+\subsection{Tracking the common mode}
+\label{sec:kf}
+The offset persists but drifts, which we model as a random walk over the arrivals of admissible messages from one sender, $\boldsymbol\delta_t=\boldsymbol\delta_{t-1}+\mathbf w_t$, $\mathbf w_t\sim\mathcal N(\mathbf 0,q^2\mathbf I)$.
+Together with \cref{eq:obs} this is a linear-Gaussian model, so the posterior given all past anchors is Gaussian.
+
+\begin{proposition}[Scalar recursion]
+\label{prop:scalar}
+If the prior covariance, the process noise and the measurement noise are all isotropic, the posterior covariance stays isotropic, $\mathbf P_t=p_t\mathbf I$, and the Kalman filter reduces exactly to
+\begin{align}
+  p_t^-&=p_{t-1}+q^2, &
+  k_t&=\begin{cases}\dfrac{p_t^-}{p_t^-+r^2/n_t}, & n_t\ge1,\\[1ex] 0, & n_t=0,\end{cases}\label{eq:gain}\\
+  \hat{\boldsymbol\delta}_t&=\hat{\boldsymbol\delta}_{t-1}+k_t\big(\bar{\mathbf z}_t-\hat{\boldsymbol\delta}_{t-1}\big), &
+  p_t&=(1-k_t)\,p_t^- .\label{eq:update}
+\end{align}
+\end{proposition}
+The proof is a two-line induction (\cref{app:proof}).
+Each stream starts from $\hat{\boldsymbol\delta}_0=\mathbf 0$ and $p_0=1$\,m$^2$.
+A message with many anchors receives a large gain; a message without anchors leaves the estimate unchanged while $p_t$ grows; the first anchors after a gap are weighted strongly, so the estimate catches up quickly after an occlusion (\cref{fig:trajectory}).
+
+\paragraph{Between registration and calibration.}
+\Cref{eq:update} is an exponentially weighted average $\hat{\boldsymbol\delta}_t=(1-k_t)\hat{\boldsymbol\delta}_{t-1}+k_t\bar{\mathbf z}_t$ whose gain is set by $q/r$, the anchor count and the time since the last anchor.
+Its two limiting cases are the classical answers to pose error: $q\to\infty$ gives $k_t\to1$ and $\hat{\boldsymbol\delta}_t=\bar{\mathbf z}_t$, \ie per-frame registration from the current correspondences; $q\to0$ gives $k_t\to0$ after convergence, \ie a fixed calibration averaged over the stream.
+For a stream with $n$ anchors per message the gain converges to
+\begin{equation}
+  k_\infty=\frac{p^-_\infty}{p^-_\infty+r^2/n},\qquad p^-_\infty=\tfrac12\Big(q^2+\sqrt{q^4+4q^2r^2/n}\Big).
+  \label{eq:steady}
+\end{equation}
+With $q=0.05$\,m, $r=0.6$\,m and the 4.79 anchors that an anchor-bearing validation message holds on average, $k_\infty\approx0.17$: the estimate pools roughly the last six anchor-bearing messages, about one second at 10\,Hz once the anchor-free messages are included.
+That is long enough to average out object-level noise and short enough to follow the drift.
+
+\paragraph{Hyper-parameters.}
+We fix $r=0.6$\,m and $g=2.5$\,m for all detectors and select $q\in\{0.025,0.05,0.1,0.15\}$\,m per detector on the calibration split only (0.05\,m for the released TraF-Align boxes; \cref{app:impl}).
+Streams are kept per sender; in our offline replay each latency budget is an independent replay, so the stream key is (sequence, budget).
+
+\paragraph{Transfer.}
+The tracked offset corrects \emph{every} remote box, $\hat{\mathbf x}_j=\tilde{\mathbf x}_j+\hat{\boldsymbol\delta}_t$, including the roadside-only objects that have no ego counterpart.
+Because $\hat{\boldsymbol\delta}_t$ persists, messages without any anchor are corrected as well.
+This is the essential difference from per-frame registration, which returns no correction whenever no correspondence is found and therefore gives up exactly on the frames in which the partner's evidence matters most.
+
+\begin{algorithm}[t]
+  \caption{\method on the receiver at decision time $t$}
+  \label{alg:comet}
+  \small
+  \KwIn{ego boxes $\mathcal B_e(t)$; admissible messages $m_\tau,m_{\tau'}$; online pose $\mathbf T_{e\leftarrow i}(t)$; stream state $(\hat{\boldsymbol\delta},p)$}
+  \KwOut{ranked detections $\mathcal D_t$}
+  $\{\tilde{\mathbf b}_j\}\leftarrow$ propagate and map $m_\tau$ by \cref{eq:prop}\;
+  \If(\tcp*[f]{once per message}){$m_\tau$ is new}{
+    $p\leftarrow p+q^2$;\quad $\mathcal A\leftarrow$ anchors of all ego boxes by \cref{eq:anchors}\;
+    \If{$n=|\mathcal A|\ge1$}{
+      $\bar{\mathbf z}\leftarrow\frac1n\sum_{(k,j)\in\mathcal A}(\mathbf x^{\text{ego}}_k-\tilde{\mathbf x}_j)$;\quad $k\leftarrow p/(p+r^2/n)$\;
+      $\hat{\boldsymbol\delta}\leftarrow\hat{\boldsymbol\delta}+k(\bar{\mathbf z}-\hat{\boldsymbol\delta})$;\quad $p\leftarrow(1-k)\,p$\;
+    }
+  }
+  $\hat{\mathbf b}_j\leftarrow\tilde{\mathbf b}_j$ with centre $\tilde{\mathbf x}_j+\hat{\boldsymbol\delta}$ for all $j$\tcp*{transfer}
+  $\mathcal E^+\leftarrow\{\mathbf b_k\in\mathcal B_e(t):s_k\ge\tau_p\}$;\quad $\mathcal C\leftarrow\{\hat{\mathbf b}_j\}\cup(\mathcal B_e(t)\setminus\mathcal E^+)$\;
+  $u_c\leftarrow f_\phi(\mathbf f_c)$ for $c\in\mathcal C$\tcp*{frozen readout head}
+  $\mathcal D_t\leftarrow\mathcal E^+$ ranked by $1+s_k$, followed by $\mathcal C$ ranked by $u_c$\;
+\end{algorithm}
+
+\subsection{Late fusion and readout}
+\label{sec:readout}
+Correct geometry is necessary but not sufficient: a corrected box only helps if it outranks the false positives it competes with, and the scores of two detectors are not comparable.
+We therefore rank the confident ego detections $\mathcal E^+_t=\{k:s_k\ge\tau_p\}$ first and score every other candidate, \ie corrected remote boxes and low-score ego boxes, with a small frozen readout head.
+The head is a two-layer perceptron with 32 hidden units (1.3K parameters) on 39 receiver-side features such as message age, box geometry and the overlap with the nearest ego detection; the 13 features that encode absolute position, including the sensor-to-sensor translation, are set to zero so that the head cannot learn location priors (\cref{app:impl}).
+It is trained once with binary cross-entropy on the fit split to predict whether a candidate adds a correct detection (IoU $\ge0.7$ with a ground-truth box not yet matched by $\mathcal E^+_t$), and then kept fixed; it never sees the validation or held-out splits.
+$\tau_p$ is selected per detector on the calibration split, and whether to keep the original heads or refit them on \method geometry is decided once, globally, on the calibration split (the original heads are kept).
+The pose estimator itself has no learned parameters.
+
+\paragraph{Cost.}
+A message carries boxes, scores and the capture time.
+Per message the receiver solves one assignment between a few dozen boxes, applies the closed-form update of \cref{eq:update} and evaluates the 1.3K-parameter head on each candidate; the state is two coordinates and one variance per sender.
+
+\subsection{Second tier: retraining intermediate fusion}
+\label{sec:tier2}
+\method produces a causal relative pose, so it can also replace the online pose of an intermediate-fusion model.
+We refer to the pipeline above, with its training-free pose estimate and frozen readout, as the first tier.
+When an intermediate-fusion model is retrained anyway, we change two things and nothing else.
+\emph{Pose input:} the fusion network receives the remote features warped with the \method estimate at training and at test time.
+\emph{Training labels:} on placeholder messages of the fit split, the roadside-only ground truth is re-registered with the per-sequence linear interpolation of the non-zero dataset offsets, so that the network is not trained to reproduce the uncorrected projection; this uses labels and is applied to training only.
+We also tested a variant that additionally moves roadside-only labels on saturated axes to the median co-labelled displacement; the calibration split preferred the simpler variant (\cref{app:tier2}).
+Evaluation always uses the official ground truth.

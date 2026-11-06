@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-11-05T19:03:05+08:00",
+  "selected": "A",
+  "checks": {
+    "PUBLIC_AP50_CI_low_positive": true,
+    "PUBLIC_AP70_CI_low_positive": true,
+    "H1_AP50_at_least1pp": true,
+    "H1_AP50_CI_low_positive": true,
+    "H1_AP70_at_least_minus030": true
+  },
+  "qualifies": true,
+  "original_decision": {
+    "path": "artifacts/research_autopilot/status_audit_20261105_peer21/R7b_analysis/decision.json",
+    "sha256": "47dae7f0c629770c2739cecd43f0c3959016eee0f5ff49151696486b27fd8dc9",
+    "bytes": 1071
+  },
+  "both_tiers_reported": true,
+  "holdout_not_gate": true,
+  "all_seed_same_sign_not_gate": true,
+  "no_new_threshold": true,
+  "main_method_unchanged": "CoMET_H1",
+  "R7c_no_launch": true,
+  "no_automatic_root_table_mutation": true
+}

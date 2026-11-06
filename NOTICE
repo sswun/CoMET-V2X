@@ -1,0 +1,12 @@
+CoMET-V2X
+Copyright (c) 2026 Shuwei Sun, Jian Huang and Hui Cao.
+
+Prior written permission from the authors is required to use the original
+code and experimental results, including for research and evaluation.
+See LICENSE for the full terms and the contact for permission requests.
+
+The release contains the authors' estimator, experiment adapters and
+analysis scripts, manuscript and result files. V2X-Seq / DAIR-V2X data,
+third-party implementations and detector weights are obtained separately.
+Their respective rights holders set the terms for those materials.
+See docs/THIRD_PARTY.md for the dataset, detector and framework sources.

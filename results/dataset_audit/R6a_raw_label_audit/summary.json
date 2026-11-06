@@ -1,0 +1,2705 @@
+{
+  "census": {
+    "fit24": {
+      "messages": 3762,
+      "zero": 1001,
+      "contingency": {
+        "nonzero_coop": 2745,
+        "zero_no_coop": 1001,
+        "nonzero_no_coop": 16
+      },
+      "per_sequence": {
+        "0000": {
+          "messages": 195,
+          "zero": 65,
+          "runs": 1
+        },
+        "0004": {
+          "messages": 201,
+          "zero": 58,
+          "runs": 1
+        },
+        "0005": {
+          "messages": 204,
+          "zero": 0,
+          "runs": 0
+        },
+        "0022": {
+          "messages": 125,
+          "zero": 30,
+          "runs": 1
+        },
+        "0029": {
+          "messages": 178,
+          "zero": 7,
+          "runs": 2
+        },
+        "0030": {
+          "messages": 148,
+          "zero": 74,
+          "runs": 1
+        },
+        "0032": {
+          "messages": 138,
+          "zero": 0,
+          "runs": 0
+        },
+        "0033": {
+          "messages": 189,
+          "zero": 57,
+          "runs": 2
+        },
+        "0037": {
+          "messages": 119,
+          "zero": 24,
+          "runs": 2
+        },
+        "0040": {
+          "messages": 193,
+          "zero": 55,
+          "runs": 3
+        },
+        "0041": {
+          "messages": 169,
+          "zero": 52,
+          "runs": 2
+        },
+        "0047": {
+          "messages": 139,
+          "zero": 16,
+          "runs": 9
+        },
+        "0048": {
+          "messages": 153,
+          "zero": 57,
+          "runs": 2
+        },
+        "0049": {
+          "messages": 188,
+          "zero": 47,
+          "runs": 1
+        },
+        "0054": {
+          "messages": 207,
+          "zero": 72,
+          "runs": 1
+        },
+        "0056": {
+          "messages": 188,
+          "zero": 55,
+          "runs": 2
+        },
+        "0060": {
+          "messages": 203,
+          "zero": 51,
+          "runs": 2
+        },
+        "0062": {
+          "messages": 182,
+          "zero": 60,
+          "runs": 1
+        },
+        "0066": {
+          "messages": 197,
+          "zero": 31,
+          "runs": 4
+        },
+        "0068": {
+          "messages": 152,
+          "zero": 0,
+          "runs": 0
+        },
+        "0078": {
+          "messages": 40,
+          "zero": 40,
+          "runs": 1
+        },
+        "0081": {
+          "messages": 80,
+          "zero": 42,
+          "runs": 1
+        },
+        "0082": {
+          "messages": 154,
+          "zero": 88,
+          "runs": 1
+        },
+        "0087": {
+          "messages": 20,
+          "zero": 20,
+          "runs": 1
+        }
+      }
+    },
+    "calibration8": {
+      "messages": 1247,
+      "zero": 319,
+      "contingency": {
+        "nonzero_coop": 927,
+        "zero_no_coop": 284,
+        "nonzero_no_coop": 1,
+        "zero_coop": 35
+      },
+      "per_sequence": {
+        "0001": {
+          "messages": 183,
+          "zero": 47,
+          "runs": 3
+        },
+        "0008": {
+          "messages": 196,
+          "zero": 64,
+          "runs": 2
+        },
+        "0010": {
+          "messages": 124,
+          "zero": 74,
+          "runs": 1
+        },
+        "0016": {
+          "messages": 143,
+          "zero": 0,
+          "runs": 0
+        },
+        "0023": {
+          "messages": 160,
+          "zero": 55,
+          "runs": 3
+        },
+        "0025": {
+          "messages": 172,
+          "zero": 75,
+          "runs": 1
+        },
+        "0077": {
+          "messages": 90,
+          "zero": 4,
+          "runs": 1
+        },
+        "0093": {
+          "messages": 179,
+          "zero": 0,
+          "runs": 0
+        }
+      }
+    },
+    "mechanism_holdout14": {
+      "messages": 2436,
+      "zero": 530,
+      "contingency": {
+        "nonzero_coop": 1896,
+        "zero_no_coop": 530,
+        "nonzero_no_coop": 10
+      },
+      "per_sequence": {
+        "0002": {
+          "messages": 452,
+          "zero": 0,
+          "runs": 0
+        },
+        "0018": {
+          "messages": 149,
+          "zero": 54,
+          "runs": 3
+        },
+        "0034": {
+          "messages": 149,
+          "zero": 35,
+          "runs": 6
+        },
+        "0035": {
+          "messages": 117,
+          "zero": 32,
+          "runs": 1
+        },
+        "0036": {
+          "messages": 176,
+          "zero": 96,
+          "runs": 1
+        },
+        "0050": {
+          "messages": 169,
+          "zero": 6,
+          "runs": 5
+        },
+        "0055": {
+          "messages": 199,
+          "zero": 1,
+          "runs": 1
+        },
+        "0057": {
+          "messages": 183,
+          "zero": 0,
+          "runs": 0
+        },
+        "0070": {
+          "messages": 198,
+          "zero": 87,
+          "runs": 6
+        },
+        "0072": {
+          "messages": 143,
+          "zero": 76,
+          "runs": 2
+        },
+        "0079": {
+          "messages": 99,
+          "zero": 19,
+          "runs": 5
+        },
+        "0080": {
+          "messages": 145,
+          "zero": 51,
+          "runs": 1
+        },
+        "0084": {
+          "messages": 59,
+          "zero": 19,
+          "runs": 1
+        },
+        "0094": {
+          "messages": 198,
+          "zero": 54,
+          "runs": 1
+        }
+      }
+    },
+    "val21": {
+      "messages": 3316,
+      "zero": 928,
+      "contingency": {
+        "nonzero_coop": 2377,
+        "zero_no_coop": 928,
+        "nonzero_no_coop": 11
+      },
+      "per_sequence": {
+        "0003": {
+          "messages": 207,
+          "zero": 31,
+          "runs": 2
+        },
+        "0007": {
+          "messages": 144,
+          "zero": 56,
+          "runs": 5
+        },
+        "0014": {
+          "messages": 163,
+          "zero": 45,
+          "runs": 1
+        },
+        "0015": {
+          "messages": 167,
+          "zero": 79,
+          "runs": 3
+        },
+        "0017": {
+          "messages": 101,
+          "zero": 66,
+          "runs": 1
+        },
+        "0020": {
+          "messages": 210,
+          "zero": 87,
+          "runs": 1
+        },
+        "0021": {
+          "messages": 189,
+          "zero": 0,
+          "runs": 0
+        },
+        "0042": {
+          "messages": 168,
+          "zero": 37,
+          "runs": 2
+        },
+        "0052": {
+          "messages": 137,
+          "zero": 42,
+          "runs": 2
+        },
+        "0058": {
+          "messages": 249,
+          "zero": 105,
+          "runs": 1
+        },
+        "0059": {
+          "messages": 209,
+          "zero": 1,
+          "runs": 1
+        },
+        "0061": {
+          "messages": 83,
+          "zero": 1,
+          "runs": 1
+        },
+        "0063": {
+          "messages": 182,
+          "zero": 49,
+          "runs": 1
+        },
+        "0071": {
+          "messages": 204,
+          "zero": 79,
+          "runs": 3
+        },
+        "0073": {
+          "messages": 181,
+          "zero": 12,
+          "runs": 8
+        },
+        "0075": {
+          "messages": 40,
+          "zero": 40,
+          "runs": 1
+        },
+        "0085": {
+          "messages": 168,
+          "zero": 47,
+          "runs": 1
+        },
+        "0086": {
+          "messages": 61,
+          "zero": 31,
+          "runs": 3
+        },
+        "0088": {
+          "messages": 31,
+          "zero": 31,
+          "runs": 1
+        },
+        "0089": {
+          "messages": 199,
+          "zero": 47,
+          "runs": 1
+        },
+        "0092": {
+          "messages": 223,
+          "zero": 42,
+          "runs": 1
+        }
+      }
+    }
+  },
+  "direct_projection": {
+    "calibration8_coop_nonzero": {
+      "n": 5894,
+      "public_xy_median_m": 1.4192639722511744,
+      "public_xy_max_m": 6.615628945859175,
+      "offset_corrected_xy_median_m": 0.5239902055369774,
+      "offset_corrected_xy_max_m": 5.399743765533134,
+      "corrected_fraction_lt_005": 0.01510010179843909,
+      "public_fraction_lt_005": 0.00016966406515100103
+    },
+    "calibration8_coop_zero": {
+      "n": 35,
+      "public_xy_median_m": 1.2182980346186705,
+      "public_xy_max_m": 1.4114025545445636,
+      "offset_corrected_xy_median_m": 1.2182980346186705,
+      "offset_corrected_xy_max_m": 1.4114025545445636,
+      "corrected_fraction_lt_005": 0.0,
+      "public_fraction_lt_005": 0.0
+    },
+    "calibration8_inf_nonzero": {
+      "n": 8885,
+      "public_xy_median_m": 1.2083045507154386,
+      "public_xy_max_m": 1.5556355984702162,
+      "offset_corrected_xy_median_m": 4.0199775184360376e-07,
+      "offset_corrected_xy_max_m": 7.041239358618873e-07,
+      "corrected_fraction_lt_005": 1.0,
+      "public_fraction_lt_005": 0.0
+    },
+    "calibration8_inf_zero": {
+      "n": 4622,
+      "public_xy_median_m": 4.018047098674482e-07,
+      "public_xy_max_m": 7.038640750100654e-07,
+      "offset_corrected_xy_median_m": 4.018047098674482e-07,
+      "offset_corrected_xy_max_m": 7.038640750100654e-07,
+      "corrected_fraction_lt_005": 1.0,
+      "public_fraction_lt_005": 1.0
+    },
+    "fit24_coop_nonzero": {
+      "n": 17930,
+      "public_xy_median_m": 1.1245016830195267,
+      "public_xy_max_m": 7.519576489540263,
+      "offset_corrected_xy_median_m": 0.4394548223646254,
+      "offset_corrected_xy_max_m": 6.54364923173288,
+      "corrected_fraction_lt_005": 0.01935303959843837,
+      "public_fraction_lt_005": 0.0014500836586726158
+    },
+    "fit24_inf_nonzero": {
+      "n": 29298,
+      "public_xy_median_m": 1.0692050707885037,
+      "public_xy_max_m": 1.5556355892741995,
+      "offset_corrected_xy_median_m": 3.982609141384475e-07,
+      "offset_corrected_xy_max_m": 7.003195022791901e-07,
+      "corrected_fraction_lt_005": 1.0,
+      "public_fraction_lt_005": 0.0
+    },
+    "fit24_inf_zero": {
+      "n": 13046,
+      "public_xy_median_m": 3.9889131847554416e-07,
+      "public_xy_max_m": 7.02525972849517e-07,
+      "offset_corrected_xy_median_m": 3.9889131847554416e-07,
+      "offset_corrected_xy_max_m": 7.02525972849517e-07,
+      "corrected_fraction_lt_005": 1.0,
+      "public_fraction_lt_005": 1.0
+    },
+    "mechanism_holdout14_coop_nonzero": {
+      "n": 11510,
+      "public_xy_median_m": 1.0839332034533156,
+      "public_xy_max_m": 7.764463753379619,
+      "offset_corrected_xy_median_m": 0.3629827254182502,
+      "offset_corrected_xy_max_m": 6.73836422265313,
+      "corrected_fraction_lt_005": 0.028236316246741965,
+      "public_fraction_lt_005": 0.0
+    },
+    "mechanism_holdout14_inf_nonzero": {
+      "n": 19454,
+      "public_xy_median_m": 1.0840662516811816,
+      "public_xy_max_m": 1.5556355538271895,
+      "offset_corrected_xy_median_m": 3.9938864866447665e-07,
+      "offset_corrected_xy_max_m": 7.030437895700017e-07,
+      "corrected_fraction_lt_005": 1.0,
+      "public_fraction_lt_005": 0.0
+    },
+    "mechanism_holdout14_inf_zero": {
+      "n": 7286,
+      "public_xy_median_m": 3.9803750381259156e-07,
+      "public_xy_max_m": 7.035374247375869e-07,
+      "offset_corrected_xy_median_m": 3.9803750381259156e-07,
+      "offset_corrected_xy_max_m": 7.035374247375869e-07,
+      "corrected_fraction_lt_005": 1.0,
+      "public_fraction_lt_005": 1.0
+    },
+    "val21_coop_nonzero": {
+      "n": 16184,
+      "public_xy_median_m": 1.0482046620172878,
+      "public_xy_max_m": 5.325065675793478,
+      "offset_corrected_xy_median_m": 0.408597296739897,
+      "offset_corrected_xy_max_m": 4.007265389560489,
+      "corrected_fraction_lt_005": 0.024839347503707365,
+      "public_fraction_lt_005": 0.001235788433020267
+    },
+    "val21_inf_nonzero": {
+      "n": 27156,
+      "public_xy_median_m": 1.0139033930814074,
+      "public_xy_max_m": 1.555635557394506,
+      "offset_corrected_xy_median_m": 3.9750825621774114e-07,
+      "offset_corrected_xy_max_m": 7.06399421529791e-07,
+      "corrected_fraction_lt_005": 1.0,
+      "public_fraction_lt_005": 0.0
+    },
+    "val21_inf_zero": {
+      "n": 13367,
+      "public_xy_median_m": 3.971455109531621e-07,
+      "public_xy_max_m": 7.024370429738653e-07,
+      "offset_corrected_xy_median_m": 3.971455109531621e-07,
+      "offset_corrected_xy_max_m": 7.024370429738653e-07,
+      "corrected_fraction_lt_005": 1.0,
+      "public_fraction_lt_005": 1.0
+    }
+  },
+  "zero_runs": [
+    {
+      "role": "fit24",
+      "sequence": "0000",
+      "start": "000143",
+      "end": "000209",
+      "messages": 65,
+      "first_to_last_s": 6.600182
+    },
+    {
+      "role": "fit24",
+      "sequence": "0004",
+      "start": "001235",
+      "end": "001296",
+      "messages": 58,
+      "first_to_last_s": 6.100275
+    },
+    {
+      "role": "fit24",
+      "sequence": "0022",
+      "start": "004357",
+      "end": "004389",
+      "messages": 30,
+      "first_to_last_s": 3.599484
+    },
+    {
+      "role": "fit24",
+      "sequence": "0029",
+      "start": "005538",
+      "end": "005543",
+      "messages": 6,
+      "first_to_last_s": 0.500028
+    },
+    {
+      "role": "fit24",
+      "sequence": "0029",
+      "start": "005545",
+      "end": "005545",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "fit24",
+      "sequence": "0030",
+      "start": "005670",
+      "end": "005743",
+      "messages": 74,
+      "first_to_last_s": 7.299214
+    },
+    {
+      "role": "fit24",
+      "sequence": "0033",
+      "start": "006179",
+      "end": "006183",
+      "messages": 5,
+      "first_to_last_s": 0.400144
+    },
+    {
+      "role": "fit24",
+      "sequence": "0033",
+      "start": "006195",
+      "end": "006246",
+      "messages": 52,
+      "first_to_last_s": 5.100898
+    },
+    {
+      "role": "fit24",
+      "sequence": "0037",
+      "start": "006791",
+      "end": "006791",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "fit24",
+      "sequence": "0037",
+      "start": "006794",
+      "end": "006816",
+      "messages": 23,
+      "first_to_last_s": 2.200242
+    },
+    {
+      "role": "fit24",
+      "sequence": "0040",
+      "start": "007325",
+      "end": "007336",
+      "messages": 12,
+      "first_to_last_s": 1.099506
+    },
+    {
+      "role": "fit24",
+      "sequence": "0040",
+      "start": "007366",
+      "end": "007366",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "fit24",
+      "sequence": "0040",
+      "start": "007414",
+      "end": "007455",
+      "messages": 42,
+      "first_to_last_s": 4.100303
+    },
+    {
+      "role": "fit24",
+      "sequence": "0041",
+      "start": "007564",
+      "end": "007564",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "fit24",
+      "sequence": "0041",
+      "start": "007575",
+      "end": "007625",
+      "messages": 51,
+      "first_to_last_s": 5.000878
+    },
+    {
+      "role": "fit24",
+      "sequence": "0047",
+      "start": "008579",
+      "end": "008579",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "fit24",
+      "sequence": "0047",
+      "start": "008581",
+      "end": "008581",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "fit24",
+      "sequence": "0047",
+      "start": "008583",
+      "end": "008583",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "fit24",
+      "sequence": "0047",
+      "start": "008586",
+      "end": "008587",
+      "messages": 2,
+      "first_to_last_s": 0.100587
+    },
+    {
+      "role": "fit24",
+      "sequence": "0047",
+      "start": "008591",
+      "end": "008593",
+      "messages": 3,
+      "first_to_last_s": 0.199757
+    },
+    {
+      "role": "fit24",
+      "sequence": "0047",
+      "start": "008596",
+      "end": "008599",
+      "messages": 4,
+      "first_to_last_s": 0.300231
+    },
+    {
+      "role": "fit24",
+      "sequence": "0047",
+      "start": "008601",
+      "end": "008601",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "fit24",
+      "sequence": "0047",
+      "start": "008605",
+      "end": "008606",
+      "messages": 2,
+      "first_to_last_s": 0.099604
+    },
+    {
+      "role": "fit24",
+      "sequence": "0047",
+      "start": "008614",
+      "end": "008614",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "fit24",
+      "sequence": "0048",
+      "start": "008706",
+      "end": "008715",
+      "messages": 10,
+      "first_to_last_s": 0.899876
+    },
+    {
+      "role": "fit24",
+      "sequence": "0048",
+      "start": "008724",
+      "end": "008790",
+      "messages": 47,
+      "first_to_last_s": 7.100038
+    },
+    {
+      "role": "fit24",
+      "sequence": "0049",
+      "start": "008934",
+      "end": "008980",
+      "messages": 47,
+      "first_to_last_s": 4.600717
+    },
+    {
+      "role": "fit24",
+      "sequence": "0054",
+      "start": "009829",
+      "end": "009900",
+      "messages": 72,
+      "first_to_last_s": 7.099933
+    },
+    {
+      "role": "fit24",
+      "sequence": "0056",
+      "start": "010235",
+      "end": "010251",
+      "messages": 17,
+      "first_to_last_s": 1.599844
+    },
+    {
+      "role": "fit24",
+      "sequence": "0056",
+      "start": "010253",
+      "end": "010290",
+      "messages": 38,
+      "first_to_last_s": 3.69967
+    },
+    {
+      "role": "fit24",
+      "sequence": "0060",
+      "start": "011061",
+      "end": "011074",
+      "messages": 14,
+      "first_to_last_s": 1.300324
+    },
+    {
+      "role": "fit24",
+      "sequence": "0060",
+      "start": "011114",
+      "end": "011150",
+      "messages": 37,
+      "first_to_last_s": 3.599797
+    },
+    {
+      "role": "fit24",
+      "sequence": "0062",
+      "start": "011391",
+      "end": "011450",
+      "messages": 60,
+      "first_to_last_s": 5.899777
+    },
+    {
+      "role": "fit24",
+      "sequence": "0066",
+      "start": "012236",
+      "end": "012236",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "fit24",
+      "sequence": "0066",
+      "start": "012238",
+      "end": "012238",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "fit24",
+      "sequence": "0066",
+      "start": "012248",
+      "end": "012248",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "fit24",
+      "sequence": "0066",
+      "start": "012262",
+      "end": "012290",
+      "messages": 28,
+      "first_to_last_s": 2.798743
+    },
+    {
+      "role": "fit24",
+      "sequence": "0078",
+      "start": "014438",
+      "end": "014477",
+      "messages": 40,
+      "first_to_last_s": 3.901812
+    },
+    {
+      "role": "fit24",
+      "sequence": "0081",
+      "start": "014896",
+      "end": "014937",
+      "messages": 42,
+      "first_to_last_s": 4.099958
+    },
+    {
+      "role": "fit24",
+      "sequence": "0082",
+      "start": "015005",
+      "end": "015092",
+      "messages": 88,
+      "first_to_last_s": 8.699895
+    },
+    {
+      "role": "fit24",
+      "sequence": "0087",
+      "start": "015888",
+      "end": "015907",
+      "messages": 20,
+      "first_to_last_s": 1.899099
+    },
+    {
+      "role": "calibration8",
+      "sequence": "0001",
+      "start": "000336",
+      "end": "000340",
+      "messages": 5,
+      "first_to_last_s": 0.40004
+    },
+    {
+      "role": "calibration8",
+      "sequence": "0001",
+      "start": "000342",
+      "end": "000346",
+      "messages": 4,
+      "first_to_last_s": 0.400234
+    },
+    {
+      "role": "calibration8",
+      "sequence": "0001",
+      "start": "000368",
+      "end": "000409",
+      "messages": 38,
+      "first_to_last_s": 4.100026
+    },
+    {
+      "role": "calibration8",
+      "sequence": "0008",
+      "start": "002000",
+      "end": "002000",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "calibration8",
+      "sequence": "0008",
+      "start": "002002",
+      "end": "002064",
+      "messages": 63,
+      "first_to_last_s": 6.200661
+    },
+    {
+      "role": "calibration8",
+      "sequence": "0010",
+      "start": "002309",
+      "end": "002382",
+      "messages": 74,
+      "first_to_last_s": 7.301421
+    },
+    {
+      "role": "calibration8",
+      "sequence": "0023",
+      "start": "004469",
+      "end": "004472",
+      "messages": 4,
+      "first_to_last_s": 0.300129
+    },
+    {
+      "role": "calibration8",
+      "sequence": "0023",
+      "start": "004475",
+      "end": "004494",
+      "messages": 20,
+      "first_to_last_s": 1.898669
+    },
+    {
+      "role": "calibration8",
+      "sequence": "0023",
+      "start": "004523",
+      "end": "004553",
+      "messages": 31,
+      "first_to_last_s": 2.998934
+    },
+    {
+      "role": "calibration8",
+      "sequence": "0025",
+      "start": "004810",
+      "end": "004884",
+      "messages": 75,
+      "first_to_last_s": 7.400061
+    },
+    {
+      "role": "calibration8",
+      "sequence": "0077",
+      "start": "014164",
+      "end": "014167",
+      "messages": 4,
+      "first_to_last_s": 0.299841
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0018",
+      "start": "003570",
+      "end": "003571",
+      "messages": 2,
+      "first_to_last_s": 0.09942
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0018",
+      "start": "003587",
+      "end": "003590",
+      "messages": 4,
+      "first_to_last_s": 0.299988
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0018",
+      "start": "003593",
+      "end": "003640",
+      "messages": 48,
+      "first_to_last_s": 4.699769
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0034",
+      "start": "006353",
+      "end": "006355",
+      "messages": 3,
+      "first_to_last_s": 0.200079
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0034",
+      "start": "006357",
+      "end": "006358",
+      "messages": 2,
+      "first_to_last_s": 0.1001
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0034",
+      "start": "006361",
+      "end": "006363",
+      "messages": 3,
+      "first_to_last_s": 0.201157
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0034",
+      "start": "006365",
+      "end": "006367",
+      "messages": 3,
+      "first_to_last_s": 0.200281
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0034",
+      "start": "006372",
+      "end": "006375",
+      "messages": 4,
+      "first_to_last_s": 0.299957
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0034",
+      "start": "006377",
+      "end": "006396",
+      "messages": 20,
+      "first_to_last_s": 1.899296
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0035",
+      "start": "006485",
+      "end": "006516",
+      "messages": 32,
+      "first_to_last_s": 3.099956
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0036",
+      "start": "006600",
+      "end": "006696",
+      "messages": 96,
+      "first_to_last_s": 9.600931
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0050",
+      "start": "009128",
+      "end": "009128",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0050",
+      "start": "009134",
+      "end": "009135",
+      "messages": 2,
+      "first_to_last_s": 0.099997
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0050",
+      "start": "009140",
+      "end": "009140",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0050",
+      "start": "009143",
+      "end": "009143",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0050",
+      "start": "009146",
+      "end": "009146",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0055",
+      "start": "010092",
+      "end": "010092",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0070",
+      "start": "013006",
+      "end": "013006",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0070",
+      "start": "013012",
+      "end": "013012",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0070",
+      "start": "013020",
+      "end": "013020",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0070",
+      "start": "013103",
+      "end": "013103",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0070",
+      "start": "013108",
+      "end": "013108",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0070",
+      "start": "013122",
+      "end": "013209",
+      "messages": 82,
+      "first_to_last_s": 8.799924
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0072",
+      "start": "013621",
+      "end": "013621",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0072",
+      "start": "013623",
+      "end": "013699",
+      "messages": 75,
+      "first_to_last_s": 7.600587
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0079",
+      "start": "014552",
+      "end": "014553",
+      "messages": 2,
+      "first_to_last_s": 0.100029
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0079",
+      "start": "014555",
+      "end": "014557",
+      "messages": 3,
+      "first_to_last_s": 0.200058
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0079",
+      "start": "014559",
+      "end": "014559",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0079",
+      "start": "014563",
+      "end": "014567",
+      "messages": 5,
+      "first_to_last_s": 0.399592
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0079",
+      "start": "014570",
+      "end": "014577",
+      "messages": 8,
+      "first_to_last_s": 0.700115
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0080",
+      "start": "014673",
+      "end": "014723",
+      "messages": 51,
+      "first_to_last_s": 5.001428
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0084",
+      "start": "015389",
+      "end": "015407",
+      "messages": 19,
+      "first_to_last_s": 1.799344
+    },
+    {
+      "role": "mechanism_holdout14",
+      "sequence": "0094",
+      "start": "017254",
+      "end": "017307",
+      "messages": 54,
+      "first_to_last_s": 5.300373
+    },
+    {
+      "role": "val21",
+      "sequence": "0003",
+      "start": "001007",
+      "end": "001014",
+      "messages": 8,
+      "first_to_last_s": 0.699463
+    },
+    {
+      "role": "val21",
+      "sequence": "0003",
+      "start": "001055",
+      "end": "001077",
+      "messages": 23,
+      "first_to_last_s": 2.300483
+    },
+    {
+      "role": "val21",
+      "sequence": "0007",
+      "start": "001747",
+      "end": "001747",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "val21",
+      "sequence": "0007",
+      "start": "001775",
+      "end": "001776",
+      "messages": 2,
+      "first_to_last_s": 0.099647
+    },
+    {
+      "role": "val21",
+      "sequence": "0007",
+      "start": "001778",
+      "end": "001780",
+      "messages": 3,
+      "first_to_last_s": 0.199902
+    },
+    {
+      "role": "val21",
+      "sequence": "0007",
+      "start": "001783",
+      "end": "001783",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "val21",
+      "sequence": "0007",
+      "start": "001814",
+      "end": "001864",
+      "messages": 49,
+      "first_to_last_s": 4.999907
+    },
+    {
+      "role": "val21",
+      "sequence": "0014",
+      "start": "002997",
+      "end": "003041",
+      "messages": 45,
+      "first_to_last_s": 4.400995
+    },
+    {
+      "role": "val21",
+      "sequence": "0015",
+      "start": "003129",
+      "end": "003129",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "val21",
+      "sequence": "0015",
+      "start": "003131",
+      "end": "003131",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "val21",
+      "sequence": "0015",
+      "start": "003134",
+      "end": "003210",
+      "messages": 77,
+      "first_to_last_s": 7.599716
+    },
+    {
+      "role": "val21",
+      "sequence": "0017",
+      "start": "003423",
+      "end": "003490",
+      "messages": 66,
+      "first_to_last_s": 6.699991
+    },
+    {
+      "role": "val21",
+      "sequence": "0020",
+      "start": "003984",
+      "end": "004070",
+      "messages": 87,
+      "first_to_last_s": 8.600305
+    },
+    {
+      "role": "val21",
+      "sequence": "0042",
+      "start": "007702",
+      "end": "007703",
+      "messages": 2,
+      "first_to_last_s": 0.099972
+    },
+    {
+      "role": "val21",
+      "sequence": "0042",
+      "start": "007761",
+      "end": "007795",
+      "messages": 35,
+      "first_to_last_s": 3.400061
+    },
+    {
+      "role": "val21",
+      "sequence": "0052",
+      "start": "009454",
+      "end": "009457",
+      "messages": 4,
+      "first_to_last_s": 0.299867
+    },
+    {
+      "role": "val21",
+      "sequence": "0052",
+      "start": "009462",
+      "end": "009500",
+      "messages": 38,
+      "first_to_last_s": 3.800033
+    },
+    {
+      "role": "val21",
+      "sequence": "0058",
+      "start": "010626",
+      "end": "010730",
+      "messages": 105,
+      "first_to_last_s": 10.400271
+    },
+    {
+      "role": "val21",
+      "sequence": "0059",
+      "start": "010938",
+      "end": "010938",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "val21",
+      "sequence": "0061",
+      "start": "011256",
+      "end": "011256",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "val21",
+      "sequence": "0063",
+      "start": "011590",
+      "end": "011640",
+      "messages": 49,
+      "first_to_last_s": 5.001031
+    },
+    {
+      "role": "val21",
+      "sequence": "0071",
+      "start": "013339",
+      "end": "013339",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "val21",
+      "sequence": "0071",
+      "start": "013341",
+      "end": "013341",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "val21",
+      "sequence": "0071",
+      "start": "013343",
+      "end": "013419",
+      "messages": 77,
+      "first_to_last_s": 7.600298
+    },
+    {
+      "role": "val21",
+      "sequence": "0073",
+      "start": "013864",
+      "end": "013864",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "val21",
+      "sequence": "0073",
+      "start": "013867",
+      "end": "013867",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "val21",
+      "sequence": "0073",
+      "start": "013869",
+      "end": "013870",
+      "messages": 2,
+      "first_to_last_s": 0.10003
+    },
+    {
+      "role": "val21",
+      "sequence": "0073",
+      "start": "013873",
+      "end": "013874",
+      "messages": 2,
+      "first_to_last_s": 0.099391
+    },
+    {
+      "role": "val21",
+      "sequence": "0073",
+      "start": "013876",
+      "end": "013876",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "val21",
+      "sequence": "0073",
+      "start": "013883",
+      "end": "013884",
+      "messages": 2,
+      "first_to_last_s": 0.100089
+    },
+    {
+      "role": "val21",
+      "sequence": "0073",
+      "start": "013886",
+      "end": "013886",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "val21",
+      "sequence": "0073",
+      "start": "013888",
+      "end": "013889",
+      "messages": 2,
+      "first_to_last_s": 0.101236
+    },
+    {
+      "role": "val21",
+      "sequence": "0075",
+      "start": "013998",
+      "end": "014037",
+      "messages": 40,
+      "first_to_last_s": 3.901239
+    },
+    {
+      "role": "val21",
+      "sequence": "0085",
+      "start": "015531",
+      "end": "015577",
+      "messages": 47,
+      "first_to_last_s": 4.601767
+    },
+    {
+      "role": "val21",
+      "sequence": "0086",
+      "start": "015734",
+      "end": "015735",
+      "messages": 2,
+      "first_to_last_s": 0.099921
+    },
+    {
+      "role": "val21",
+      "sequence": "0086",
+      "start": "015737",
+      "end": "015737",
+      "messages": 1,
+      "first_to_last_s": 0.0
+    },
+    {
+      "role": "val21",
+      "sequence": "0086",
+      "start": "015740",
+      "end": "015767",
+      "messages": 28,
+      "first_to_last_s": 2.700358
+    },
+    {
+      "role": "val21",
+      "sequence": "0088",
+      "start": "016037",
+      "end": "016067",
+      "messages": 31,
+      "first_to_last_s": 2.998856
+    },
+    {
+      "role": "val21",
+      "sequence": "0089",
+      "start": "016221",
+      "end": "016267",
+      "messages": 47,
+      "first_to_last_s": 4.600425
+    },
+    {
+      "role": "val21",
+      "sequence": "0092",
+      "start": "016884",
+      "end": "016927",
+      "messages": 42,
+      "first_to_last_s": 4.299083
+    }
+  ],
+  "cal8_zero_coop": {
+    "frames": 35,
+    "objects": 35,
+    "rows": [
+      {
+        "frame": "004810",
+        "sequence": "0025",
+        "inf_frame": "004976",
+        "inf_token": "e4aad57c-7e02-3051-9007-fc84b431c674",
+        "veh_token": "d2c76aeb-256d-318e-a60c-0518418abed3",
+        "raw_road_to_coop_residual": [
+          -1.1135746774224238,
+          0.34459820064956403,
+          0.19585200505582567
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          -1.0000000005838672e-07
+        ],
+        "raw_inf_to_vehicle": [
+          -1.1135746774224238,
+          0.34459820064956403,
+          0.19585210505582573
+        ],
+        "cooperative_location": [
+          18.31316,
+          13.65802,
+          -0.852441
+        ],
+        "raw_inf_location": [
+          53.14047590734617,
+          -20.9086043568694,
+          -0.8508864454361085
+        ],
+        "inf_timestamp_us": 1626161047492477,
+        "veh_timestamp_us": 1626161047502114
+      },
+      {
+        "frame": "004811",
+        "sequence": "0025",
+        "inf_frame": "004977",
+        "inf_token": "4a1776c1-7ecb-3a6b-a417-2d833e273c9a",
+        "veh_token": "4ad6be8e-89c6-3306-9430-46cc2b98938c",
+        "raw_road_to_coop_residual": [
+          -1.0303028661650124,
+          0.3966095957797773,
+          0.12136354254334203
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          3.0000000006413785e-07
+        ],
+        "raw_inf_to_vehicle": [
+          -1.0303028661650124,
+          0.3966095957797773,
+          0.12136324254334196
+        ],
+        "cooperative_location": [
+          18.04652,
+          13.24631,
+          -0.901531
+        ],
+        "raw_inf_location": [
+          53.152430538016645,
+          -20.823596897703982,
+          -0.8468507742620046
+        ],
+        "inf_timestamp_us": 1626161047591994,
+        "veh_timestamp_us": 1626161047602092
+      },
+      {
+        "frame": "004812",
+        "sequence": "0025",
+        "inf_frame": "004978",
+        "inf_token": "85cf4f9e-2cd7-3bd9-a4b2-c0e5988ed0a5",
+        "veh_token": "8e0133be-24eb-323f-acdd-f5dba9e8ac09",
+        "raw_road_to_coop_residual": [
+          -1.0937387812948742,
+          0.4122004765626244,
+          0.06390896718403283
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          -2.0000000000575113e-07
+        ],
+        "raw_inf_to_vehicle": [
+          -1.0937387812948742,
+          0.4122004765626244,
+          0.06390916718403283
+        ],
+        "cooperative_location": [
+          17.70251,
+          12.83972,
+          -0.90517
+        ],
+        "raw_inf_location": [
+          53.156485506369215,
+          -20.86816257386962,
+          -0.7679799223115529
+        ],
+        "inf_timestamp_us": 1626161047689508,
+        "veh_timestamp_us": 1626161047702046
+      },
+      {
+        "frame": "004813",
+        "sequence": "0025",
+        "inf_frame": "004979",
+        "inf_token": "8be2cd29-9226-33cc-a111-7a76a8052adf",
+        "veh_token": "460c576b-00fc-3003-b213-76a7639340d7",
+        "raw_road_to_coop_residual": [
+          -1.134958916556517,
+          0.44030941069831897,
+          0.0999014615421211
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          2.0000000000575113e-07
+        ],
+        "raw_inf_to_vehicle": [
+          -1.134958916556517,
+          0.44030941069831897,
+          0.09990126154212109
+        ],
+        "cooperative_location": [
+          17.35191,
+          12.47289,
+          -0.858882
+        ],
+        "raw_inf_location": [
+          53.14666078361394,
+          -20.875675039930627,
+          -0.7523700727030604
+        ],
+        "inf_timestamp_us": 1626161047798554,
+        "veh_timestamp_us": 1626161047801967
+      },
+      {
+        "frame": "004814",
+        "sequence": "0025",
+        "inf_frame": "004980",
+        "inf_token": "0bd3165a-66dd-3deb-8564-f6f2ae75c3cd",
+        "veh_token": "f72e878d-bed2-38a3-883b-16c623b79618",
+        "raw_road_to_coop_residual": [
+          -1.0765306561484316,
+          0.35528721467089497,
+          0.20523082135344317
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          -2.0000000000575113e-07
+        ],
+        "raw_inf_to_vehicle": [
+          -1.0765306561484316,
+          0.35528721467089497,
+          0.20523102135344318
+        ],
+        "cooperative_location": [
+          17.02259,
+          12.09554,
+          -0.847462
+        ],
+        "raw_inf_location": [
+          53.27539908743001,
+          -20.886751494627163,
+          -0.8553875635947481
+        ],
+        "inf_timestamp_us": 1626161047889124,
+        "veh_timestamp_us": 1626161047901908
+      },
+      {
+        "frame": "004815",
+        "sequence": "0025",
+        "inf_frame": "004981",
+        "inf_token": "cc922272-468e-3aad-8b03-e2a0d80f36e5",
+        "veh_token": "7ac7820a-692b-3d61-ab85-cc5a309a6dd5",
+        "raw_road_to_coop_residual": [
+          -1.0365445714722092,
+          0.5276808147857501,
+          0.14659851902997156
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          2.0000000000575113e-07
+        ],
+        "raw_inf_to_vehicle": [
+          -1.0365445714722092,
+          0.5276808147857501,
+          0.14659831902997156
+        ],
+        "cooperative_location": [
+          16.62074,
+          11.73179,
+          -0.884202
+        ],
+        "raw_inf_location": [
+          53.13625489904964,
+          -20.747408654455995,
+          -0.8281278743046938
+        ],
+        "inf_timestamp_us": 1626161047990371,
+        "veh_timestamp_us": 1626161048001837
+      },
+      {
+        "frame": "004816",
+        "sequence": "0025",
+        "inf_frame": "004982",
+        "inf_token": "d080cd98-3c69-3024-b9ae-7a5d353ab7d9",
+        "veh_token": "a6e65145-7e73-3aec-86e1-749421cd6d64",
+        "raw_road_to_coop_residual": [
+          -1.0330638714385287,
+          0.5338109137252935,
+          0.09873000793818931
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          -2.0000000000575113e-07
+        ],
+        "raw_inf_to_vehicle": [
+          -1.0330638714385287,
+          0.5338109137252935,
+          0.09873020793818932
+        ],
+        "cooperative_location": [
+          16.27439,
+          11.39254,
+          -0.92803
+        ],
+        "raw_inf_location": [
+          53.15113171435601,
+          -20.806046385411218,
+          -0.7935539676570906
+        ],
+        "inf_timestamp_us": 1626161048087617,
+        "veh_timestamp_us": 1626161048101751
+      },
+      {
+        "frame": "004817",
+        "sequence": "0025",
+        "inf_frame": "004983",
+        "inf_token": "924fe641-48a9-3303-9498-ea60e65536f8",
+        "veh_token": "7efa74e3-5f34-3eab-b5b9-823c13ca33cf",
+        "raw_road_to_coop_residual": [
+          -1.1701842908070486,
+          0.5157225829508292,
+          -0.08682866427229818
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -1.1701842908070486,
+          0.5157225829508292,
+          -0.08682866427229818
+        ],
+        "cooperative_location": [
+          15.81253,
+          11.07067,
+          -1.038866
+        ],
+        "raw_inf_location": [
+          53.152514333616246,
+          -20.874639505887643,
+          -0.6637290360867061
+        ],
+        "inf_timestamp_us": 1626161048187727,
+        "veh_timestamp_us": 1626161048201709
+      },
+      {
+        "frame": "004818",
+        "sequence": "0025",
+        "inf_frame": "004984",
+        "inf_token": "8a92457e-0f06-37fd-ae53-eef61e6c61ac",
+        "veh_token": "d3a8a23b-c556-3127-913c-f3e672eca06a",
+        "raw_road_to_coop_residual": [
+          -1.0942036385377438,
+          0.4592291399936297,
+          0.07712065917528066
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -1.0942036385377438,
+          0.4592291399936297,
+          0.07712065917528066
+        ],
+        "cooperative_location": [
+          15.44384,
+          10.72807,
+          -1.069247
+        ],
+        "raw_inf_location": [
+          53.19252106691861,
+          -20.88313148526732,
+          -0.7971018569738053
+        ],
+        "inf_timestamp_us": 1626161048286687,
+        "veh_timestamp_us": 1626161048301704
+      },
+      {
+        "frame": "004819",
+        "sequence": "0025",
+        "inf_frame": "004985",
+        "inf_token": "00f80f40-bd4d-3873-99fb-a875250a9efb",
+        "veh_token": "b7ed361e-08f8-3cd7-834b-3f60ea47d60b",
+        "raw_road_to_coop_residual": [
+          -1.2084302550503079,
+          0.562213666740087,
+          0.09535763818153153
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -1.2084302550503079,
+          0.562213666740087,
+          0.09535763818153153
+        ],
+        "cooperative_location": [
+          14.88188,
+          10.51459,
+          -1.052882
+        ],
+        "raw_inf_location": [
+          53.17512042292757,
+          -20.848634313750683,
+          -0.7555009887159176
+        ],
+        "inf_timestamp_us": 1626161048379877,
+        "veh_timestamp_us": 1626161048401703
+      },
+      {
+        "frame": "004820",
+        "sequence": "0025",
+        "inf_frame": "004986",
+        "inf_token": "f820a7c2-b640-376e-8b7d-5b1fba7d75c6",
+        "veh_token": "6ffb01bb-abaa-38a2-a6d8-e7f77c3a29e4",
+        "raw_road_to_coop_residual": [
+          -1.169696392436844,
+          0.5386885089753353,
+          0.10551816531381752
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -1.169696392436844,
+          0.5386885089753353,
+          0.10551816531381752
+        ],
+        "cooperative_location": [
+          14.48471,
+          10.2155,
+          -1.07693
+        ],
+        "raw_inf_location": [
+          53.188867385755756,
+          -20.889693491976768,
+          -0.7886797131203815
+        ],
+        "inf_timestamp_us": 1626161048479555,
+        "veh_timestamp_us": 1626161048501746
+      },
+      {
+        "frame": "004821",
+        "sequence": "0025",
+        "inf_frame": "004987",
+        "inf_token": "810fb3fa-f353-337f-8937-7d3e1d562f6f",
+        "veh_token": "d960077b-6ce0-32b2-ba82-5b63a7f3d5cc",
+        "raw_road_to_coop_residual": [
+          -1.2402669430535784,
+          0.5268528317403618,
+          0.12871230834852532
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -1.2402669430535784,
+          0.5268528317403618,
+          0.12871230834852532
+        ],
+        "cooperative_location": [
+          13.99836,
+          9.966796,
+          -1.050105
+        ],
+        "raw_inf_location": [
+          53.204741809306334,
+          -20.927374798760095,
+          -0.7868945813151234
+        ],
+        "inf_timestamp_us": 1626161048579652,
+        "veh_timestamp_us": 1626161048601819
+      },
+      {
+        "frame": "004822",
+        "sequence": "0025",
+        "inf_frame": "004988",
+        "inf_token": "640c3bf5-a21a-3c40-a1ee-d0d2c3ef9656",
+        "veh_token": "fa309658-247e-3e31-af57-f6a8c2596011",
+        "raw_road_to_coop_residual": [
+          -1.2531192028357072,
+          0.6494223852465524,
+          0.13228322461632813
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -1.2531192028357072,
+          0.6494223852465524,
+          0.13228322461632813
+        ],
+        "cooperative_location": [
+          13.57354,
+          9.724615,
+          -1.076786
+        ],
+        "raw_inf_location": [
+          53.10962553265714,
+          -20.988135513418825,
+          -0.8287379596017823
+        ],
+        "inf_timestamp_us": 1626161048679428,
+        "veh_timestamp_us": 1626161048701905
+      },
+      {
+        "frame": "004823",
+        "sequence": "0025",
+        "inf_frame": "004989",
+        "inf_token": "a32c5a5c-990d-3ee4-b122-9d3a301e1b3d",
+        "veh_token": "99eac60d-948c-3752-be07-def3810a4386",
+        "raw_road_to_coop_residual": [
+          -1.1467024995351274,
+          0.6315517844783223,
+          0.12869263801022335
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -1.1467024995351274,
+          0.6315517844783223,
+          0.12869263801022335
+        ],
+        "cooperative_location": [
+          13.10101,
+          9.491919,
+          -1.083592
+        ],
+        "raw_inf_location": [
+          53.16706783724699,
+          -20.879600077318347,
+          -0.8309768024477018
+        ],
+        "inf_timestamp_us": 1626161048783685,
+        "veh_timestamp_us": 1626161048802040
+      },
+      {
+        "frame": "004824",
+        "sequence": "0025",
+        "inf_frame": "004990",
+        "inf_token": "2a6b6fe3-6039-35e9-a873-4587080dff72",
+        "veh_token": "bc15df98-d4c4-3341-817d-5f9a822edad2",
+        "raw_road_to_coop_residual": [
+          -1.0712740451881633,
+          0.6378444709011166,
+          0.12194396597718704
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -1.0712740451881633,
+          0.6378444709011166,
+          0.12194396597718704
+        ],
+        "cooperative_location": [
+          12.63688,
+          9.238206,
+          -1.069174
+        ],
+        "raw_inf_location": [
+          53.17713367314851,
+          -20.84648985055612,
+          -0.7961780804641201
+        ],
+        "inf_timestamp_us": 1626161048881445,
+        "veh_timestamp_us": 1626161048902142
+      },
+      {
+        "frame": "004825",
+        "sequence": "0025",
+        "inf_frame": "004991",
+        "inf_token": "cd28a849-f116-308d-a13d-ce2935d97def",
+        "veh_token": "4b47e372-527f-36a6-8f69-bc2b7261d523",
+        "raw_road_to_coop_residual": [
+          -1.096681480412638,
+          0.4880533401124403,
+          0.12936273221404737
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -1.096681480412638,
+          0.4880533401124403,
+          0.12936273221404737
+        ],
+        "cooperative_location": [
+          12.212,
+          8.933764,
+          -1.061854
+        ],
+        "raw_inf_location": [
+          53.24974882115625,
+          -20.933305211651433,
+          -0.7943335934639872
+        ],
+        "inf_timestamp_us": 1626161048978765,
+        "veh_timestamp_us": 1626161049002235
+      },
+      {
+        "frame": "004826",
+        "sequence": "0025",
+        "inf_frame": "004992",
+        "inf_token": "fad2b80a-a790-3d66-bfc7-b81bcd98e8cd",
+        "veh_token": "3179b5bc-556e-3cb9-9ee4-48d232be120a",
+        "raw_road_to_coop_residual": [
+          -1.0149915809731436,
+          0.6789129208396201,
+          0.15701381791969737
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -1.0149915809731436,
+          0.6789129208396201,
+          0.15701381791969737
+        ],
+        "cooperative_location": [
+          11.68472,
+          8.792329,
+          -1.078406
+        ],
+        "raw_inf_location": [
+          53.171476530002785,
+          -20.840147970975245,
+          -0.8523441222441512
+        ],
+        "inf_timestamp_us": 1626161049078080,
+        "veh_timestamp_us": 1626161049102516
+      },
+      {
+        "frame": "004827",
+        "sequence": "0025",
+        "inf_frame": "004993",
+        "inf_token": "29b65422-adee-3d4e-bc66-83c211f53af3",
+        "veh_token": "86682720-e959-36a9-a960-d810ed953f87",
+        "raw_road_to_coop_residual": [
+          -0.9860771300569766,
+          0.6452714461108009,
+          0.09935957517140048
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -0.9860771300569766,
+          0.6452714461108009,
+          0.09935957517140048
+        ],
+        "cooperative_location": [
+          11.1875,
+          8.566056,
+          -1.037118
+        ],
+        "raw_inf_location": [
+          53.20400939455719,
+          -20.857029700159487,
+          -0.7761000529211408
+        ],
+        "inf_timestamp_us": 1626161049178185,
+        "veh_timestamp_us": 1626161049203051
+      },
+      {
+        "frame": "004828",
+        "sequence": "0025",
+        "inf_frame": "004994",
+        "inf_token": "1d63e35a-86bd-3975-824a-d7ae26cae49d",
+        "veh_token": "5ea6088e-c78b-3e3c-aa31-58e5383164bc",
+        "raw_road_to_coop_residual": [
+          -1.0952211021387441,
+          0.6460745589064381,
+          0.14228982866069106
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -1.0952211021387441,
+          0.6460745589064381,
+          0.14228982866069106
+        ],
+        "cooperative_location": [
+          10.65513,
+          8.406986,
+          -1.072597
+        ],
+        "raw_inf_location": [
+          53.238200035841835,
+          -20.940782161170862,
+          -0.8711095513723786
+        ],
+        "inf_timestamp_us": 1626161049279109,
+        "veh_timestamp_us": 1626161049302285
+      },
+      {
+        "frame": "004829",
+        "sequence": "0025",
+        "inf_frame": "004995",
+        "inf_token": "dba71c51-3e11-39ad-b06b-d3fe0613f31a",
+        "veh_token": "29d4b2b8-f194-3961-bc01-983d12715d35",
+        "raw_road_to_coop_residual": [
+          -0.9264232456800361,
+          0.7436343090350963,
+          0.10182902360356616
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -0.9264232456800361,
+          0.7436343090350963,
+          0.10182902360356616
+        ],
+        "cooperative_location": [
+          10.18559,
+          8.246581,
+          -1.066991
+        ],
+        "raw_inf_location": [
+          53.19461499283646,
+          -20.85209505946174,
+          -0.8319117541608803
+        ],
+        "inf_timestamp_us": 1626161049379820,
+        "veh_timestamp_us": 1626161049402304
+      },
+      {
+        "frame": "004830",
+        "sequence": "0025",
+        "inf_frame": "004996",
+        "inf_token": "ff4b1ac6-4f50-3837-91eb-0c3ddc6f9454",
+        "veh_token": "16b05353-f1a0-3def-a08d-822d233b5ca1",
+        "raw_road_to_coop_residual": [
+          -1.001276101627841,
+          0.6451818796786464,
+          0.0894780750392441
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -1.001276101627841,
+          0.6451818796786464,
+          0.0894780750392441
+        ],
+        "cooperative_location": [
+          9.661081,
+          7.988369,
+          -1.07316
+        ],
+        "raw_inf_location": [
+          53.21752302203908,
+          -20.921022840969396,
+          -0.8170995377170733
+        ],
+        "inf_timestamp_us": 1626161049475255,
+        "veh_timestamp_us": 1626161049502204
+      },
+      {
+        "frame": "004831",
+        "sequence": "0025",
+        "inf_frame": "004997",
+        "inf_token": "8fc19e75-6bd8-301d-953c-007165a8bd69",
+        "veh_token": "d969fd13-9f26-3513-94da-5ac06df79ade",
+        "raw_road_to_coop_residual": [
+          -0.9133020563036052,
+          0.683074222989748,
+          0.07131666620307864
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -0.9133020563036052,
+          0.683074222989748,
+          0.07131666620307864
+        ],
+        "cooperative_location": [
+          9.100864,
+          7.85086,
+          -1.163169
+        ],
+        "raw_inf_location": [
+          53.22682921135536,
+          -20.792582746937704,
+          -0.8486481750616095
+        ],
+        "inf_timestamp_us": 1626161049576382,
+        "veh_timestamp_us": 1626161049602151
+      },
+      {
+        "frame": "004832",
+        "sequence": "0025",
+        "inf_frame": "004998",
+        "inf_token": "7c0bf870-240e-3141-8596-14b0a50e5ffe",
+        "veh_token": "8e03058a-ca0f-3528-9162-a44969352241",
+        "raw_road_to_coop_residual": [
+          -0.894371401183319,
+          0.8186716445033806,
+          0.08441525500781188
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -0.894371401183319,
+          0.8186716445033806,
+          0.08441525500781188
+        ],
+        "cooperative_location": [
+          8.59009,
+          7.683849,
+          -1.177642
+        ],
+        "raw_inf_location": [
+          53.11335790882754,
+          -20.82894313204315,
+          -0.8018017741416346
+        ],
+        "inf_timestamp_us": 1626161049667953,
+        "veh_timestamp_us": 1626161049702096
+      },
+      {
+        "frame": "004833",
+        "sequence": "0025",
+        "inf_frame": "004999",
+        "inf_token": "80930de5-f817-3fa7-b915-ef18c4edc29b",
+        "veh_token": "28deeebb-0a5c-30ae-b268-e9b5f0fa0505",
+        "raw_road_to_coop_residual": [
+          -0.9907788425826975,
+          0.6513325742853224,
+          0.13140787068301196
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -0.9907788425826975,
+          0.6513325742853224,
+          0.13140787068301196
+        ],
+        "cooperative_location": [
+          8.052459,
+          7.529146,
+          -1.153723
+        ],
+        "raw_inf_location": [
+          53.27429855618036,
+          -20.929213162048352,
+          -0.8081439009771296
+        ],
+        "inf_timestamp_us": 1626161049768795,
+        "veh_timestamp_us": 1626161049802166
+      },
+      {
+        "frame": "004834",
+        "sequence": "0025",
+        "inf_frame": "005000",
+        "inf_token": "635078c7-00bf-34b5-88e4-033da78cb463",
+        "veh_token": "d5abe882-d381-3bb7-9c43-5b33a0650ade",
+        "raw_road_to_coop_residual": [
+          -0.9358122400702928,
+          0.7800676589183375,
+          0.11237485257338853
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -0.9358122400702928,
+          0.7800676589183375,
+          0.11237485257338853
+        ],
+        "cooperative_location": [
+          7.480178,
+          7.451176,
+          -1.141935
+        ],
+        "raw_inf_location": [
+          53.2244041031103,
+          -20.895916686105913,
+          -0.7921310286890222
+        ],
+        "inf_timestamp_us": 1626161049871849,
+        "veh_timestamp_us": 1626161049902351
+      },
+      {
+        "frame": "004835",
+        "sequence": "0025",
+        "inf_frame": "005001",
+        "inf_token": "fbad212e-677c-316c-a8dc-2b4ea4003f0e",
+        "veh_token": "17e2e362-0842-3b41-ac85-64084c0294f9",
+        "raw_road_to_coop_residual": [
+          -0.9312615057660967,
+          0.8395401314319759,
+          0.1669568190789381
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -0.9312615057660967,
+          0.8395401314319759,
+          0.1669568190789381
+        ],
+        "cooperative_location": [
+          6.925929,
+          7.283308,
+          -1.150069
+        ],
+        "raw_inf_location": [
+          53.13255735325959,
+          -20.895288283513167,
+          -0.8626950191625218
+        ],
+        "inf_timestamp_us": 1626161049967291,
+        "veh_timestamp_us": 1626161050002534
+      },
+      {
+        "frame": "004836",
+        "sequence": "0025",
+        "inf_frame": "005002",
+        "inf_token": "a17a96c8-d923-302f-91a4-e8069c977167",
+        "veh_token": "3c5fcd2d-35ca-3feb-a5f0-d70361e30730",
+        "raw_road_to_coop_residual": [
+          -0.9387610261223784,
+          0.895483157122138,
+          0.1928629346861226
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -0.9387610261223784,
+          0.895483157122138,
+          0.1928629346861226
+        ],
+        "cooperative_location": [
+          6.332649,
+          7.260481,
+          -1.162826
+        ],
+        "raw_inf_location": [
+          53.18454802621185,
+          -20.920335945762528,
+          -0.8981875939543773
+        ],
+        "inf_timestamp_us": 1626161050077566,
+        "veh_timestamp_us": 1626161050102778
+      },
+      {
+        "frame": "004837",
+        "sequence": "0025",
+        "inf_frame": "005003",
+        "inf_token": "3d468999-24bc-3e8b-ba8e-e835d8dd4f85",
+        "veh_token": "45ad8610-e773-3dd8-9ba9-fe06e3bdb0f0",
+        "raw_road_to_coop_residual": [
+          -0.9644606441713517,
+          0.8598211802756053,
+          0.06340554329365511
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -0.9644606441713517,
+          0.8598211802756053,
+          0.06340554329365511
+        ],
+        "cooperative_location": [
+          5.747928,
+          7.103995,
+          -1.175479
+        ],
+        "raw_inf_location": [
+          53.167590400943425,
+          -20.936317095609066,
+          -0.7669586461889084
+        ],
+        "inf_timestamp_us": 1626161050169666,
+        "veh_timestamp_us": 1626161050201978
+      },
+      {
+        "frame": "004838",
+        "sequence": "0025",
+        "inf_frame": "005004",
+        "inf_token": "a75c37fe-3658-3cc6-89f9-98a71fabdb3e",
+        "veh_token": "034a3de8-1cbd-321a-a807-f214cbf4fd0a",
+        "raw_road_to_coop_residual": [
+          -0.9310682576307281,
+          0.9002841124956511,
+          0.1458921539435427
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -0.9310682576307281,
+          0.9002841124956511,
+          0.1458921539435427
+        ],
+        "cooperative_location": [
+          5.150056,
+          7.05649,
+          -1.196383
+        ],
+        "raw_inf_location": [
+          53.18262192146424,
+          -20.93572627124788,
+          -0.851801502389991
+        ],
+        "inf_timestamp_us": 1626161050267467,
+        "veh_timestamp_us": 1626161050302895
+      },
+      {
+        "frame": "004839",
+        "sequence": "0025",
+        "inf_frame": "005005",
+        "inf_token": "9747a6e5-0e10-3b68-a4b1-4453a441f4b3",
+        "veh_token": "3a95115b-6cd3-35de-9435-fc76cd94590e",
+        "raw_road_to_coop_residual": [
+          -1.081930243890687,
+          0.7750671182902975,
+          0.15800899255685863
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -1.081930243890687,
+          0.7750671182902975,
+          0.15800899255685863
+        ],
+        "cooperative_location": [
+          4.559203,
+          6.924285,
+          -1.188304
+        ],
+        "raw_inf_location": [
+          53.28123777815893,
+          -21.12836026627002,
+          -0.8467334518296488
+        ],
+        "inf_timestamp_us": 1626161050367247,
+        "veh_timestamp_us": 1626161050402915
+      },
+      {
+        "frame": "004840",
+        "sequence": "0025",
+        "inf_frame": "005006",
+        "inf_token": "549a8b11-06b9-36fc-b3eb-c33443daa933",
+        "veh_token": "ea86050c-e69c-36f2-bdce-64e4621f35f8",
+        "raw_road_to_coop_residual": [
+          -0.9067934367306227,
+          0.8289748040702367,
+          0.15408090265274077
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -0.9067934367306227,
+          0.8289748040702367,
+          0.15408090265274077
+        ],
+        "cooperative_location": [
+          3.935544,
+          6.859798,
+          -1.165443
+        ],
+        "raw_inf_location": [
+          53.22494018258099,
+          -20.933145201361626,
+          -0.8134560967542503
+        ],
+        "inf_timestamp_us": 1626161050465459,
+        "veh_timestamp_us": 1626161050502897
+      },
+      {
+        "frame": "004841",
+        "sequence": "0025",
+        "inf_frame": "005007",
+        "inf_token": "5feecd29-9ae5-3f2a-ad2c-92e9ad75ceae",
+        "veh_token": "58843e3f-8811-38bc-a80c-b08424f99e9e",
+        "raw_road_to_coop_residual": [
+          -0.9320419267161446,
+          0.8732861270783276,
+          0.2064526203923187
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -0.9320419267161446,
+          0.8732861270783276,
+          0.2064526203923187
+        ],
+        "cooperative_location": [
+          3.304404,
+          6.800085,
+          -1.147807
+        ],
+        "raw_inf_location": [
+          53.184489206147035,
+          -20.94012706292586,
+          -0.8555897233196559
+        ],
+        "inf_timestamp_us": 1626161050565701,
+        "veh_timestamp_us": 1626161050602639
+      },
+      {
+        "frame": "004842",
+        "sequence": "0025",
+        "inf_frame": "005008",
+        "inf_token": "0373388c-5453-3b30-b9ea-ce68079f7187",
+        "veh_token": "67d72679-666d-3d5c-a646-1942f3f82e57",
+        "raw_road_to_coop_residual": [
+          -0.8521059862698719,
+          0.8903176674968742,
+          0.1940063702290511
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -0.8521059862698719,
+          0.8903176674968742,
+          0.1940063702290511
+        ],
+        "cooperative_location": [
+          2.686597,
+          6.803956,
+          -1.157007
+        ],
+        "raw_inf_location": [
+          53.22695746418176,
+          -20.907004889413244,
+          -0.855954848034175
+        ],
+        "inf_timestamp_us": 1626161050665846,
+        "veh_timestamp_us": 1626161050702721
+      },
+      {
+        "frame": "004843",
+        "sequence": "0025",
+        "inf_frame": "005009",
+        "inf_token": "a3bc12a9-d1ad-3310-9bca-a675f19fd351",
+        "veh_token": "838c7cd7-d92c-39c1-9b00-a1300bea0406",
+        "raw_road_to_coop_residual": [
+          -0.5696229426941692,
+          0.7786190219158167,
+          0.2527124012818509
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -0.5696229426941692,
+          0.7786190219158167,
+          0.2527124012818509
+        ],
+        "cooperative_location": [
+          2.013341,
+          6.708858,
+          -1.056866
+        ],
+        "raw_inf_location": [
+          53.24946327964396,
+          -20.62619247062057,
+          -0.826520045940307
+        ],
+        "inf_timestamp_us": 1626161050766883,
+        "veh_timestamp_us": 1626161050802666
+      },
+      {
+        "frame": "004844",
+        "sequence": "0025",
+        "inf_frame": "005010",
+        "inf_token": "9fcafbc6-c25e-3db8-b7db-f236fe075c40",
+        "veh_token": "02b9730a-27c5-3d4a-a8c3-5c3a96dbba28",
+        "raw_road_to_coop_residual": [
+          -0.7259282256607289,
+          0.9345826897989191,
+          0.17139583012170556
+        ],
+        "raw_veh_to_coop_residual": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_inf_to_vehicle": [
+          -0.7259282256607289,
+          0.9345826897989191,
+          0.17139583012170556
+        ],
+        "cooperative_location": [
+          1.403715,
+          6.687161,
+          -1.096988
+        ],
+        "raw_inf_location": [
+          53.13780082946622,
+          -20.82497382438988,
+          -0.7729545175592056
+        ],
+        "inf_timestamp_us": 1626161050864058,
+        "veh_timestamp_us": 1626161050902774
+      }
+    ],
+    "interpretation": "Exact zero with coop is not assumed missing; raw vehicle/roadside and cooperative label deltas reported per object. Source fields do not themselves prove offset computability."
+  },
+  "missing_lineage": {},
+  "confirmed_zero_placeholder_unadjusted_GT": true,
+  "scope": "Direct label construction relative to public calibration; not physical pose truth. Exact-zero and co-labelled populations are NOT complements."
+}

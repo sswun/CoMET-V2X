@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-11-05T10:22:33+08:00",
+  "status": "complete_independently_reviewed",
+  "decision": {
+    "path": "artifacts/research_autopilot/status_audit_20261105_peer20/R7_preregistered_read/decision.json",
+    "sha256": "2587b5a5fa56d258aade666b6a7dfa1b76f68bcc4e89a6085acf4229de34718e",
+    "bytes": 1745
+  },
+  "panels": {
+    "path": "artifacts/research_autopilot/status_audit_20261105_peer20/R7_preregistered_read/panels.json",
+    "sha256": "0963149263c3dc81e527d7b0361b6b9515b6910915ca67c7f835a63531aac8dd",
+    "bytes": 15012
+  }
+}

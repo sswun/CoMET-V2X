@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-11-05T12:11:52+08:00",
+  "status": "passed",
+  "cells": 71589,
+  "issues": [],
+  "sources": 209,
+  "tables": 31,
+  "scope": "Independent source-pointer, units, mean/SD and CSV serialization check.\n\nUses stdlib statistics/math, not generator arithmetic. This is a table review,\nnot an independent experimental matching or bootstrap implementation.\n",
+  "reviewer": {
+    "path": "preexperiment/research_autopilot/review_peer17_final_tables_v2_20261104.py",
+    "sha256": "6a910613bbbb53302d9a086dac844b867ab900b40688549332a9f6cfc672c704",
+    "bytes": 2559
+  },
+  "manifest": {
+    "path": "docs/paper_draft_v0_20261103/final_tables_v3/manifest.json",
+    "sha256": "6faab93b56e89322de72030fea1f3884a30e7ed48ee44d12dc777c7f464cc40f",
+    "bytes": 16658
+  }
+}

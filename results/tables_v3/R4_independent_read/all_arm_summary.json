@@ -1,0 +1,326 @@
+[
+  {
+    "role": "val21",
+    "threshold": 50,
+    "arm": "cbm_gated_KF",
+    "cal_selected": false,
+    "H1_AP": 78.87478592014632,
+    "external_AP": 74.79476322606122,
+    "external_minus_H1": -4.080022694085102
+  },
+  {
+    "role": "val21",
+    "threshold": 50,
+    "arm": "cbm_instant",
+    "cal_selected": false,
+    "H1_AP": 78.87478592014632,
+    "external_AP": 74.45649616676049,
+    "external_minus_H1": -4.418289753385835
+  },
+  {
+    "role": "val21",
+    "threshold": 50,
+    "arm": "cbm_median",
+    "cal_selected": true,
+    "H1_AP": 78.87478592014632,
+    "external_AP": 74.49836921064366,
+    "external_minus_H1": -4.376416709502664
+  },
+  {
+    "role": "val21",
+    "threshold": 50,
+    "arm": "freealign_gated_KF",
+    "cal_selected": false,
+    "H1_AP": 78.87478592014632,
+    "external_AP": 74.84338242331457,
+    "external_minus_H1": -4.031403496831757
+  },
+  {
+    "role": "val21",
+    "threshold": 50,
+    "arm": "freealign_instant",
+    "cal_selected": false,
+    "H1_AP": 78.87478592014632,
+    "external_AP": 74.00684144662627,
+    "external_minus_H1": -4.867944473520055
+  },
+  {
+    "role": "val21",
+    "threshold": 50,
+    "arm": "freealign_median",
+    "cal_selected": false,
+    "H1_AP": 78.87478592014632,
+    "external_AP": 73.97710889078638,
+    "external_minus_H1": -4.89767702935994
+  },
+  {
+    "role": "val21",
+    "threshold": 50,
+    "arm": "roco_gated_KF",
+    "cal_selected": false,
+    "H1_AP": 78.87478592014632,
+    "external_AP": 75.30132184838641,
+    "external_minus_H1": -3.573464071759915
+  },
+  {
+    "role": "val21",
+    "threshold": 50,
+    "arm": "roco_instant",
+    "cal_selected": false,
+    "H1_AP": 78.87478592014632,
+    "external_AP": 75.0940780422552,
+    "external_minus_H1": -3.7807078778911176
+  },
+  {
+    "role": "val21",
+    "threshold": 50,
+    "arm": "roco_median",
+    "cal_selected": false,
+    "H1_AP": 78.87478592014632,
+    "external_AP": 75.06799822542565,
+    "external_minus_H1": -3.8067876947206685
+  },
+  {
+    "role": "val21",
+    "threshold": 70,
+    "arm": "cbm_gated_KF",
+    "cal_selected": false,
+    "H1_AP": 66.62807518598599,
+    "external_AP": 63.88242976470582,
+    "external_minus_H1": -2.745645421280173
+  },
+  {
+    "role": "val21",
+    "threshold": 70,
+    "arm": "cbm_instant",
+    "cal_selected": false,
+    "H1_AP": 66.62807518598599,
+    "external_AP": 64.05955678798303,
+    "external_minus_H1": -2.568518398002965
+  },
+  {
+    "role": "val21",
+    "threshold": 70,
+    "arm": "cbm_median",
+    "cal_selected": true,
+    "H1_AP": 66.62807518598599,
+    "external_AP": 64.00381489324768,
+    "external_minus_H1": -2.624260292738313
+  },
+  {
+    "role": "val21",
+    "threshold": 70,
+    "arm": "freealign_gated_KF",
+    "cal_selected": false,
+    "H1_AP": 66.62807518598599,
+    "external_AP": 63.883727433724665,
+    "external_minus_H1": -2.7443477522613264
+  },
+  {
+    "role": "val21",
+    "threshold": 70,
+    "arm": "freealign_instant",
+    "cal_selected": false,
+    "H1_AP": 66.62807518598599,
+    "external_AP": 63.489768063979085,
+    "external_minus_H1": -3.138307122006907
+  },
+  {
+    "role": "val21",
+    "threshold": 70,
+    "arm": "freealign_median",
+    "cal_selected": false,
+    "H1_AP": 66.62807518598599,
+    "external_AP": 63.535354069644136,
+    "external_minus_H1": -3.092721116341856
+  },
+  {
+    "role": "val21",
+    "threshold": 70,
+    "arm": "roco_gated_KF",
+    "cal_selected": false,
+    "H1_AP": 66.62807518598599,
+    "external_AP": 64.20385907926337,
+    "external_minus_H1": -2.424216106722625
+  },
+  {
+    "role": "val21",
+    "threshold": 70,
+    "arm": "roco_instant",
+    "cal_selected": false,
+    "H1_AP": 66.62807518598599,
+    "external_AP": 64.35984041165086,
+    "external_minus_H1": -2.268234774335127
+  },
+  {
+    "role": "val21",
+    "threshold": 70,
+    "arm": "roco_median",
+    "cal_selected": false,
+    "H1_AP": 66.62807518598599,
+    "external_AP": 64.29654323977046,
+    "external_minus_H1": -2.3315319462155344
+  },
+  {
+    "role": "mechanism_holdout14",
+    "threshold": 50,
+    "arm": "cbm_gated_KF",
+    "cal_selected": false,
+    "H1_AP": 86.98923338392804,
+    "external_AP": 78.81146948978557,
+    "external_minus_H1": -8.177763894142473
+  },
+  {
+    "role": "mechanism_holdout14",
+    "threshold": 50,
+    "arm": "cbm_instant",
+    "cal_selected": false,
+    "H1_AP": 86.98923338392804,
+    "external_AP": 79.264389962306,
+    "external_minus_H1": -7.72484342162204
+  },
+  {
+    "role": "mechanism_holdout14",
+    "threshold": 50,
+    "arm": "cbm_median",
+    "cal_selected": true,
+    "H1_AP": 86.98923338392804,
+    "external_AP": 79.16789808976641,
+    "external_minus_H1": -7.821335294161628
+  },
+  {
+    "role": "mechanism_holdout14",
+    "threshold": 50,
+    "arm": "freealign_gated_KF",
+    "cal_selected": false,
+    "H1_AP": 86.98923338392804,
+    "external_AP": 79.46648728986332,
+    "external_minus_H1": -7.522746094064715
+  },
+  {
+    "role": "mechanism_holdout14",
+    "threshold": 50,
+    "arm": "freealign_instant",
+    "cal_selected": false,
+    "H1_AP": 86.98923338392804,
+    "external_AP": 78.7369447498187,
+    "external_minus_H1": -8.252288634109334
+  },
+  {
+    "role": "mechanism_holdout14",
+    "threshold": 50,
+    "arm": "freealign_median",
+    "cal_selected": false,
+    "H1_AP": 86.98923338392804,
+    "external_AP": 78.6842785877644,
+    "external_minus_H1": -8.304954796163642
+  },
+  {
+    "role": "mechanism_holdout14",
+    "threshold": 50,
+    "arm": "roco_gated_KF",
+    "cal_selected": false,
+    "H1_AP": 86.98923338392804,
+    "external_AP": 81.83185951734878,
+    "external_minus_H1": -5.157373866579263
+  },
+  {
+    "role": "mechanism_holdout14",
+    "threshold": 50,
+    "arm": "roco_instant",
+    "cal_selected": false,
+    "H1_AP": 86.98923338392804,
+    "external_AP": 81.37159060699429,
+    "external_minus_H1": -5.617642776933749
+  },
+  {
+    "role": "mechanism_holdout14",
+    "threshold": 50,
+    "arm": "roco_median",
+    "cal_selected": false,
+    "H1_AP": 86.98923338392804,
+    "external_AP": 81.49433609404188,
+    "external_minus_H1": -5.494897289886154
+  },
+  {
+    "role": "mechanism_holdout14",
+    "threshold": 70,
+    "arm": "cbm_gated_KF",
+    "cal_selected": false,
+    "H1_AP": 72.5692288647541,
+    "external_AP": 66.11159180425622,
+    "external_minus_H1": -6.4576370604978734
+  },
+  {
+    "role": "mechanism_holdout14",
+    "threshold": 70,
+    "arm": "cbm_instant",
+    "cal_selected": false,
+    "H1_AP": 72.5692288647541,
+    "external_AP": 66.62583018737442,
+    "external_minus_H1": -5.943398677379676
+  },
+  {
+    "role": "mechanism_holdout14",
+    "threshold": 70,
+    "arm": "cbm_median",
+    "cal_selected": true,
+    "H1_AP": 72.5692288647541,
+    "external_AP": 66.5444689644202,
+    "external_minus_H1": -6.0247599003338905
+  },
+  {
+    "role": "mechanism_holdout14",
+    "threshold": 70,
+    "arm": "freealign_gated_KF",
+    "cal_selected": false,
+    "H1_AP": 72.5692288647541,
+    "external_AP": 66.35940209441995,
+    "external_minus_H1": -6.209826770334146
+  },
+  {
+    "role": "mechanism_holdout14",
+    "threshold": 70,
+    "arm": "freealign_instant",
+    "cal_selected": false,
+    "H1_AP": 72.5692288647541,
+    "external_AP": 66.09603575057584,
+    "external_minus_H1": -6.473193114178258
+  },
+  {
+    "role": "mechanism_holdout14",
+    "threshold": 70,
+    "arm": "freealign_median",
+    "cal_selected": false,
+    "H1_AP": 72.5692288647541,
+    "external_AP": 66.07692815494265,
+    "external_minus_H1": -6.492300709811445
+  },
+  {
+    "role": "mechanism_holdout14",
+    "threshold": 70,
+    "arm": "roco_gated_KF",
+    "cal_selected": false,
+    "H1_AP": 72.5692288647541,
+    "external_AP": 68.26846625881448,
+    "external_minus_H1": -4.30076260593961
+  },
+  {
+    "role": "mechanism_holdout14",
+    "threshold": 70,
+    "arm": "roco_instant",
+    "cal_selected": false,
+    "H1_AP": 72.5692288647541,
+    "external_AP": 68.11532021014477,
+    "external_minus_H1": -4.453908654609322
+  },
+  {
+    "role": "mechanism_holdout14",
+    "threshold": 70,
+    "arm": "roco_median",
+    "cal_selected": false,
+    "H1_AP": 72.5692288647541,
+    "external_AP": 68.09045834357057,
+    "external_minus_H1": -4.47877052118352
+  }
+]

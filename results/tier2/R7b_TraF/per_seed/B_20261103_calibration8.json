@@ -1,0 +1,586 @@
+[
+  {
+    "wait_ms": 0,
+    "AP": 83.9425069195336,
+    "CI95": [
+      78.4772428081224,
+      87.75806294952436
+    ],
+    "GT": 11143,
+    "conditions": 1247,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "all",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": 100,
+    "AP": 84.22977236856646,
+    "CI95": [
+      80.24704147148074,
+      87.18919490184804
+    ],
+    "GT": 11143,
+    "conditions": 1247,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "all",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": 200,
+    "AP": 84.64610428152541,
+    "CI95": [
+      82.61031729251376,
+      86.5106911799761
+    ],
+    "GT": 11143,
+    "conditions": 1247,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "all",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": 400,
+    "AP": 84.20038551523523,
+    "CI95": [
+      83.198591592078,
+      85.71889683260747
+    ],
+    "GT": 11143,
+    "conditions": 1247,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "all",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": "four_wait_mean",
+    "AP": 84.25469227121518,
+    "CI95": [
+      81.46236234002457,
+      86.59594771048245
+    ],
+    "replicates": 2000,
+    "sequences": 8,
+    "population": "all",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": 0,
+    "AP": 66.27111854766358,
+    "CI95": [
+      50.75765966319258,
+      81.19728150282249
+    ],
+    "GT": 1000,
+    "conditions": 319,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "zero",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": 100,
+    "AP": 67.93637605970848,
+    "CI95": [
+      53.111733641441994,
+      81.78743086070394
+    ],
+    "GT": 1000,
+    "conditions": 319,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "zero",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": 200,
+    "AP": 67.67138781241839,
+    "CI95": [
+      53.28652662106621,
+      81.47676976275565
+    ],
+    "GT": 1000,
+    "conditions": 319,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "zero",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": 400,
+    "AP": 67.5919766819069,
+    "CI95": [
+      53.096278288162104,
+      81.67260361813312
+    ],
+    "GT": 1000,
+    "conditions": 319,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "zero",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": "four_wait_mean",
+    "AP": 67.36771477542433,
+    "CI95": [
+      52.550019427890994,
+      81.5335214361038
+    ],
+    "replicates": 2000,
+    "sequences": 8,
+    "population": "zero",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": 0,
+    "AP": 84.9705403485786,
+    "CI95": [
+      79.24178223224443,
+      89.41394818367428
+    ],
+    "GT": 10347,
+    "conditions": 962,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "colabelled",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": 100,
+    "AP": 85.17204852997156,
+    "CI95": [
+      80.9665359302825,
+      88.68635013219729
+    ],
+    "GT": 10347,
+    "conditions": 962,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "colabelled",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": 200,
+    "AP": 85.64706705636856,
+    "CI95": [
+      83.54048706703567,
+      87.96707019803277
+    ],
+    "GT": 10347,
+    "conditions": 962,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "colabelled",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": 400,
+    "AP": 85.15797862744418,
+    "CI95": [
+      83.96131192757859,
+      87.24000626277808
+    ],
+    "GT": 10347,
+    "conditions": 962,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "colabelled",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": "four_wait_mean",
+    "AP": 85.23690864059071,
+    "CI95": [
+      82.2863978136312,
+      88.03576179516624
+    ],
+    "replicates": 2000,
+    "sequences": 8,
+    "population": "colabelled",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": 0,
+    "AP": 85.80683875810507,
+    "CI95": [
+      79.68999019809749,
+      91.0333396303263
+    ],
+    "GT": 10143,
+    "conditions": 928,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "nonzero",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": 100,
+    "AP": 85.93856953821583,
+    "CI95": [
+      81.24969228521367,
+      90.51282251359784
+    ],
+    "GT": 10143,
+    "conditions": 928,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "nonzero",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": 200,
+    "AP": 86.42745364159825,
+    "CI95": [
+      83.78375148071184,
+      89.75279434618557
+    ],
+    "GT": 10143,
+    "conditions": 928,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "nonzero",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": 400,
+    "AP": 85.95530056743155,
+    "CI95": [
+      84.26871526007949,
+      88.59793304700896
+    ],
+    "GT": 10143,
+    "conditions": 928,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "nonzero",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": "four_wait_mean",
+    "AP": 86.03204062633768,
+    "CI95": [
+      82.58171813628809,
+      89.86500069020275
+    ],
+    "replicates": 2000,
+    "sequences": 8,
+    "population": "nonzero",
+    "threshold": 50,
+    "method": "result"
+  },
+  {
+    "wait_ms": 0,
+    "AP": 66.8537594631151,
+    "CI95": [
+      59.19348896496669,
+      73.28060691462686
+    ],
+    "GT": 11143,
+    "conditions": 1247,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "all",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": 100,
+    "AP": 67.03470126469256,
+    "CI95": [
+      60.15125888623305,
+      72.92432164040555
+    ],
+    "GT": 11143,
+    "conditions": 1247,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "all",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": 200,
+    "AP": 66.9514618985973,
+    "CI95": [
+      60.38353363542734,
+      72.63269007618852
+    ],
+    "GT": 11143,
+    "conditions": 1247,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "all",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": 400,
+    "AP": 66.57020321230557,
+    "CI95": [
+      60.70419149565812,
+      71.96207799183428
+    ],
+    "GT": 11143,
+    "conditions": 1247,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "all",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": "four_wait_mean",
+    "AP": 66.85253145967764,
+    "CI95": [
+      60.12552444312283,
+      72.65675027837733
+    ],
+    "replicates": 2000,
+    "sequences": 8,
+    "population": "all",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": 0,
+    "AP": 59.71435070612154,
+    "CI95": [
+      39.008857572541054,
+      75.87066551910361
+    ],
+    "GT": 1000,
+    "conditions": 319,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "zero",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": 100,
+    "AP": 60.930989059015985,
+    "CI95": [
+      40.566604933594455,
+      76.48479197442396
+    ],
+    "GT": 1000,
+    "conditions": 319,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "zero",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": 200,
+    "AP": 60.832440696161605,
+    "CI95": [
+      40.48169595634187,
+      76.34763385896849
+    ],
+    "GT": 1000,
+    "conditions": 319,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "zero",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": 400,
+    "AP": 60.67707672639357,
+    "CI95": [
+      40.552125576453,
+      76.23769010351401
+    ],
+    "GT": 1000,
+    "conditions": 319,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "zero",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": "four_wait_mean",
+    "AP": 60.538714296923175,
+    "CI95": [
+      40.227441195181214,
+      76.24163534859989
+    ],
+    "replicates": 2000,
+    "sequences": 8,
+    "population": "zero",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": 0,
+    "AP": 67.13546152480198,
+    "CI95": [
+      59.7560853408786,
+      73.4039705281254
+    ],
+    "GT": 10347,
+    "conditions": 962,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "colabelled",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": 100,
+    "AP": 67.26855896112576,
+    "CI95": [
+      60.96268378662558,
+      72.93525369872036
+    ],
+    "GT": 10347,
+    "conditions": 962,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "colabelled",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": 200,
+    "AP": 67.18608503422374,
+    "CI95": [
+      61.15238295060976,
+      72.70102784752466
+    ],
+    "GT": 10347,
+    "conditions": 962,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "colabelled",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": 400,
+    "AP": 66.77647998080411,
+    "CI95": [
+      61.446870129881546,
+      72.07995001679893
+    ],
+    "GT": 10347,
+    "conditions": 962,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "colabelled",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": "four_wait_mean",
+    "AP": 67.0916463752389,
+    "CI95": [
+      60.88393953657679,
+      72.68722552266938
+    ],
+    "replicates": 2000,
+    "sequences": 8,
+    "population": "colabelled",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": 0,
+    "AP": 67.57460095932795,
+    "CI95": [
+      59.96278964623839,
+      74.55191283170961
+    ],
+    "GT": 10143,
+    "conditions": 928,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "nonzero",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": 100,
+    "AP": 67.64815930990216,
+    "CI95": [
+      61.07252977072346,
+      74.08577081289829
+    ],
+    "GT": 10143,
+    "conditions": 928,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "nonzero",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": 200,
+    "AP": 67.56516417446059,
+    "CI95": [
+      61.312025821963545,
+      73.78182007072971
+    ],
+    "GT": 10143,
+    "conditions": 928,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "nonzero",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": 400,
+    "AP": 67.16642198242482,
+    "CI95": [
+      61.66595489294811,
+      73.02124693801802
+    ],
+    "GT": 10143,
+    "conditions": 928,
+    "sequences": 8,
+    "replicates": 2000,
+    "population": "nonzero",
+    "threshold": 70,
+    "method": "result"
+  },
+  {
+    "wait_ms": "four_wait_mean",
+    "AP": 67.48858660652888,
+    "CI95": [
+      60.978837193505456,
+      73.78436884699278
+    ],
+    "replicates": 2000,
+    "sequences": 8,
+    "population": "nonzero",
+    "threshold": 70,
+    "method": "result"
+  }
+]

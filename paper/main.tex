@@ -1,0 +1,69 @@
+% CoMET manuscript (preprint version). Build: latexmk -pdf main.tex
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{xspace}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,backgrounds,calc,shapes.geometric}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks,allcolors=blue!55!black,breaklinks]{hyperref}
+\usepackage[capitalise,nameinlink]{cleveref}
+
+\captionsetup{font=small,labelfont=bf}
+\setlist{itemsep=2pt,topsep=3pt}
+\emergencystretch=3em
+\newtheorem{proposition}{Proposition}
+
+\newcommand{\method}{CoMET\xspace}
+\newcommand{\apseven}{AP@0.7\xspace}
+\newcommand{\apfive}{AP@0.5\xspace}
+\newcommand{\pp}{\,pp\xspace}
+\newcommand{\ie}{i.e.,\xspace}
+\newcommand{\eg}{e.g.,\xspace}
+% Expandable input for table bodies inside tabular environments.
+\makeatletter\newcommand{\tabinput}[1]{\@@input #1 }\makeatother
+
+\title{\method: Tracking the Shared Pose Error of Roadside Messages\\for Asynchronous Vehicle--Infrastructure Cooperative 3D Detection}
+\author{Shuwei Sun \qquad Jian Huang \qquad Hui Cao\\[3pt]
+  \small Xi'an Jiaotong University}
+\date{}
+\hypersetup{
+  pdftitle={CoMET: Tracking the Shared Pose Error of Roadside Messages for Asynchronous Vehicle-Infrastructure Cooperative 3D Detection},
+  pdfauthor={Shuwei Sun, Jian Huang, Hui Cao}
+}
+
+\begin{document}
+\maketitle
+
+\input{sec/0_abstract}
+\input{sec/1_intro}
+\input{sec/2_related}
+\input{sec/3_problem}
+\input{sec/4_method}
+\input{sec/5_protocol}
+\input{sec/6_results}
+\input{sec/7_discussion}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\clearpage
+\appendix
+\input{sec/A_appendix}
+
+\end{document}

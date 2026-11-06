@@ -1,0 +1,17 @@
+{
+  "source": {
+    "path": "artifacts/research_autopilot/status_audit_20261105_peer20/R7_resource_recovery_v3/seed20261103/mechanism_holdout14/terminal.json",
+    "sha256": "e8ad9146612f6629974972876d71036d03d57408cdc2f95089c431657cd0120d",
+    "bytes": 652
+  },
+  "records": {
+    "path": "artifacts/research_autopilot/status_audit_20261105_peer20/R7_resource_recovery_v3/seed20261103/mechanism_holdout14/records.json",
+    "sha256": "4738a69bf4f1949bdbcadb3a5eb31962a498cff715b2532fecfb4f9b2ff66150",
+    "bytes": 2621275
+  },
+  "seed": 20261103,
+  "input": "ONLINE_K1",
+  "model": "clean",
+  "GT_join": true,
+  "ROI": "original official common"
+}

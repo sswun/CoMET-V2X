@@ -1,0 +1,28 @@
+{
+  "created_at": "2026-11-05T19:02:52+08:00",
+  "selected_tier": "A",
+  "checks": {
+    "PUBLIC_AP50_CI_low_positive": true,
+    "PUBLIC_AP70_CI_low_positive": true,
+    "H1_AP50_at_least1pp": true,
+    "H1_AP50_CI_low_positive": true,
+    "H1_AP70_at_least_minus030": true
+  },
+  "qualifies": true,
+  "hold14_reported_not_gate": true,
+  "all_seed_same_sign_not_gate": true,
+  "main_method_unchanged": "CoMET_H1",
+  "no_automatic_root_table_mutation": true,
+  "disposition": "main_conversation_second_tier_eligible",
+  "H1_reference": "final three frozen heads mean; preview single-head value is not substituted",
+  "contrasts": {
+    "path": "artifacts/research_autopilot/status_audit_20261105_peer21/R7b_analysis/contrasts.json",
+    "sha256": "dc9eec3a372e112fcab3817c2a8cb0e671bb5bd71626ca4aa8f450e9454d0713",
+    "bytes": 112745
+  },
+  "sources": {
+    "path": "artifacts/research_autopilot/status_audit_20261105_peer21/R7b_analysis/source_identities.json",
+    "sha256": "1fc3492f4ae9535536152c82f2956aa619e536c8ba2b7fb229a73711f751c938",
+    "bytes": 18357
+  }
+}

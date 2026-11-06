@@ -1,0 +1,62 @@
+{
+  "created_at": "2026-11-05T09:42:26+08:00",
+  "status": "complete_light_checked",
+  "completed": [
+    {
+      "role": "val21",
+      "method": "clean",
+      "predictions": {
+        "path": "artifacts/research_autopilot/status_audit_20261105_peer20/R7_analysis_seed20261102/val21_clean_predictions.npz",
+        "sha256": "44065b5e6a084a20c3be61a5c204e48c7b4518da79dd4701e8f2b48c52491d45",
+        "bytes": 784281
+      }
+    },
+    {
+      "role": "val21",
+      "method": "original_K4",
+      "predictions": {
+        "path": "artifacts/research_autopilot/status_audit_20261105_peer20/R7_analysis_seed20261102/val21_original_K4_predictions.npz",
+        "sha256": "40229197c9249d27c411a8be3f20265e8d909095927bb1e32fec23d4f09becd2",
+        "bytes": 788242
+      }
+    },
+    {
+      "role": "val21",
+      "method": "PUBLIC_finetuned",
+      "predictions": {
+        "path": "artifacts/research_autopilot/status_audit_20261105_peer20/R7_analysis_seed20261102/val21_PUBLIC_finetuned_predictions.npz",
+        "sha256": "b8558179e11d5a10a136f04a96488d8cb5159556657f287ac7e12f2a4cfb8bb4",
+        "bytes": 783055
+      }
+    },
+    {
+      "role": "mechanism_holdout14",
+      "method": "clean",
+      "predictions": {
+        "path": "artifacts/research_autopilot/status_audit_20261105_peer20/R7_analysis_seed20261102/mechanism_holdout14_clean_predictions.npz",
+        "sha256": "6a96115e09522d405bd615bf277e9316d7c48c9d0bca34dc38427c6c5921112c",
+        "bytes": 580754
+      }
+    },
+    {
+      "role": "mechanism_holdout14",
+      "method": "original_K4",
+      "predictions": {
+        "path": "artifacts/research_autopilot/status_audit_20261105_peer20/R7_analysis_seed20261102/mechanism_holdout14_original_K4_predictions.npz",
+        "sha256": "41a8719c8460eece7382c2d7648a5aa508f7320e1cb4eff91e7b9f9eb1c84444",
+        "bytes": 585008
+      }
+    },
+    {
+      "role": "mechanism_holdout14",
+      "method": "PUBLIC_finetuned",
+      "predictions": {
+        "path": "artifacts/research_autopilot/status_audit_20261105_peer20/R7_analysis_seed20261102/mechanism_holdout14_PUBLIC_finetuned_predictions.npz",
+        "sha256": "cccc906cae4fe3e441938c32c4fbb0f4704a5f64ef37a423db351b744e9a5d3a",
+        "bytes": 586532
+      }
+    }
+  ],
+  "matching_and_statistic_independent": false,
+  "training_shared": true
+}

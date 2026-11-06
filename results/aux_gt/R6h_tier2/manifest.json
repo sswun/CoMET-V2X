@@ -1,0 +1,498 @@
+{
+  "created_at": "2026-11-06T09:06:11+08:00",
+  "rows": 1440,
+  "sources": [
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/mechanism_holdout14_A_20261101_all_gaps_statistics.json",
+        "sha256": "34fce126ad04483ea5cc4cb4c9c39b8fd3dd1e274337952c1560812196a8dddb",
+        "bytes": 12485
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/mechanism_holdout14_A_20261101_all_gaps_statistics.json",
+        "sha256": "40f83df8f796bd58fc533fe299ac838c03ee982c560e4ebddacbd7fcdf175acf",
+        "bytes": 12486
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/mechanism_holdout14_A_20261101_label_median_statistics.json",
+        "sha256": "a0d999d525c7d1ab845fdaeb90a6c61e47a76f0881d85c4539ccef211ffa3b39",
+        "bytes": 12645
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/mechanism_holdout14_A_20261101_label_median_statistics.json",
+        "sha256": "deecf835125aa01d38a737ec61e059bbcf7ba763dd1d7ef364070f729689609b",
+        "bytes": 12647
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/mechanism_holdout14_A_20261102_all_gaps_statistics.json",
+        "sha256": "cca453e5e2289c562e5488d8a8d6bfaa2eb6a842c0acdb66a67af398db041011",
+        "bytes": 12488
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/mechanism_holdout14_A_20261102_all_gaps_statistics.json",
+        "sha256": "28b28b03e9e3337e0261497f671b6d9b3711836f303a1c2d9bf0c420ec2139a5",
+        "bytes": 12490
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/mechanism_holdout14_A_20261102_label_median_statistics.json",
+        "sha256": "9129ccf7c6cd0f228a31462e0e657808ef56db3103790b032430a31fc2ddf3b2",
+        "bytes": 12650
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/mechanism_holdout14_A_20261102_label_median_statistics.json",
+        "sha256": "142f28c972017293ed760e3b5c6300b1801b335598d7d2d8b4ecc9f25ef4e6d1",
+        "bytes": 12656
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/mechanism_holdout14_A_20261103_all_gaps_statistics.json",
+        "sha256": "ce4a021fadc0c213861aa66cb626577e420a342b272e88b140d7a22117d604e4",
+        "bytes": 12490
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/mechanism_holdout14_A_20261103_all_gaps_statistics.json",
+        "sha256": "641041d707435b919628feca6021fc1ca4d704b7bfd409858f6d1820f484e78f",
+        "bytes": 12495
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/mechanism_holdout14_A_20261103_label_median_statistics.json",
+        "sha256": "11a734a9675db88089c20880b308e705b6133a0ec6e99f8e3119cb0e220f64e8",
+        "bytes": 12653
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/mechanism_holdout14_A_20261103_label_median_statistics.json",
+        "sha256": "fd290c39ba4ee24e98272b599d2cf827ed387409eb44f2efbb2c69daaabc8a14",
+        "bytes": 12651
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/mechanism_holdout14_H1_20261101_all_gaps_statistics.json",
+        "sha256": "18a7ed1cbbeaa2c3ffe43effef2a03e92ad163a7bb47dffc20e36d5497ee2e8b",
+        "bytes": 12533
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/mechanism_holdout14_H1_20261101_all_gaps_statistics.json",
+        "sha256": "34fd61a18e82f399417345a23d893508653282bf0f78419adf2b780927b397aa",
+        "bytes": 12511
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/mechanism_holdout14_H1_20261101_label_median_statistics.json",
+        "sha256": "2dd26057fec0b82fa490546c68649550fc828b821c77999f9fc348da55822659",
+        "bytes": 12694
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/mechanism_holdout14_H1_20261101_label_median_statistics.json",
+        "sha256": "8f3a0dcff60249d01de1df193239e44df7d54d8bb9187a4dbc5cbcdf00e789f0",
+        "bytes": 12684
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/mechanism_holdout14_H1_20261102_all_gaps_statistics.json",
+        "sha256": "37b57fe926b3891eaf61f17c217d37bba13cd87d58b0908a18d7b896ca2ead70",
+        "bytes": 12532
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/mechanism_holdout14_H1_20261102_all_gaps_statistics.json",
+        "sha256": "662120415fb3018508c3c1564f672cd25781372806e8870376e2f524a73d693d",
+        "bytes": 12521
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/mechanism_holdout14_H1_20261102_label_median_statistics.json",
+        "sha256": "d4379789d4f67e4a5e9b6ee3d4392a002ae9253685a5ac20592fd8554787e4e9",
+        "bytes": 12696
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/mechanism_holdout14_H1_20261102_label_median_statistics.json",
+        "sha256": "7a35ec12dc059fdbd45ff51619a5d955256da00c810a456901fb29b6638e9b3c",
+        "bytes": 12687
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/mechanism_holdout14_H1_20261103_all_gaps_statistics.json",
+        "sha256": "2775476b8adb0ece03b8768d3e159f12b9bb9b5a21cfce76fea0d3b9fe2eab0e",
+        "bytes": 12526
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/mechanism_holdout14_H1_20261103_all_gaps_statistics.json",
+        "sha256": "4098943a51f37f67511faccf89fda6eea37c281f3f496aaa9af04f445c623198",
+        "bytes": 12524
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/mechanism_holdout14_H1_20261103_label_median_statistics.json",
+        "sha256": "5f3b08a34e41103590e6e6be1735905841b728e1c350ef71346398fb4dc6501a",
+        "bytes": 12690
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/mechanism_holdout14_H1_20261103_label_median_statistics.json",
+        "sha256": "ebd429ce29fe499b84371ff8953021e264f3fbf8eb41fbc28a79bd72ff4639bb",
+        "bytes": 12687
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/mechanism_holdout14_PUBLIC_20261101_all_gaps_statistics.json",
+        "sha256": "327e9c2fe68358f88e6a8b296d3edeae5d3abfaf16366bf18f26246b2ca5876e",
+        "bytes": 12698
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/mechanism_holdout14_PUBLIC_20261101_all_gaps_statistics.json",
+        "sha256": "4b4e280d63464c89b8b661d32bdad8dc5d9875e1502a58e1ad1a6ef9c514f855",
+        "bytes": 12692
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/mechanism_holdout14_PUBLIC_20261101_label_median_statistics.json",
+        "sha256": "e6d04c0846bbd56007fbd386c042f906c91defa4ce5be5b969ddf58c478bd641",
+        "bytes": 12857
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/mechanism_holdout14_PUBLIC_20261101_label_median_statistics.json",
+        "sha256": "884f7a308a77c3eac4d6d6b021328c6ee94da88a518fd18b81312e8f9d6f2822",
+        "bytes": 12849
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/mechanism_holdout14_PUBLIC_20261102_all_gaps_statistics.json",
+        "sha256": "032f0ef253b15898a4a808d4de120b21ce69f011cb584f463d64b8641c50d1cc",
+        "bytes": 12701
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/mechanism_holdout14_PUBLIC_20261102_all_gaps_statistics.json",
+        "sha256": "12486b2c697d4a88f150db4a46f5d32864d9d1a02203b6561728d59d74dd3ac4",
+        "bytes": 12694
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/mechanism_holdout14_PUBLIC_20261102_label_median_statistics.json",
+        "sha256": "2fed86c35c6eaf6a8892e3b94971982219bac02298756c69f5fcb66859a7cf63",
+        "bytes": 12862
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/mechanism_holdout14_PUBLIC_20261102_label_median_statistics.json",
+        "sha256": "0745dfdc23ad0f24827e9b43fa1ac65903ff343836c408e8474dadc99f85ac76",
+        "bytes": 12851
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/mechanism_holdout14_PUBLIC_20261103_all_gaps_statistics.json",
+        "sha256": "7fe445704db13050b3210793861386d6df9182b48ac4f7597f95b917930bb614",
+        "bytes": 12697
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/mechanism_holdout14_PUBLIC_20261103_all_gaps_statistics.json",
+        "sha256": "e89d24dda2f982b56fd386d0e2b0a76e2430071549a3882a54b5ebdb8511d4b3",
+        "bytes": 12694
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/mechanism_holdout14_PUBLIC_20261103_label_median_statistics.json",
+        "sha256": "bcb333cb2a88097399e84475db16eadb71e4b366d3f5cde435d669060624a3dc",
+        "bytes": 12851
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/mechanism_holdout14_PUBLIC_20261103_label_median_statistics.json",
+        "sha256": "80be4676d8012a49517165edc27436248e702c8ae18add25dd58fd4fdaf9e3e2",
+        "bytes": 12854
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/val21_A_20261101_all_gaps_statistics.json",
+        "sha256": "c11dfd5718c403d62fec762213e4e093b2643f78275d8a466834c737275e6273",
+        "bytes": 11937
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/val21_A_20261101_all_gaps_statistics.json",
+        "sha256": "3190a59ecbbf64228723e7a31639942940bbe717140cff053dcfec668223fa6f",
+        "bytes": 11930
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/val21_A_20261101_label_median_statistics.json",
+        "sha256": "1ae4d1ca18fa00c7a4f64a7bc0e28536e6ca8424b48fab9dfc376f3df1333e86",
+        "bytes": 12092
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/val21_A_20261101_label_median_statistics.json",
+        "sha256": "f080c498fd62e4864d86f243b0a26e5d4e877103eb930afcfe05b9aebef6aa61",
+        "bytes": 12093
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/val21_A_20261102_all_gaps_statistics.json",
+        "sha256": "aa078689baea30e56a978d7297c4f5802cf3d55bb2d1ffa4846b6948d45b23e9",
+        "bytes": 11937
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/val21_A_20261102_all_gaps_statistics.json",
+        "sha256": "6f67b5af2d82ee9d9067fc8a1fe0306762126ec13027195fa60cae83d51b87a2",
+        "bytes": 11935
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/val21_A_20261102_label_median_statistics.json",
+        "sha256": "3cd5fba64afe3c0f9d0152701f4ed05148129bbb6e7322fe295527e619e06750",
+        "bytes": 12090
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/val21_A_20261102_label_median_statistics.json",
+        "sha256": "cdfc0144fa6e0c081b91790576193eeeae964b5cf4ba527f0c43905395484962",
+        "bytes": 12100
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/val21_A_20261103_all_gaps_statistics.json",
+        "sha256": "e4e50d7deffa42025d2eaeda0b2ed9f4086076feb9a003c06402a22dc2c31694",
+        "bytes": 11932
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/val21_A_20261103_all_gaps_statistics.json",
+        "sha256": "f7cf15e631421bcb34000b65c2cb9edb44e9a688bab0855821609073c6347760",
+        "bytes": 11935
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/val21_A_20261103_label_median_statistics.json",
+        "sha256": "3e3f33a2a4fa1546d346ce578b6fcd8ff912fae03195845008eb620c5bf6c7d5",
+        "bytes": 12086
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/val21_A_20261103_label_median_statistics.json",
+        "sha256": "62a111da107974b3a372c5cce5e94516d7282ee2a576734c97c035697d8ee4c2",
+        "bytes": 12094
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/val21_H1_20261101_all_gaps_statistics.json",
+        "sha256": "b4358646ed8a696401a5fc62461714f6c6f72fa774432f782d6e175a7a8cefe8",
+        "bytes": 11968
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/val21_H1_20261101_all_gaps_statistics.json",
+        "sha256": "e39804da87900d9948d1ebdaf94352e448be21f35aa1e93474fc1d891b464f4a",
+        "bytes": 11978
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/val21_H1_20261101_label_median_statistics.json",
+        "sha256": "6c2d6bfdbc49fcde2e1c5b96a76bc0eaf0bb50c12e845bbff040c391cfd5b5eb",
+        "bytes": 12130
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/val21_H1_20261101_label_median_statistics.json",
+        "sha256": "6184fb0da84506a873bdaafd5326bdb13729659a2bbfd659eb04cec06a4a2577",
+        "bytes": 12129
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/val21_H1_20261102_all_gaps_statistics.json",
+        "sha256": "d9bc9a022bf122a8182d0fd5601311cf8815f21ad747054f2990832f4d9d3f38",
+        "bytes": 11976
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/val21_H1_20261102_all_gaps_statistics.json",
+        "sha256": "2a1f26a863f0bd6e677806cf81ecbe4462c58802204394160edaab2c9b49b2da",
+        "bytes": 11966
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/val21_H1_20261102_label_median_statistics.json",
+        "sha256": "496520c0f885e9867b30cf25855100f7a5d59d3375593f82ff3e23725d787d90",
+        "bytes": 12128
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/val21_H1_20261102_label_median_statistics.json",
+        "sha256": "97afa11988a01668ce69fc2c2a73d928a9e7508163eb8e78110c3f708fd22d41",
+        "bytes": 12132
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/val21_H1_20261103_all_gaps_statistics.json",
+        "sha256": "9ccb663dd6ac3698622ee8f28098de6a466994e3baf8025cc662a702a85c00f5",
+        "bytes": 11977
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/val21_H1_20261103_all_gaps_statistics.json",
+        "sha256": "560c3930db539aeed672ea614338529e3dc1859e726f7d76a3f16d862b85e1e2",
+        "bytes": 11969
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/val21_H1_20261103_label_median_statistics.json",
+        "sha256": "acd23291deefd302cf86875b55c252295f85ffb3f27c3a540d756fee55f4932a",
+        "bytes": 12135
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/val21_H1_20261103_label_median_statistics.json",
+        "sha256": "97f98b9cdb686f40a0358c8bcc35d4c18d70d909a381dcad3414e76f67ac1259",
+        "bytes": 12128
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/val21_PUBLIC_20261101_all_gaps_statistics.json",
+        "sha256": "135b999cdc29ca5dbbbd19a6a3f2a208256290373dcba89fff459e59c3829835",
+        "bytes": 12135
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/val21_PUBLIC_20261101_all_gaps_statistics.json",
+        "sha256": "a9ed55d6cf95a213050d4fa833907c7559f8ed12db2e99e96d61d896485622ce",
+        "bytes": 12138
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/val21_PUBLIC_20261101_label_median_statistics.json",
+        "sha256": "8481886cd9a03b14d2978934b441859ce56e88e794b6601fd3d303b3e765c021",
+        "bytes": 12296
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/val21_PUBLIC_20261101_label_median_statistics.json",
+        "sha256": "63625a84c3a012415c23538f77f83a095763a0a02061ed55ecb7431717964f1b",
+        "bytes": 12292
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/val21_PUBLIC_20261102_all_gaps_statistics.json",
+        "sha256": "1b59ff4624bde377ed426196f96ab8b7da948bcd72efcb35cd3abafcc15ca206",
+        "bytes": 12134
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/val21_PUBLIC_20261102_all_gaps_statistics.json",
+        "sha256": "0b48e2695d68bafea22af35f2938e79d5379d16e2bf02a0feb000f7feb845606",
+        "bytes": 12136
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/val21_PUBLIC_20261102_label_median_statistics.json",
+        "sha256": "9fa2051b9721b19640ece87499d9e3e7ca906ebccae7c258e155951e161a165f",
+        "bytes": 12302
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/val21_PUBLIC_20261102_label_median_statistics.json",
+        "sha256": "74aaa6821bfc69e0dec23d120cff085e17e62ca479bfe571db1a21676b486e78",
+        "bytes": 12291
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/val21_PUBLIC_20261103_all_gaps_statistics.json",
+        "sha256": "7bef4b7fe9bd4298fc7bcff7ecdb9d0b9ce38c9da0018b2cd9e4ed43d542be61",
+        "bytes": 12137
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/val21_PUBLIC_20261103_all_gaps_statistics.json",
+        "sha256": "d0ec351eb4182b461c3ddfd62d02b341da0c78dd8cac93f911af63817e6ab675",
+        "bytes": 12138
+      }
+    },
+    {
+      "domain": "author",
+      "source": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h/val21_PUBLIC_20261103_label_median_statistics.json",
+        "sha256": "54992a3a06497d63de95edf971147f5488ead97d78b4d78cdd9588778de3915c",
+        "bytes": 12291
+      },
+      "independent": {
+        "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/val21_PUBLIC_20261103_label_median_statistics.json",
+        "sha256": "33c234df0f926820a4b36e101d617da5899dc51c8a23c68f88740f57820ddc7f",
+        "bytes": 12296
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R6h_independent/terminal.json",
+      "sha256": "517508ef72d217068af7a096b7f28aef6eee4e3658928f0c2c1229804fb39bf4",
+      "bytes": 209
+    },
+    {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer22/cycle06_acceptance_v1/terminal.json",
+      "sha256": "f42b9fa9453249d15a8ca2f9f20c5197dc8c3b401e9e3d6fb517e45770a7fb75",
+      "bytes": 1280
+    }
+  ],
+  "table": {
+    "path": "docs/paper_draft_v0_20261103/final_tables_v3/aux_colabelled/tier2_R6h_2000_v1/sensitivity.csv",
+    "sha256": "9806bafbf49e5c954b0b8ffe9ab654902d020e30ef397d4ed082f16b5d499586",
+    "bytes": 914496
+  },
+  "numeric_source_roundtrip": true,
+  "upstream_independent_science_required": true,
+  "no_new_matching_AP_bootstrap": true,
+  "no_selection": true,
+  "official_main_unchanged": true,
+  "not_physical_truth": true,
+  "whole_release_closed": false
+}

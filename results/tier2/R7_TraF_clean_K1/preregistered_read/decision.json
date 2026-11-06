@@ -1,0 +1,72 @@
+{
+  "created_at": "2026-11-05T10:22:33+08:00",
+  "qualifies_for_main_conversation_discussion": true,
+  "automatic_adoption": false,
+  "main_method_unchanged": "CoMET all-ego H1",
+  "primary_role": "val21",
+  "colabelled": {
+    "role": "val21",
+    "population": "colabelled",
+    "threshold": 70,
+    "comparison": "clean_minus_original_K4",
+    "delta_pp": 0.48524076045740117,
+    "CI95": [
+      0.27472844368370897,
+      0.7078729934379755
+    ],
+    "clean_AP": 65.34866150160637,
+    "reference_AP": 64.86342074114897,
+    "seeds": [
+      20261101,
+      20261102,
+      20261103
+    ],
+    "replicates": 2000,
+    "four_wait_mean": true,
+    "seed_average_paired": true
+  },
+  "official": {
+    "role": "val21",
+    "population": "all",
+    "threshold": 70,
+    "comparison": "clean_minus_original_K4",
+    "delta_pp": 0.2546490284450016,
+    "CI95": [
+      0.032331415780405416,
+      0.476223475174087
+    ],
+    "clean_AP": 66.43572021047544,
+    "reference_AP": 66.18107118203044,
+    "seeds": [
+      20261101,
+      20261102,
+      20261103
+    ],
+    "replicates": 2000,
+    "four_wait_mean": true,
+    "seed_average_paired": true
+  },
+  "hold14_colabelled": {
+    "role": "mechanism_holdout14",
+    "population": "colabelled",
+    "threshold": 70,
+    "comparison": "clean_minus_original_K4",
+    "delta_pp": 0.7459883299072487,
+    "CI95": [
+      -0.29402039901215316,
+      1.2105710737202986
+    ],
+    "clean_AP": 72.99439349614637,
+    "reference_AP": 72.24840516623912,
+    "seeds": [
+      20261101,
+      20261102,
+      20261103
+    ],
+    "replicates": 2000,
+    "four_wait_mean": true,
+    "seed_average_paired": true
+  },
+  "disposition": "main_conversation_discussion_only",
+  "no_new_learning_followup": true
+}

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "comet-v2x"
+version = "0.1.0"
+description = "Causal common-mode error tracking for asynchronous V2X cooperative 3D detection"
+readme = "README.md"
+authors = [
+    { name = "Shuwei Sun" },
+    { name = "Jian Huang" },
+    { name = "Hui Cao" },
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = ["numpy>=1.21", "scipy>=1.7"]
+
+[project.urls]
+Repository = "https://github.com/sswun/CoMET-V2X"
+"Permission requests" = "https://github.com/sswun/CoMET-V2X/issues/new"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["comet"]

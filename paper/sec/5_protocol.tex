@@ -1,0 +1,36 @@
+\section{Experimental Protocol}
+\label{sec:protocol}
+
+\paragraph{Data and splits.}
+We use the sequential V2I perception subset of V2X-Seq~\cite{yu2023v2xseq}.
+Cooperative labels of the test split are not public, so all reported numbers are on the 21 official validation sequences (3,316 messages at each budget, 31,123 vehicle boxes), which no detector has seen during training and which are never used for any selection.
+The 46 training sequences are divided into a \emph{fit} split (24) for readout heads and retraining, a \emph{calibration} split (8) that is the only split used for selecting any hyper-parameter, and a \emph{held-out} split (14) that we report as a secondary result.
+The held-out split lies inside the detectors' training data; results on it are reported but never used to choose anything.
+
+\paragraph{Protocol and metric.}
+We use the strict arrival protocol of \cref{sec:setting} with $d\in\{0,100,200,400\}$\,ms.
+We report bird's-eye-view (BEV) average precision at IoU 0.7 and 0.5 (\apseven, \apfive) for vehicles in the common region $x\in[0,96]$\,m, $|y|\le38.4$\,m of the ego frame, with predictions ranked globally over the split.
+Unless stated otherwise a number is the mean over the four budgets and over the three frozen readout heads (seeds 2023/2024/2025) or three training seeds.
+
+\paragraph{Statistics.}
+Confidence intervals are 95\% whole-sequence paired bootstrap intervals with 2,000 replicates~\cite{efron1993bootstrap}: sequences are resampled with replacement, both methods are evaluated on the same draw, and draws are paired before averaging over heads, seeds and budgets.
+We recomputed every reported number from the saved detections with a second, independently written implementation of box matching, AP and bootstrap; the two implementations agree to numerical precision.
+Where a table lists per-head intervals we give the envelope of the three heads' intervals.
+
+\paragraph{Populations and auxiliary references.}
+Following \cref{sec:audit} we additionally split each result into \emph{all} messages (primary), messages with an exactly \emph{zero} offset, and messages with at least one \emph{co-labelled} object.
+The populations are defined by annotations, used for reading only, and never as an input or for selection.
+The two auxiliary references move only roadside-only ground-truth boxes, keep all predictions, rankings and the evaluation region unchanged, and are used as sensitivity analyses:
+\emph{interpolated} (placeholder messages re-registered with the per-sequence interpolation of non-zero offsets) and \emph{label-median} (messages with at least three co-labelled objects re-registered with their median displacement; otherwise the official or interpolated offset).
+
+\paragraph{Detectors and baselines.}
+\emph{Detectors.} For late fusion we use the single-agent boxes of five detectors from three architectures: the released TraF-Align~\cite{song2025trafalign} weights, TraF-Align retrained under the strict protocol, two V2X-ViT~\cite{xu2022v2xvit} models trained with different seeds, and Where2comm~\cite{hu2022where2comm}.
+Unless stated otherwise, results use the released TraF-Align boxes, the strongest single-agent detector (62.15 \apseven).
+\emph{Intermediate fusion.} F-Cooper~\cite{chen2019fcooper} and V2X-ViT (three seeds) trained under the strict protocol, and TraF-Align with its released weights, all with online poses.
+\emph{Late fusion.} The official DAIR-V2X late-fusion baseline~\cite{yu2022dairv2x} without and with its time compensation (we report the better of the two per column), and our late fusion with online poses and the same readout as \method.
+\emph{Per-frame registration.} The official box-level modules of FreeAlign~\cite{lei2024freealign}, RoCo~\cite{huang2024roco} and CBM~\cite{song2023cbm} on the same candidate pool, each followed by the same readout as \method; we additionally smooth each module's per-frame estimate with a temporal median or an innovation-gated Kalman filter whose parameters are selected on the calibration split.
+\emph{Pose graph.} CoAlign~\cite{lu2023coalign} trained on V2X-Seq under our protocol with three seeds.
+In \cref{sec:geometry} we also show, as an upper reference that is not deployable, late fusion placed with the dataset offset, which uses annotations of the current frame.
+
+\paragraph{Reproducibility.}
+The estimator is re-implemented in a stand-alone package that reproduces the per-message offsets, variances and anchor counts behind all tables exactly (maximum absolute difference 0 over 205,202 messages, five detectors and four splits); the code, the protocol and all result tables are released.

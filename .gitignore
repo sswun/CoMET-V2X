@@ -1,0 +1,33 @@
+# Local working notes (Chinese analysis and decision records). Not for publication.
+internal/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.venv/
+build/
+dist/
+.env
+.env.*
+
+# Large or licensed artefacts that must never be committed
+*.pth
+*.pt
+*.ckpt
+*.npz
+*.pcd
+*.bin
+
+# OS
+.DS_Store
+
+# LaTeX build files (keep main.pdf and main.bbl for arXiv)
+paper/*.aux
+paper/*.log
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.out
+paper/*.blg
+paper/*.synctex.gz

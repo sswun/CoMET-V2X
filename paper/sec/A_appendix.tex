@@ -1,0 +1,172 @@
+\section*{Appendix}
+\addcontentsline{toc}{section}{Appendix}
+
+\section{Proof of the scalar recursion}
+\label{app:proof}
+Let the state $\boldsymbol\delta_t\in\mathbb R^2$ follow $\boldsymbol\delta_t=\boldsymbol\delta_{t-1}+\mathbf w_t$ with $\mathbf w_t\sim\mathcal N(\mathbf 0,q^2\mathbf I)$, and let a message with $n_t\ge1$ anchors provide $\bar{\mathbf z}_t=\boldsymbol\delta_t+\bar{\boldsymbol\eta}_t$ with $\bar{\boldsymbol\eta}_t\sim\mathcal N(\mathbf 0,\tfrac{r^2}{n_t}\mathbf I)$; the mean of $n_t$ independent residuals with covariance $r^2\mathbf I$ has covariance $\tfrac{r^2}{n_t}\mathbf I$, and it is a sufficient statistic for $\boldsymbol\delta_t$ because the likelihood of the individual residuals depends on them only through their mean.
+Assume $\mathbf P_{t-1}=p_{t-1}\mathbf I$, which holds for $t=1$ with $p_0=1$\,m$^2$.
+The prediction gives $\mathbf P_t^-=(p_{t-1}+q^2)\mathbf I=p_t^-\mathbf I$.
+With observation matrix $\mathbf I$ the Kalman gain is $\mathbf K_t=\mathbf P_t^-(\mathbf P_t^-+\tfrac{r^2}{n_t}\mathbf I)^{-1}=\tfrac{p_t^-}{p_t^-+r^2/n_t}\mathbf I=k_t\mathbf I$, and the update gives $\mathbf P_t=(\mathbf I-\mathbf K_t)\mathbf P_t^-=(1-k_t)p_t^-\mathbf I$.
+Without anchors there is no update and $\mathbf P_t=\mathbf P_t^-$.
+By induction the covariance stays isotropic and \cref{eq:gain,eq:update} are exact.
+The steady state of \cref{eq:steady} follows from the fixed point $p^-=(1-k)p^-+q^2$ with $k=p^-/(p^-+r^2/n)$, which gives $(p^-)^2-q^2p^--q^2r^2/n=0$.
+
+\section{Audit of the dataset offset}
+\label{app:audit}
+
+\paragraph{Procedure.}
+For every training and validation frame pair we read the raw vehicle-side and roadside annotations, project the roadside labels into the vehicle frame with the public calibration, and join them to the cooperative labels by track and token.
+Cooperative labels carry a source flag (vehicle-only, roadside-only, co-labelled).
+For roadside-only objects we compare the cooperative label with the public projection, separately for frames with zero and non-zero offset; a second implementation repeats the join and the inverse transform chain independently.
+For co-labelled objects we compute the displacement between the vehicle label and the projected roadside label; its median over the objects of a frame (frames with at least three co-labelled objects) is the label-median displacement used in \cref{sec:audit}.
+
+\paragraph{Findings in detail.}
+The roadside-only cooperative label equals the public projection plus the offset, with a residual of about $4\times10^{-7}$\,m, for zero and non-zero offsets alike.
+\Cref{tab:census} gives the census; in the fit, held-out and validation splits no zero message contains a co-labelled object, and only 10--16 non-zero messages lack one.
+The non-zero values per axis are
+$\{-1.10,-1.06,-1.02,-0.98,-0.94\}$, $\{-0.70,\dots,-0.54\}$, $\{-0.30,\dots,-0.14\}$, $\{+0.10,\dots,+0.26\}$ and $\{+0.50,\dots,+0.66\}$ in steps of 0.04\,m, five values per group; together with zero these are 26 values.
+For interior values the median label-median displacement of the same frames differs from the value by at most about 0.1\,m (\cref{fig:audit}); on the bounds the displacement continues beyond the bound.
+Over frames with at least three co-labelled objects and a non-zero offset, the correlation between offset and label-median displacement is 0.85 for $x$ and 0.92 for $y$, and their median difference is 0.16\,m; the offset is therefore close to, but not equal to, the label displacement, and we do not interpret it as a mean.
+
+\section{Implementation details}
+\label{app:impl}
+
+\paragraph{Hyper-parameters.}
+$r=0.6$\,m, $g=2.5$\,m, $p_0=1$\,m$^2$ for all detectors.
+Selected on the calibration split: $q=0.05$/$0.025$/$0.1$/$0.05$/$0.05$\,m and $\tau_p=0.5$/$0.3$/$0.5$/$0.5$/$0.5$ for the released TraF-Align, the strictly retrained TraF-Align, the two V2X-ViT models and Where2comm.
+The candidate grid for $q$ was $\{0.025,0.05,0.1,0.15\}$\,m.
+The choice between the original readout heads and heads refitted on \method geometry was made once for all detectors on the calibration split (mean over five detectors 65.70 vs.\ 65.66 \apseven for heads refitted after removing placeholder frames; original heads kept).
+
+\paragraph{Anchor statistics.}
+\Cref{tab:anchors} lists the mean number of anchors per message and the fraction of messages without anchors for the released TraF-Align boxes.
+
+\begin{table}[h]
+  \centering
+  \caption{Mean anchors per message / fraction of messages without anchors, released TraF-Align boxes.}
+  \label{tab:anchors}
+  \small
+  \begin{tabular}{l rrrr}
+    \toprule
+    Split & 0\,ms & 100\,ms & 200\,ms & 400\,ms \\
+    \midrule
+    \tabinput{tables/anchors.tex}
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Readout.}
+The 39 receiver-side features of a candidate are: message age, detector score, box size, heading in the receiver and source frames, distance and BEV overlap to the nearest ego detection and that detection's score, the number of ego boxes within 10\,m, flags for ego, propagated and causally associated candidates, propagation horizon, time between the two messages used for the velocity, speed, association distance (absolute and relative to the gate) and propagation shift. The 13 features that encode absolute position (receiver and source coordinates and ranges, and the source-to-receiver translation and range) are zeroed.
+The head is a two-layer perceptron (39--32--1, 1,313 parameters) trained with binary cross-entropy on candidates of the fit split; three heads with seeds 2023/2024/2025 are trained and all results average over them.
+
+\paragraph{Second tier.}
+Initial weights: the released TraF-Align weights (epoch 60).
+Reader and backbone are frozen (batch normalisation in evaluation mode); the fusion network, multi-scale aggregation and detection head are trained.
+AdamW, learning rate $10^{-4}$, weight decay 0.01, gradient accumulation 4, 2,000 updates (8,000 micro-batches, about one pass over the 7,524 fit conditions at $d\in\{0,400\}$\,ms), no checkpoint selection on validation data.
+The loss is the original anchor classification and box regression loss on current cooperative ground truth.
+The same budget is used for the online-pose and \method arms and for Where2comm and CoAlign.
+
+\section{Auxiliary references in detail}
+\label{app:aux}
+
+\begin{table}[h]
+  \centering
+  \caption{\textbf{Interpolated reference with three gap limits} (released TraF-Align boxes, \apseven, 95\% intervals). Placeholder runs are re-registered only if they are at most 1\,s or 3\,s long, or always.}
+  \label{tab:auxinterp}
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \resizebox{\linewidth}{!}{%
+  \begin{tabular}{l ll ll}
+    \toprule
+    & \multicolumn{2}{c}{validation} & \multicolumn{2}{c}{held-out} \\
+    \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+    Re-registered & \method $-$ online & \method $-$ single & \method $-$ online & \method $-$ single \\
+    \midrule
+    \tabinput{tables/aux_interp.tex}
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \caption{\textbf{Label-median reference by population} (\apseven differences, mean over three heads; every 95\% interval excludes zero). On placeholder messages (zero) \method is now better than the online pose as well, because the reference registers the roadside-only objects.}
+  \label{tab:auxfull}
+  \small
+  \setlength{\tabcolsep}{3pt}
+  \resizebox{\linewidth}{!}{%
+  \begin{tabular}{ll rrr rrr}
+    \toprule
+    & & \multicolumn{3}{c}{\method $-$ online} & \multicolumn{3}{c}{\method $-$ single} \\
+    \cmidrule(lr){3-5}\cmidrule(lr){6-8}
+    Detector & Split & all & co-lab. & zero & all & co-lab. & zero \\
+    \midrule
+    \tabinput{tables/aux_full.tex}
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\section{Second tier in detail}
+\label{app:tier2}
+
+\paragraph{Held-out split.}
+\Cref{tab:tier2heldout} gives the absolute AP of the retrained TraF-Align models on the held-out split (inside the detectors' training data). Tier 2 improves on retraining with online poses by $+3.15$ \apseven $[0.23, 4.81]$ and $+1.91$ \apfive.
+
+\begin{table}[h]
+  \centering
+  \caption{\textbf{Retrained TraF-Align on the held-out split}, mean over budgets and three seeds.}
+  \label{tab:tier2heldout}
+  \small
+  \begin{tabular}{l rr}
+    \toprule
+    Training and test pose / training labels & \apseven & \apfive \\
+    \midrule
+    \tabinput{tables/tier2_heldout.tex}
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Label variants.}
+Variant A re-registers roadside-only training labels on placeholder messages with the per-sequence interpolation of non-zero offsets.
+Variant B additionally moves roadside-only labels on axes where the offset sits on a search bound to the label-median displacement of the frame (frames with at least three co-labelled objects).
+On the calibration split A scored 67.91 and B 66.66 \apseven (three seeds, four budgets), so A was selected before the validation and held-out splits were evaluated; \cref{tab:tierab} reports both.
+The calibration split has the highest share of saturated messages (77.7\%), on which the official ground truth favours predictions placed at the bound, which explains why the selection prefers A; we keep the variant selected in advance.
+
+\begin{table}[h]
+  \centering
+  \caption{\textbf{Label variants A (selected) and B} minus retraining with online poses, TraF-Align, three seeds, 95\% intervals.}
+  \label{tab:tierab}
+  \small
+  \setlength{\tabcolsep}{3pt}
+  \resizebox{\linewidth}{!}{%
+  \begin{tabular}{l ll ll}
+    \toprule
+    & val.\ \apseven & val.\ \apfive & held-out \apseven & held-out \apfive \\
+    \midrule
+    \tabinput{tables/tier_ab.tex}
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\paragraph{Selection criterion fixed in advance.}
+Before evaluating the validation split we required, for the selected variant, that the 95\% intervals of the difference to retraining with the online pose lie above zero for both \apseven and \apfive, and that the difference to \method{} without retraining be at least $+1.0$ \apfive with an interval above zero and no worse than $-0.30$ \apseven.
+All five conditions were met.
+
+\begin{table}[h]
+  \centering
+  \caption{\textbf{Second tier under the auxiliary references}: tier 2 minus retraining with online poses (TraF-Align, 95\% intervals).}
+  \label{tab:tier2aux}
+  \small
+  \setlength{\tabcolsep}{2.5pt}
+  \resizebox{\linewidth}{!}{%
+  \begin{tabular}{ll ll ll}
+    \toprule
+    Reference & Difference & val.\ \apseven & val.\ \apfive & held-out \apseven & held-out \apfive \\
+    \midrule
+    \tabinput{tables/tier2_aux.tex}
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\section{Reproducibility}
+\label{app:repro}
+The repository contains (i) the stand-alone estimator with unit tests and a script that compares it with the reference per-message states; (ii) a snapshot of the research code that produced every reported result, with a SHA-256 manifest; (iii) every table of this paper in machine-readable form with the source of each number; and (iv) the scripts that generate the tables and figures of this manuscript from those files.
+No dataset content, per-frame annotation-derived data or model weights are redistributed.

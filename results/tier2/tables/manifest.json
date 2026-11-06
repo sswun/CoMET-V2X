@@ -1,0 +1,111 @@
+{
+  "created_at": "2026-11-06T12:05:43+08:00",
+  "status": "initial_accepted_tables_complete",
+  "artifacts": {
+    "traf_seed_statistics": {
+      "table": {
+        "path": "docs/paper_draft_v0_20261103/final_tables_v3/tier2_v1/traf_seed_statistics.csv",
+        "sha256": "36a111b6dde8ead51f040047291340834ab0a082ef40af9a7d91739ca062852d",
+        "bytes": 1317830
+      },
+      "rows": 1440
+    },
+    "traf_mean_statistics": {
+      "table": {
+        "path": "docs/paper_draft_v0_20261103/final_tables_v3/tier2_v1/traf_mean_statistics.csv",
+        "sha256": "3863d1637941327b09cc1ca7c46d4e131ac33ace7aead77e355526aeaa6dfebe",
+        "bytes": 910913
+      },
+      "rows": 480
+    },
+    "traf_existing_paired_CI": {
+      "table": {
+        "path": "docs/paper_draft_v0_20261103/final_tables_v3/tier2_v1/traf_existing_paired_CI.csv",
+        "sha256": "d776916586ad8a58d429d35894cf06a938d7373aa3d091b3e9591640124add60",
+        "bytes": 427268
+      },
+      "rows": 672
+    },
+    "cross_seed_statistics": {
+      "table": {
+        "path": "docs/paper_draft_v0_20261103/final_tables_v3/tier2_v1/cross_seed_statistics.csv",
+        "sha256": "00034aa865a47e5819daaabe4e84a8244f229e685873ab77c5bec3baa61f0f1c",
+        "bytes": 967642
+      },
+      "rows": 1080
+    },
+    "cross_mean_statistics": {
+      "table": {
+        "path": "docs/paper_draft_v0_20261103/final_tables_v3/tier2_v1/cross_mean_statistics.csv",
+        "sha256": "595bb925919d20a8cad012887bc1dbc984de5288d86545b026ddb94e80c1d750",
+        "bytes": 678197
+      },
+      "rows": 360
+    },
+    "cross_existing_paired_CI": {
+      "table": {
+        "path": "docs/paper_draft_v0_20261103/final_tables_v3/tier2_v1/cross_existing_paired_CI.csv",
+        "sha256": "f63bfdf74e4ea03315beb85763816cb8267bf2434357542eec2af52a5a84dd99",
+        "bytes": 183102
+      },
+      "rows": 280
+    },
+    "first_tier_seed_statistics": {
+      "table": {
+        "path": "docs/paper_draft_v0_20261103/final_tables_v3/tier2_v1/first_tier_seed_statistics.csv",
+        "sha256": "53325ba2f750cd143458121cd3e8daca05c763bb40d66456687ec593cf2eea1c",
+        "bytes": 240858
+      },
+      "rows": 270
+    },
+    "first_tier_mean_statistics": {
+      "table": {
+        "path": "docs/paper_draft_v0_20261103/final_tables_v3/tier2_v1/first_tier_mean_statistics.csv",
+        "sha256": "242deeb1d82fe8380ac5c19dda9fd0eec13cdb2347f0388d8be96644ee11d78e",
+        "bytes": 160104
+      },
+      "rows": 90
+    }
+  },
+  "reviews": [
+    {
+      "path": "artifacts/research_autopilot/status_audit_20261105_peer21/R7b_gate_postcheck/terminal.json",
+      "sha256": "b98a4e3bec135096bde0891e35753ab70e7caa9662a1875b4071f0ba61b7779a",
+      "bytes": 10943
+    },
+    {
+      "path": "artifacts/research_autopilot/status_audit_20261105_peer20/R7_preregistered_read/terminal.json",
+      "sha256": "a13684b4adc3630c6535dc301deeb2cf48230508f7ce8deead74af1976e0b1d8",
+      "bytes": 552
+    },
+    {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R7c_acceptance_cycle03_v3/terminal.json",
+      "sha256": "00dfea59974c63eb8a90497d9bf160dace3894ab0470dcdf5797b07ff1c9e0b4",
+      "bytes": 22243
+    },
+    {
+      "path": "artifacts/research_autopilot/status_audit_20261104_peer19/recipe_independent/where2comm/terminal.json",
+      "sha256": "ebddf4702a4a030edfd43264db6bf7a86214b08e8238dd3d21854dd84cad6fd4",
+      "bytes": 736
+    }
+  ],
+  "GT_scope": {
+    "path": "docs/paper_draft_v0_20261103/final_tables_v3/tier2_v1/GT_and_scope_identity.json",
+    "sha256": "e65ac67243e6a1a7f2fd427bd199e7eee1c5cf3460865a65e5757ee784c74833",
+    "bytes": 31852
+  },
+  "second_tier": "R7b A 2000",
+  "new_matching": 0,
+  "new_AP": 0,
+  "new_bootstrap": 0,
+  "new_forwards": 0,
+  "new_updates": 0,
+  "no_joint_CI_created": true,
+  "root_tables_unchanged": true,
+  "manuscript_by_main_conversation": true,
+  "pending": [
+    "R7d independent complete curve",
+    "remaining generated auxiliary CSV references"
+  ],
+  "whole_release_closed": false
+}

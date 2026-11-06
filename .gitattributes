@@ -1,0 +1,3 @@
+# Preserve archived file bytes and their recorded SHA-256 checksums on all platforms.
+/research_code/** -text
+/results/** -text

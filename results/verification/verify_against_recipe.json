@@ -1,0 +1,143 @@
+{
+ "author/fit24": {
+  "messages": 15048,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "author/calibration8": {
+  "messages": 4988,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "author/val21": {
+  "messages": 13264,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "author/mechanism_holdout14": {
+  "messages": 9744,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "strict60/fit24": {
+  "messages": 7524,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "strict60/calibration8": {
+  "messages": 2494,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "strict60/val21": {
+  "messages": 13264,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "strict60/mechanism_holdout14": {
+  "messages": 9744,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "v2xvit_seed2024/fit24": {
+  "messages": 15048,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "v2xvit_seed2024/calibration8": {
+  "messages": 4988,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "v2xvit_seed2024/val21": {
+  "messages": 13264,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "v2xvit_seed2024/mechanism_holdout14": {
+  "messages": 9744,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "v2xvit_seed2025/fit24": {
+  "messages": 15048,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "v2xvit_seed2025/calibration8": {
+  "messages": 4988,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "v2xvit_seed2025/val21": {
+  "messages": 13264,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "v2xvit_seed2025/mechanism_holdout14": {
+  "messages": 9744,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "where2comm/fit24": {
+  "messages": 15048,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "where2comm/calibration8": {
+  "messages": 4988,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "where2comm/val21": {
+  "messages": 13264,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "where2comm/mechanism_holdout14": {
+  "messages": 9744,
+  "max_abs_delta_diff": 0.0,
+  "max_abs_variance_diff": 0.0,
+  "anchors_equal": true,
+  "max_abs_observation_diff": 0.0
+ },
+ "_all_equal": true
+}

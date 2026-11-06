@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-11-05T06:07:08+08:00",
+  "means": {
+    "clean": 65.66017045053283,
+    "original": 65.70163249670559
+  },
+  "selected": "original",
+  "domains": [
+    {
+      "domain": "author",
+      "created_at": "2026-11-05T00:28:25+08:00",
+      "q": 0.05,
+      "tau": 0.5,
+      "cal_only": true,
+      "means": {
+        "clean": 69.10926967278611,
+        "original": 69.09215794380113
+      }
+    },
+    {
+      "domain": "strict60",
+      "created_at": "2026-11-05T06:07:02+08:00",
+      "q": 0.025,
+      "tau": 0.3,
+      "cal_only": true,
+      "means": {
+        "clean": 55.767555176973254,
+        "original": 55.75781275888985
+      }
+    },
+    {
+      "domain": "v2xvit_seed2024",
+      "created_at": "2026-11-05T00:25:38+08:00",
+      "q": 0.1,
+      "tau": 0.5,
+      "cal_only": true,
+      "means": {
+        "clean": 68.58650011314695,
+        "original": 68.68272273405255
+      }
+    },
+    {
+      "domain": "v2xvit_seed2025",
+      "created_at": "2026-11-05T00:25:29+08:00",
+      "q": 0.05,
+      "tau": 0.5,
+      "cal_only": true,
+      "means": {
+        "clean": 66.9578691136354,
+        "original": 67.02717184807298
+      }
+    },
+    {
+      "domain": "where2comm",
+      "created_at": "2026-11-05T00:26:03+08:00",
+      "q": 0.05,
+      "tau": 0.5,
+      "cal_only": true,
+      "means": {
+        "clean": 67.87965817612249,
+        "original": 67.94829719871142
+      }
+    }
+  ],
+  "independent_pending": true,
+  "cal8_official_only": true,
+  "old_registry_unchanged": true,
+  "formal_read_for_selection": false,
+  "required_consumers": "New clean-head table and asset consumers if selected; original tables retain exact identity."
+}

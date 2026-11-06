@@ -1,0 +1,7 @@
+{
+  "created_at": "2026-11-05T00:05:51+08:00",
+  "status": "complete_independently_reviewed",
+  "wall_s": 36.59295012336224,
+  "confirmed": true,
+  "scope": "R6a: direct raw annotation lineage, not detector matching or physical truth.\n\nToken/track joins precede geometry; raw roadside locations are transformed by\npublic calibrations. No nearest-neighbour acceptance or offset sign fitting.\nThe independent branch uses track+token crosscheck and a separately assembled\ninverse rotation/translation chain, not the production homogeneous solve.\n"
+}

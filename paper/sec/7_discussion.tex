@@ -1,0 +1,26 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\paragraph{Reading V2X-Seq results with online pose correction.}
+Our audit changes how such results should be read.
+The dataset offset is the right reference for the official ground truth, because the ground truth is built from it; it is not a measurement of the physical pose error, being zero where it could not be estimated and clipped at the bounds of its search.
+A method that estimates the true error is therefore counted as wrong on placeholder frames and on saturated frames.
+Population splits and auxiliary references do not replace physical ground truth, but they show which conclusions depend on these artefacts; for \method, none of these conclusions changes.
+We hope that future releases document how such offsets are produced and flag placeholders explicitly.
+
+\paragraph{Limitations.}
+\method assumes that one translation dominates the error of a message and that the objects seen by both agents share it with those seen only by the partner.
+When this does not hold, for example when the partner's objects are affected by errors that the co-visible objects do not reflect, the transferred correction can misplace boxes; a consistency check on the normalised filter innovation is a natural safeguard.
+The model is planar and translation-only, and the estimate follows abrupt changes of the offset with a short delay.
+Because anchors are gated at 2.5\,m, an offset larger than the gate cannot be acquired from a cold start, although an error that grows after tracking has begun is still followed.
+Anchor weighting by object motion or distance and an explicit rotation term are natural extensions.
+Our real-data evaluation uses one V2I dataset, complemented by a controlled simulation, and all numbers come from offline replay of recorded messages.
+
+\section{Conclusion}
+\label{sec:conclusion}
+On real V2I data with online poses and strict arrival, the main obstacle to cooperative detection is a slowly drifting translation shared by all objects of a message, while the age of the message costs far less.
+Tracking this translation from co-visible anchors with a causal scalar filter, and transferring it to the objects only the partner sees, turns box messages into a clear gain over intermediate fusion for every detector we tested, without training the estimator; the same pose also improves intermediate fusion when it is retrained.
+We further find that the benchmark's own reference offset is a placeholder on a quarter of the frames and saturated on almost half of the rest, which matters for evaluating any geometric correction.
+The estimator, protocol and experimental results accompany the manuscript at
+\url{https://github.com/sswun/CoMET-V2X}. Use of the code or results requires
+prior written permission from the authors. The repository gives the terms and contact details.

@@ -17,6 +17,7 @@ authors:
     orcid: "https://orcid.org/0000-0002-4985-0028"
 version: 0.2.0
 date-released: "2026-11-07"
+doi: 10.5281/zenodo.24024592
 url: "https://github.com/sswun/CoMET-V2X/releases/tag/v0.2.0"
 identifiers:
   - type: doi

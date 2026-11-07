@@ -7,7 +7,7 @@
   Xi'an Jiaotong University
 </p>
 <p align="center">
-  <a href="https://doi.org/10.5281/zenodo.23999417"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23999417.svg" alt="Zenodo DOI for all CoMET-V2X versions"></a>
+  <a href="https://doi.org/10.5281/zenodo.24024592"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.24024592.svg" alt="Zenodo DOI for CoMET-V2X v0.2.0"></a>
 </p>
 <p align="center">
   <a href="paper/main.pdf"><strong>Manuscript (PDF)</strong></a> ·
@@ -98,7 +98,7 @@ For v0.2.0, the archived comparison covers 15 detector/split combinations withou
 
 ## Citation and permissions
 
-For authorized use, cite the version used in the experiment. The release page links to the Zenodo record for v0.2.0. [v0.2.0 release](https://github.com/sswun/CoMET-V2X/releases/tag/v0.2.0) · [All versions](https://doi.org/10.5281/zenodo.23999417) · [v0.1.0 archive](https://doi.org/10.5281/zenodo.23999418) · [Citation metadata](CITATION.cff)
+For authorized use, cite the version used in the experiment. The DOI for v0.2.0 is [10.5281/zenodo.24024592](https://doi.org/10.5281/zenodo.24024592). [v0.2.0 release](https://github.com/sswun/CoMET-V2X/releases/tag/v0.2.0) · [All versions](https://doi.org/10.5281/zenodo.23999417) · [v0.1.0 archive](https://doi.org/10.5281/zenodo.23999418) · [Citation metadata](CITATION.cff)
 
 ```bibtex
 @software{sun2026cometv2x,
@@ -107,7 +107,8 @@ For authorized use, cite the version used in the experiment. The release page li
   year    = {2026},
   version = {0.2.0},
   publisher = {Zenodo},
-  url     = {https://github.com/sswun/CoMET-V2X/releases/tag/v0.2.0}
+  doi     = {10.5281/zenodo.24024592},
+  url     = {https://doi.org/10.5281/zenodo.24024592}
 }
 ```
 

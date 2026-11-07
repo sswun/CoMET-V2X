@@ -7,7 +7,7 @@
   Xi'an Jiaotong University
 </p>
 <p align="center">
-  <a href="https://doi.org/10.5281/zenodo.23999418"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23999418.svg" alt="Zenodo DOI for CoMET-V2X v0.1.0"></a>
+  <a href="https://doi.org/10.5281/zenodo.23999417"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23999417.svg" alt="Zenodo DOI for all CoMET-V2X versions"></a>
 </p>
 <p align="center">
   <a href="paper/main.pdf"><strong>Manuscript (PDF)</strong></a> ·
@@ -48,11 +48,11 @@ Vehicle AP on `val21`, using official ground truth. Each row averages the four a
 - **Where the metric changes the interpretation.** The official offset is exactly zero on **27.99%** of validation messages. The roadside-only labels on these frames coincide with the uncorrected projection. With the released TraF-Align detector, CoMET gains **4.53 AP70 points** on co-labelled frames and loses **3.42** on zero-offset frames relative to online poses. [Label audit and population analysis](docs/FINDINGS.md)
 - **Retraining the fusion network.** TraF-Align fine-tuned with CoMET poses and cleaned training labels reaches **81.44 AP50 / 66.49 AP70**. Against the same-budget online-pose fine-tune, the paired gains are **+1.17 AP50** (95% CI 0.58–1.87) and **+0.81 AP70** (0.18–1.62). [Second-tier results](results/tier2/)
 
-## Extensions after v0.1.0
+## New in v0.2.0
 
-These experiments were specified with their acceptance criteria before evaluation, after the archived v0.1.0 snapshot. The current manuscript reports them; the main tables are unchanged. [Results and criteria](results/research_v2/README.md)
+The revised manuscript reports large pose errors, when the tracker can recover and how much the two fusion methods gain when used together. Settings and adoption criteria were fixed before validation. [Results and criteria](results/research_v2/README.md)
 
-- **Offsets beyond the association gate.** CoMET-A detects a lost lock and re-acquires it from a vote over recent ego–remote displacements. With 3–5 m of injected error, it keeps 97.7–99.5% of clean AP70, while CoMET falls to near the online-pose level. On real data it changes the five-detector mean AP70 by −0.0006 points. [Implementation](comet/acquisition.py)
+- **Offsets beyond the association gate.** CoMET-A detects a lost lock and re-acquires it from a vote over recent ego–remote displacements. On the two TraF-Align configurations, it retains 97.7–99.5% of clean AP70 under 3–5 m of injected displacement. On validation data without injected error, the change from CoMET averages −0.0006 AP70 across five detectors. [Implementation](comet/acquisition.py)
 - **Two-tier combination.** Pairing CoMET late-fusion boxes with those of the retrained TraF-Align reaches **67.85 AP70 / 82.62 AP50** on `val21`. That is +1.23 AP70 over late fusion and +1.18 AP50 over TraF-Align, with intervals above zero. [Implementation](comet/fusion.py)
 - **Native fusion under pose error.** With 1–3 m of injected error, giving TraF-Align the CoMET-A-corrected pose instead of the injected one raises AP70 by 2.2–4.4 points.
 
@@ -81,7 +81,7 @@ corrected = apply_offset(remote, state["delta"])
 print(state["anchors"], corrected[-1].round(2).tolist())  # 2 [30.85, 2.0]
 ```
 
-Keep the same tracker across arrivals from the same sender–receiver pair. Use a separate stream key per sequence and delay in offline replays. The standalone package provides association, filtering and box correction. The caller supplies projected, time-aligned boxes and handles downstream fusion. [Estimator source](comet/estimator.py)
+Keep the same tracker across arrivals from the same sender–receiver pair. Use a separate stream key per sequence and delay in offline replays. The caller supplies projected, time-aligned boxes. The package also provides [lock acquisition](comet/acquisition.py) and [two-tier box fusion](comet/fusion.py). [Estimator source](comet/estimator.py)
 
 ## Reproducing the paper
 
@@ -94,19 +94,20 @@ Keep the same tracker across arrivals from the same sender–receiver pair. Use 
 
 The archived verification covers **205,202 message updates** across five detector configurations and four splits. The reference implementation matched the saved offsets, observations, anchor counts and variances exactly in that run. Repeating it requires the original detector caches and accepted state files. The research scripts retain their workspace-relative artifact paths. The release includes derived statistics and filter traces. Raw sensor data, per-frame ground truth, detector predictions and weights must be obtained separately. [Verification report](results/verification/verify_against_recipe.json) · [Replay tool](tools/verify_against_recipe.py)
 
+For v0.2.0, the archived comparison covers 15 detector/split combinations without injected errors, eight injected cases and 69,024 fused frames across the validation and hold-out runs. [Verification results](results/verification/verify_research_v2.json) · [Replay tool](tools/verify_research_v2.py)
+
 ## Citation and permissions
 
-For authorized use, cite the software using GitHub's **Cite this repository** action or this BibTeX entry. The version DOI identifies the archived v0.1.0 snapshot. Use the all-versions DOI to follow subsequent releases. [v0.1.0 archive](https://doi.org/10.5281/zenodo.23999418) · [All versions](https://doi.org/10.5281/zenodo.23999417) · [Citation metadata](CITATION.cff)
+For authorized use, cite the version used in the experiment. The release page links to the Zenodo record for v0.2.0. [v0.2.0 release](https://github.com/sswun/CoMET-V2X/releases/tag/v0.2.0) · [All versions](https://doi.org/10.5281/zenodo.23999417) · [v0.1.0 archive](https://doi.org/10.5281/zenodo.23999418) · [Citation metadata](CITATION.cff)
 
 ```bibtex
 @software{sun2026cometv2x,
   author  = {Sun, Shuwei and Huang, Jian and Cao, Hui},
   title   = {{CoMET-V2X}: Tracking the Shared Pose Error of Roadside Messages for Asynchronous Vehicle--Infrastructure Cooperative 3D Detection},
   year    = {2026},
-  version = {0.1.0},
+  version = {0.2.0},
   publisher = {Zenodo},
-  doi     = {10.5281/zenodo.23999418},
-  url     = {https://doi.org/10.5281/zenodo.23999418}
+  url     = {https://github.com/sswun/CoMET-V2X/releases/tag/v0.2.0}
 }
 ```
 

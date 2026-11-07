@@ -14,7 +14,7 @@ Only accepted results are included: each was produced by a frozen script and rec
 | `ablations/` | R6e readout-head decontamination decision. |
 | `mechanism/` | A5 autocorrelation with cluster bootstrap; per-message KF trajectories of the author detector. |
 | `tier2/` | R7, R7b (TraF), R7c (Where2comm, CoAlign): decisions, contrasts, per-seed statistics, paper tables; R7d training-budget sweep. |
-| `research_v2/` | Extensions after v0.1.0: R8d CoMET-A, R8c pose-error stress test, R8e two-tier combination ([details](research_v2/README.md)). Paper tables unchanged. |
+| `research_v2/` | Extensions after v0.1.0: R8d CoMET-A, R8c pose-error stress test, R8e two-tier combination ([details](research_v2/README.md)). The original baseline tables are in `tables_v3/`. |
 | `verification/` | `comet/` vs accepted recipe states, CoMET-A states and two-tier detections (all equal). |
 
 ## Common fields

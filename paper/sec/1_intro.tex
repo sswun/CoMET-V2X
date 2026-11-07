@@ -37,6 +37,7 @@ Pose-robust methods~\cite{lu2023coalign,lei2024freealign,huang2024roco,song2023c
 Neither treats the partner's error as persistent: the first leaves it uncorrected, and the second re-estimates it from scratch in every frame, so no estimate is available when correspondences are missing.
 We propose \method (Common-Mode Error Tracking), which treats the partner's current systematic error as a state to be estimated together with its uncertainty.
 \method uses every ego detection as an anchor candidate, forms one robust observation per message with mutual-nearest-neighbour Hungarian matching, tracks the shared offset with a causal Kalman filter per sender, carries the estimate through messages without anchors, and transfers it to every remote box (\cref{fig:overview}).
+When the offset is larger than the association gate, a lock-acquisition step recovers it from a vote over the displacements of recent messages.
 A small frozen readout head then re-ranks the corrected boxes together with the low-score ego detections.
 Because process and measurement noise are isotropic, the filter reduces exactly to a scalar recursion with a two-coordinate state and one variance per stream; it has no learned parameters and needs only the boxes that a late-fusion message already carries.
 Its two limiting cases are the two classical answers to pose error, per-frame registration and fixed calibration, and on real data it outperforms both.
@@ -50,13 +51,15 @@ We report the official evaluation as the primary result and complement it with l
 \paragraph{Results.}
 With the boxes of the released TraF-Align detector, \method reaches 66.63 \apseven averaged over the four latency budgets, 3.45 points above late fusion with online poses and 3.67 above the best intermediate fusion, while keeping the advantage at every budget.
 It improves the late fusion of all five detectors we test by 2.2--3.5 points over online poses and by 0.3--0.6 over estimating the offset from the current message alone. Nine variants of three per-frame registration modules, with and without temporal smoothing, remain 2.3--3.1 points behind, and as the pose input of CoAlign, \method beats CoAlign's own pose graph by 1.1 points.
-When intermediate fusion is retrained, using \method poses and cleaned labels is better than retraining with online poses on all three architectures we test (significantly on two), and gives the highest \apfive of all methods on the strongest one.
+With known pose errors of 3--5\,m injected into the roadside messages, \method with lock acquisition keeps 97.6--99.5\% of its accuracy for all five detectors, and its corrected pose raises the accuracy of retrained intermediate fusion under the same errors by 2.2--4.4 points.
+When intermediate fusion is retrained, using \method poses and cleaned labels is better than retraining with online poses on all three architectures we test (significantly on two).
+Combining the boxes of the retrained network with those of \method late fusion reaches 67.85 \apseven and 82.62 \apfive, better than either alone on both metrics.
 
 \paragraph{Contributions.}
 \begin{itemize}
   \item We show that under strict arrival and online poses the main obstacle to real V2I cooperative detection is a slowly drifting common-mode translation, which co-visible objects reveal but which no single message estimates reliably.
-  \item We propose \method, a training-free causal tracker of this translation with cross-object transfer, which interpolates between per-frame registration and fixed calibration and costs a single small assignment per message.
+  \item We propose \method, a training-free causal tracker of this translation with cross-object transfer, which interpolates between per-frame registration and fixed calibration, re-acquires offsets beyond its association gate, and costs a single small assignment per message.
   \item We audit the reference offsets of V2X-Seq, identify a zero placeholder and a saturated bounded search, explain how they enter the official ground truth, and propose an evaluation that separates label artefacts from method effects.
-  \item We provide an extensive evaluation with paired sequence-level confidence intervals, hyper-parameters selected on a separate calibration split only, every reported number re-derived by an independent implementation, and a retraining study across three architectures.
+  \item We provide an extensive evaluation with paired sequence-level confidence intervals, hyper-parameters selected on a separate calibration split only, every reported number re-derived by an independent implementation, a controlled study with injected pose errors on real data, and a retraining study across three architectures together with a box-level combination of late and intermediate fusion.
 \end{itemize}
 

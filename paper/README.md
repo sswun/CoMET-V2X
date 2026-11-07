@@ -23,9 +23,10 @@ python3 scripts/extract_numbers.py
 python3 scripts/make_tables.py
 python3 scripts/make_figures.py
 python3 scripts/make_fig_overview.py
+python3 scripts/make_fig_robustness.py
 latexmk -pdf main.tex
 ```
 
 Numbers written in the running text were checked by hand against `numbers.json` and `../docs/FINDINGS.md`. If a result file changes, regenerate the tables and figures and re-check the text.
 
-Not included: the training-budget dose-response of the second tier.
+Lock acquisition, the injected pose-error study, the two-tier combination and the training budget of the second tier (Sections 4.4, 4.6, 6.9, 6.10 and Appendices E–F) are read from `../results/research_v2/` and `../results/tier2/R7d_TraF_budget/`.

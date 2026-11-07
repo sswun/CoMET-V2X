@@ -1,0 +1,275 @@
+[
+  {
+    "case": "author_calibration8_T1_0.5",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/cases/author_calibration8_T1_0.5/summary.json",
+      "sha256": "93dd699140345c3a26f219ddf11e98a0a5c4fcdade8acd4df25723fd4be03a9f",
+      "bytes": 4855
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_calibration8_T1_0.5/CoMET_M_summary.json",
+      "sha256": "bb188488954ca8e6fe1cb1d691dd21b28c8bd00a68f445400d6d9e4bf464d5a7",
+      "bytes": 1186
+    }
+  },
+  {
+    "case": "author_calibration8_T1_1.0",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/cases/author_calibration8_T1_1.0/summary.json",
+      "sha256": "b7ec1556d4d985b63b740389f5ad4eddca0795afbd1a702d012d3d4142c5be39",
+      "bytes": 4870
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_calibration8_T1_1.0/CoMET_M_summary.json",
+      "sha256": "bbaf9db31b0a7d769654d1501df2945c6eba970dfd44e43c6809650f9122d6d8",
+      "bytes": 1188
+    }
+  },
+  {
+    "case": "author_calibration8_T1_2.0",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/cases/author_calibration8_T1_2.0/summary.json",
+      "sha256": "81fb2c6260c0c75217e89664ea544fb07cd05ad725f0778c75691aaade5a9f59",
+      "bytes": 4896
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_calibration8_T1_2.0/CoMET_M_summary.json",
+      "sha256": "24bf126e5682ee03817e949f3c0e23f24cc5890c03316afcb01149acd4d0faf1",
+      "bytes": 1190
+    }
+  },
+  {
+    "case": "author_calibration8_T1_3.0",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8d/cases/author_calibration8_T1_3.0/summary.json",
+      "sha256": "7749b0cbab898e0ede9e509dad57160988c4ab34f12f97d3ebd3b69d44aa2447",
+      "bytes": 4897
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_calibration8_T1_3.0/CoMET_M_summary.json",
+      "sha256": "6c81cedf9ffe04548f5989737b80df3ea37d9a3d46103999f59cebc670075d7b",
+      "bytes": 1193
+    }
+  },
+  {
+    "case": "author_calibration8_T1_5.0",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8d/cases/author_calibration8_T1_5.0/summary.json",
+      "sha256": "3a1bfacd4047b11de995af85a2312b6e170aa6e4ac33ca4a500b7e07daa59f49",
+      "bytes": 4915
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_calibration8_T1_5.0/CoMET_M_summary.json",
+      "sha256": "aebf8bfd7fa6de3b91167a75c783adde7202962d5b7d2be30eae08e560e17f05",
+      "bytes": 1207
+    }
+  },
+  {
+    "case": "author_calibration8_T2_2.0",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/cases/author_calibration8_T2_2.0/summary.json",
+      "sha256": "061179ee9be3a94d44e1a2d2c294968cb2bb814483b3fd04e3328076dbcd9816",
+      "bytes": 4893
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_calibration8_T2_2.0/CoMET_M_summary.json",
+      "sha256": "09a3145bf9f6603decf31e65ea50d4a401d0850b92c6721ac1e034b18369bdae",
+      "bytes": 1184
+    }
+  },
+  {
+    "case": "author_calibration8_T3_2.0",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/cases/author_calibration8_T3_2.0/summary.json",
+      "sha256": "f782c64427471c599b4713700fe95156d2c7d77899f181f9e2716f5479236694",
+      "bytes": 4875
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_calibration8_T3_2.0/CoMET_M_summary.json",
+      "sha256": "5dfc11747874e27db6528f8d4de5e77dbfffe90c6bca5a68dd1e5951d55e4e08",
+      "bytes": 1187
+    }
+  },
+  {
+    "case": "author_val21_T1_0.5",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/cases/author_val21_T1_0.5/summary.json",
+      "sha256": "4e0245cc42db865fb1f4acc09f5a1b141bab766991abfb7ab652de4782696ea5",
+      "bytes": 4866
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_val21_T1_0.5/CoMET_M_summary.json",
+      "sha256": "9338d0636b8198c3350b11e50ce2082362912180755a1b32a4add1e289d3808f",
+      "bytes": 1174
+    }
+  },
+  {
+    "case": "author_val21_T1_1.0",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/cases/author_val21_T1_1.0/summary.json",
+      "sha256": "a17e9c6796433cdeb34ca8a1bd90f31cd9dcdb82f11f7555ec65ca59b29c3eb1",
+      "bytes": 4856
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_val21_T1_1.0/CoMET_M_summary.json",
+      "sha256": "9e840fce41a01473794c39712b0676aee50b4c8aeae3326c3dc31486d9914f0f",
+      "bytes": 1173
+    }
+  },
+  {
+    "case": "author_val21_T1_2.0",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/cases/author_val21_T1_2.0/summary.json",
+      "sha256": "0282f6ddb0db1bd7319c22da4636ddc1f3dba5248555957f410bb196acd6cc82",
+      "bytes": 4848
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_val21_T1_2.0/CoMET_M_summary.json",
+      "sha256": "c3ad6cb68c15aae5999d0ab26441948e19ab77245336312d1bbb1f2f41dc5097",
+      "bytes": 1175
+    }
+  },
+  {
+    "case": "author_val21_T1_3.0",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8d_material_v2/cases/author_val21_T1_3.0/summary.json",
+      "sha256": "1302ee6b46377054ac4e6ab38094a9f5aedd8a97779ace8d728114765527fcbe",
+      "bytes": 4854
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_val21_T1_3.0/CoMET_M_summary.json",
+      "sha256": "631a8c41475f8a7bd4772aeb74fca55d74374ec2e2fae3fd82545573052a63ad",
+      "bytes": 1181
+    }
+  },
+  {
+    "case": "author_val21_T1_5.0",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8d_material_v2/cases/author_val21_T1_5.0/summary.json",
+      "sha256": "e3c3f2495723ba922daee3dc5826c906aa29d526b370160586b502ed8df8d8d3",
+      "bytes": 4881
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_val21_T1_5.0/CoMET_M_summary.json",
+      "sha256": "83ef110dd38dedef5c30a16a6ba2dc6d6d2f13f822ff24ed36813211a0dd4594",
+      "bytes": 1193
+    }
+  },
+  {
+    "case": "author_val21_T2_2.0",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/cases/author_val21_T2_2.0/summary.json",
+      "sha256": "c876ea8bf212a4b064097cc7543636d6580d596ca6ac4d44a40e2f200da8a301",
+      "bytes": 4843
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_val21_T2_2.0/CoMET_M_summary.json",
+      "sha256": "5453a274827a23af74727a31b47fe994bddf84977080182471a5c01240941059",
+      "bytes": 1171
+    }
+  },
+  {
+    "case": "author_val21_T3_2.0",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/cases/author_val21_T3_2.0/summary.json",
+      "sha256": "86e74bc8028d2f03bd827abad64d5c84302dff06bbf835be55de77e35ce8b6a2",
+      "bytes": 4855
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_val21_T3_2.0/CoMET_M_summary.json",
+      "sha256": "3fab22d4ad27103e36d5af453f9f772d26547a8d14a3b17d1869daf447c363f8",
+      "bytes": 1168
+    }
+  },
+  {
+    "case": "author_mechanism_holdout14_T1_0.5",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/cases/author_mechanism_holdout14_T1_0.5/summary.json",
+      "sha256": "6357702546441667e4f3cd3abaaf2de4d887368d46f1e37b2fc39166a3045f85",
+      "bytes": 4912
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_mechanism_holdout14_T1_0.5/CoMET_M_summary.json",
+      "sha256": "b7c8ced536e692f51403c8f2c9bb0d0730475aa4b9206ec9fa23996f33a60ae7",
+      "bytes": 1201
+    }
+  },
+  {
+    "case": "author_mechanism_holdout14_T1_1.0",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/cases/author_mechanism_holdout14_T1_1.0/summary.json",
+      "sha256": "23d2f08a771f0682691b6c461f2509245709be63a854ebcfb9ee0b22c3cc6938",
+      "bytes": 4941
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_mechanism_holdout14_T1_1.0/CoMET_M_summary.json",
+      "sha256": "00b73330f3cfd614b89d1fd15906d50e6747ec29115dd3a2ea3a648fc42e1f80",
+      "bytes": 1200
+    }
+  },
+  {
+    "case": "author_mechanism_holdout14_T1_2.0",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/cases/author_mechanism_holdout14_T1_2.0/summary.json",
+      "sha256": "56e49a77be6825b677e08cf19e9115857ce4bec0b41ccb92755165388f284678",
+      "bytes": 4941
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_mechanism_holdout14_T1_2.0/CoMET_M_summary.json",
+      "sha256": "dd278610cbf61728e24f3a2351932081104a341ff84d364ec509f570d0e452ab",
+      "bytes": 1205
+    }
+  },
+  {
+    "case": "author_mechanism_holdout14_T1_3.0",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/cases/author_mechanism_holdout14_T1_3.0/summary.json",
+      "sha256": "33b5d1f4a7004a1712f382afdd13d990331c35b746cb55cd69a6bbaa0dea747d",
+      "bytes": 4931
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_mechanism_holdout14_T1_3.0/CoMET_M_summary.json",
+      "sha256": "5afe18b9d00b59f399cde609918f84377f08c559998a122c8bb933a8322841a6",
+      "bytes": 1207
+    }
+  },
+  {
+    "case": "author_mechanism_holdout14_T1_5.0",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/cases/author_mechanism_holdout14_T1_5.0/summary.json",
+      "sha256": "0dd73507418410aadc8338335fcf2c1feccd2b2a3d00d11289f982bc16659fea",
+      "bytes": 4988
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_mechanism_holdout14_T1_5.0/CoMET_M_summary.json",
+      "sha256": "8133ebf3a50a8e16f57028e692dba3924ffb4d1f321478cac4880f772010111b",
+      "bytes": 1210
+    }
+  },
+  {
+    "case": "author_mechanism_holdout14_T2_2.0",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/cases/author_mechanism_holdout14_T2_2.0/summary.json",
+      "sha256": "438b6b5876696c7ff554c722dfb70daceff7b547922047e8b844ebd749c33b15",
+      "bytes": 4942
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_mechanism_holdout14_T2_2.0/CoMET_M_summary.json",
+      "sha256": "ca222198ac94fda9865739adab1bce3729ad2886a4e72cf4c5846c419d4053a9",
+      "bytes": 1205
+    }
+  },
+  {
+    "case": "author_mechanism_holdout14_T3_2.0",
+    "base_summary": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/cases/author_mechanism_holdout14_T3_2.0/summary.json",
+      "sha256": "b064d4a86b05f21adf2f804949b0b34c96dff390553e64f1b83757e27b6cb352",
+      "bytes": 4939
+    },
+    "motion": {
+      "path": "artifacts/research_autopilot/status_audit_20261106_peer26/R8c_late/motion/author_mechanism_holdout14_T3_2.0/CoMET_M_summary.json",
+      "sha256": "952b899c977cfbccb7078fed0b38176bf456691915e0afecaad19a82fe84b672",
+      "bytes": 1202
+    }
+  }
+]

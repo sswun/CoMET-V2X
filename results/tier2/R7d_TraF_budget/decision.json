@@ -1,0 +1,28 @@
+{
+  "created_at": "2026-11-07T02:40:39+08:00",
+  "selected": 2000,
+  "checks": {
+    "PUBLIC_AP50_CI_low_positive": true,
+    "PUBLIC_AP70_CI_low_positive": true,
+    "H1_AP50_at_least1pp": true,
+    "H1_AP50_CI_low_positive": true,
+    "H1_AP70_at_least_minus030": true
+  },
+  "qualifies": true,
+  "replace_second_tier_eligible": false,
+  "hold14_not_gate": true,
+  "no_automatic_root_table_mutation": true,
+  "main_conversation_manuscript_only": true,
+  "cross_architecture_required": false,
+  "auxiliary_R6h_append_required": false,
+  "complete_curve": {
+    "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R7d_analysis/panels.json",
+    "sha256": "c47a15d63396e67b0e4e7c1c164d0844ba7f93ad911583d9715d57be63b36ba3",
+    "bytes": 195307
+  },
+  "contrasts": {
+    "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R7d_analysis/contrasts.json",
+    "sha256": "400b49c89578e7f6226f4c7a53eff3e58c5a1920877fc69ee9f20bf9977e2919",
+    "bytes": 136883
+  }
+}

@@ -253,6 +253,57 @@ def main():
     N["R6e"] = jload(RES / "ablations/R6e_readout_head_decontamination/decision.json")["means"]
     N["verification"] = jload(RES / "verification/verify_against_recipe.json")["_all_equal"]
 
+    # ---------------- second tier: training-budget sweep ----------------
+    bud = {}
+    for r in jload(RES / "tier2/R7d_TraF_budget/panels.json"):
+        if r["population"] == "all" and r["wait_ms"] == "four_wait_mean":
+            bud[f"{r['budget']}|{r['role']}|{r['method']}|{r['threshold']}"] = r["AP"]
+    cal = defaultdict(list)
+    for r in rows(RES / "tier2/tables/R7d_A_calibration.csv.gz"):
+        if r["population"] == "all" and r["threshold"] == "70" and r["wait_ms"] == "four_wait_mean" and r["seed"]:
+            cal[r["method"].replace("A_budget", "")].append(float(r["AP"]))
+    for b, v in cal.items():
+        bud[f"{b}|calibration8|A|70"] = float(np.mean(v))
+    N["budget"] = bud
+
+    # ---------------- lock acquisition (pre-registered extension) ----------------
+    V2 = RES / "research_v2"
+    acq = {}
+    for r in rows(V2 / "R8d_acquisition/results.csv"):
+        key = f"{r['domain']}|{r['role']}|{r['kind']}|{float(r['amplitude']):g}|{r['method']}|{r['threshold']}"
+        acq[key] = dict(AP=float(r["AP"]), delta_H1=float(r["delta_H1"]) if r["delta_H1"] else None,
+                        CI=json.loads(r["delta_H1_CI95"]) if r["delta_H1_CI95"] else None,
+                        retained=float(r["ratio_clean_H1"]) if r["ratio_clean_H1"] else None)
+    N["acquisition"] = acq
+    N["acquisition_gate"] = jload(V2 / "R8d_acquisition/adoption_gate.json")["checks"]
+
+    # ---------------- pose-error stress test ----------------
+    st = {}
+    for d in DOMAINS:
+        for r in rows(V2 / "R8c_stress/late" / d / "results.csv"):
+            key = f"{d}|{r['role']}|{r['kind']}|{float(r['amplitude']):g}|{r['method']}|{r['threshold']}"
+            st[key] = dict(AP=float(r["AP"]), delta_H1=float(r["delta_H1"]) if r["delta_H1"] else None,
+                           CI=json.loads(r["delta_H1_CI95"]) if r["delta_H1_CI95"] else None,
+                           retained=float(r["ratio_clean_H1"]) if r["ratio_clean_H1"] else None)
+    N["stress_late"] = st
+    N["stress_native"] = {f"{r['model']}|{float(r['amplitude_m']):g}|{r['threshold']}": dict(
+        uncorrected=float(r["uncorrected_AP"]), corrected=float(r["corrected_AP"]), delta=float(r["delta"]),
+        CI=json.loads(r["paired_CI95"])) for r in rows(V2 / "R8c_stress/native/results.csv")}
+    rec = defaultdict(lambda: [0, 0])
+    for r in rows(V2 / "R8c_stress/capture/T3_recovery_all_methods.csv.gz"):
+        k = f"{r['domain']}|{r['role']}|{r['method']}"
+        rec[k][1] += 1
+        rec[k][0] += int(r["right_censored"] in ("False", "false", "0"))
+    N["step_recovery"] = {k: dict(recovered=v[0], streams=v[1]) for k, v in rec.items()}
+
+    # ---------------- two-tier combination ----------------
+    N["combination"] = {f"{r['role']}|{r['threshold']}|{r['reference']}": dict(
+        AP=float(r["AP"]), baseline=float(r["baseline_AP"]), delta=float(r["delta"]), CI=json.loads(r["paired_CI95"]))
+        for r in rows(V2 / "R8e_two_tier/results.csv")}
+    N["combination_coefficients"] = jload(V2 / "R8e_two_tier/coefficients.json")["coefficients"]
+    N["combination_choice"] = jload(V2 / "R8e_two_tier/calibration_choice.json")["cal_AP70"]
+    N["verification_extensions"] = jload(RES / "verification/verify_research_v2.json")["_all_equal"]
+
     (HERE / "numbers.json").write_text(json.dumps(N, indent=1))
     print("wrote", HERE / "numbers.json")
 

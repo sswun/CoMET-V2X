@@ -48,6 +48,14 @@ Vehicle AP on `val21`, using official ground truth. Each row averages the four a
 - **Where the metric changes the interpretation.** The official offset is exactly zero on **27.99%** of validation messages. The roadside-only labels on these frames coincide with the uncorrected projection. With the released TraF-Align detector, CoMET gains **4.53 AP70 points** on co-labelled frames and loses **3.42** on zero-offset frames relative to online poses. [Label audit and population analysis](docs/FINDINGS.md)
 - **Retraining the fusion network.** TraF-Align fine-tuned with CoMET poses and cleaned training labels reaches **81.44 AP50 / 66.49 AP70**. Against the same-budget online-pose fine-tune, the paired gains are **+1.17 AP50** (95% CI 0.58–1.87) and **+0.81 AP70** (0.18–1.62). [Second-tier results](results/tier2/)
 
+## Extensions after v0.1.0
+
+These experiments were specified with their acceptance criteria before evaluation, after the archived v0.1.0 snapshot. The current manuscript reports them; the main tables are unchanged. [Results and criteria](results/research_v2/README.md)
+
+- **Offsets beyond the association gate.** CoMET-A detects a lost lock and re-acquires it from a vote over recent ego–remote displacements. With 3–5 m of injected error, it keeps 97.7–99.5% of clean AP70, while CoMET falls to near the online-pose level. On real data it changes the five-detector mean AP70 by −0.0006 points. [Implementation](comet/acquisition.py)
+- **Two-tier combination.** Pairing CoMET late-fusion boxes with those of the retrained TraF-Align reaches **67.85 AP70 / 82.62 AP50** on `val21`. That is +1.23 AP70 over late fusion and +1.18 AP50 over TraF-Align, with intervals above zero. [Implementation](comet/fusion.py)
+- **Native fusion under pose error.** With 1–3 m of injected error, giving TraF-Align the CoMET-A-corrected pose instead of the injected one raises AP70 by 2.2–4.4 points.
+
 ## Run the estimator
 
 After receiving permission, the following example runs on CPU with Python 3.8+ and uses synthetic boxes. From a checkout of this repository, install the package and run its tests.

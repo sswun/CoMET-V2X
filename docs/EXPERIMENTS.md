@@ -40,7 +40,19 @@ Each row: the question, the entry script(s) in `research_code/preexperiment/rese
 | R7b | TraF with CoMET poses and cleaned labels (tiers A/B), pre-registered gate | `run_peer21_clean_H1_native_v1_20261105.py`, `consume_peer21_R7b_v1_20261105.py`, `review_peer21_R7b_gate_v1_20261105.py` | `results/tier2/R7b_TraF/`, `results/tier2/tables/` |
 | R7c | Same recipe on Where2comm and CoAlign | `run_peer21_R7c_clean_cross_v1_20261105.py`, `consume_peer21_R7c_cross_v1_20261105.py` | `results/tier2/R7c_cross_architecture/`, `results/tier2/tables/` |
 | R6h | Tier 2 on both auxiliary references | `run_peer22_R6h_v1_20261106.py` | `results/aux_gt/R6h_tier2/` |
-| R7d | Training-budget dose-response (2000 / 8000 / 20000 updates) | not included | — |
+| R7d | Training-budget dose-response (2000 / 8000 / 20000 updates); 2000 selected on calibration8 | multi-host training/evaluation chain not included | `results/tier2/R7d_TraF_budget/`, `results/tier2/tables/R7d_*` |
+
+## Research extensions after v0.1.0
+
+Pre-registered after the paper numbers were frozen; they do not change `results/tables_v3/`.
+
+| ID | Question | Entry scripts | Results |
+|---|---|---|---|
+| R8d | CoMET-A lock acquisition beyond the 2.5 m gate (two pre-registered gates) | `run_peer26_R8d_v1_20261106.py`, `recover_peer26_material_v2_20261106.py`; estimators in `peer26_R8_estimators_v1_20261106.py` (clean version `comet/acquisition.py`) | `results/research_v2/R8d_acquisition/` |
+| R8c | Controlled pose-error injection: five late-fusion detectors, native TraF | `run_peer26_R8c_late_v1_20261106.py`, `report_peer26_R8c_v1_20261107.py`; native dispatch across hosts not included | `results/research_v2/R8c_stress/` |
+| R8e | Two-tier box-level combination, four settings chosen on calibration8 | `run_peer26_R8e_v1_20261107.py`, `recover_peer26_R8e_float64_v2_20261107.py` (clean version `comet/fusion.py`) | `results/research_v2/R8e_two_tier/` |
+
+`run_peer26_R8b_v1_20261106.py` is included because R8d imports its domain and readout context.
 
 ## Shared infrastructure
 

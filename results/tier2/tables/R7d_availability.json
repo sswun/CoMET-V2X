@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-11-07T02:41:08+08:00",
+  "selected": 2000,
+  "formal_independent_terminal": {
+    "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R7d_analysis/terminal.json",
+    "sha256": "9a2bacf0a5ad37b0d7c9cc66a43383618b58a3107442be4e8892877af486e8c0",
+    "bytes": 642
+  },
+  "decision": {
+    "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R7d_analysis/decision.json",
+    "sha256": "36a957422650c7361ef67c2384d3b8e27bfee7fa9361ee32065b386321feeb27",
+    "bytes": 989
+  },
+  "calibration": {
+    "path": "artifacts/research_autopilot/status_audit_20261106_peer22/R7d_analysis/calibration_verified.json",
+    "sha256": "05481a42b6ac6ea83b7dd4e65bc64d8a7315c03e9a76a76a55b6d5d092293623",
+    "bytes": 447
+  },
+  "PUBLIC_cal8": "not_evaluated_by_frozen_contract; no new forward authorized",
+  "PUBLIC_cal8_missing_budgets": [
+    2000,
+    8000,
+    20000
+  ],
+  "curve": {
+    "table": {
+      "path": "docs/paper_draft_v0_20261103/final_tables_v3/tier2_v1/R7d_formal_curves.csv",
+      "sha256": "2c4e2e8e2fb66eb8bcba27f0833165204c0a3176c281a4c4a6d183b481fc84fb",
+      "bytes": 713722
+    },
+    "rows": 1200
+  },
+  "A_calibration": {
+    "table": {
+      "path": "docs/paper_draft_v0_20261103/final_tables_v3/tier2_v1/R7d_A_calibration.csv",
+      "sha256": "4d987dfcde68e7cd1b6f409435ba4710a38276d85dafc9e8e8403b773280191f",
+      "bytes": 326946
+    },
+    "rows": 360
+  },
+  "accepted_2000_from_R7b_not_new_snapshot": true,
+  "second_tier_manuscript": "R7b A per peer23",
+  "preview_not_used": true,
+  "no_scientific_contract_change": true
+}

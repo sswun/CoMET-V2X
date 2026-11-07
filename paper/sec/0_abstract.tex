@@ -5,6 +5,7 @@ In this setting most of the value of cooperation is lost to geometry rather than
 The loss is a slowly drifting translation shared by all objects of a message. The objects seen by both agents reveal it, but 38\% of messages contain no such object.
 
 We propose \method (Common-Mode Error Tracking), which treats this translation as a latent state of the message stream: every ego detection is an anchor candidate; one observation per message is formed by mutual-nearest-neighbour Hungarian matching; a causal scalar Kalman filter tracks the offset per sender; and the estimate corrects every remote box, including those of objects the ego vehicle cannot see.
+A lock-acquisition step recovers offsets larger than the association gate from a vote over recent displacements.
 The estimator has no learned parameters, and messages carry only boxes, scores and capture times; a 1.3K-parameter readout head, trained once and frozen, re-ranks the merged candidates.
 
 \method reaches 66.63 \apseven, 3.45 points above the same late fusion with online poses and 3.67 above the best intermediate fusion.
@@ -12,5 +13,6 @@ It improves all five detectors we test, from three architectures, by 2.2--3.5 po
 Nine variants of three per-frame registration modules, with and without temporal smoothing, remain 2.3--3.1 points behind.
 We also find that the benchmark's reference offset is an exact-zero placeholder on 28\% of validation messages and comes from a bounded discrete search that saturates on 45\% of the remaining ones; because the roadside-only ground truth is built from this offset, the official evaluation inherits both artefacts.
 We therefore report results on label-defined populations and under two auxiliary references; \method improves on every population under both.
-Finally, retraining an intermediate-fusion network with \method poses and cleaned labels improves over retraining with online poses on all three architectures we test, significantly on two, and gives the highest \apfive of all methods.
+Under injected pose errors of 3--5\,m, \method with lock acquisition retains 97.6--99.5\% of its accuracy, whereas tracking alone falls nearly to the level of online poses.
+Finally, retraining an intermediate-fusion network with \method poses and cleaned labels improves over retraining with online poses on all three architectures we test, significantly on two; combining its boxes with those of \method late fusion gives the best result overall, 67.85 \apseven and 82.62 \apfive.
 \end{abstract}

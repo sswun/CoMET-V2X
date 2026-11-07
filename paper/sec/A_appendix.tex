@@ -125,14 +125,14 @@ The same budget is used for the online-pose and \method arms and for Where2comm 
 \end{table}
 
 \paragraph{Label variants.}
-Variant A re-registers roadside-only training labels on placeholder messages with the per-sequence interpolation of non-zero offsets.
-Variant B additionally moves roadside-only labels on axes where the offset sits on a search bound to the label-median displacement of the frame (frames with at least three co-labelled objects).
-On the calibration split A scored 67.91 and B 66.66 \apseven (three seeds, four budgets), so A was selected before the validation and held-out splits were evaluated; \cref{tab:tierab} reports both.
-The calibration split has the highest share of saturated messages (77.7\%), on which the official ground truth favours predictions placed at the bound, which explains why the selection prefers A; we keep the variant selected in advance.
+The \emph{interpolated} labels re-register roadside-only training labels on placeholder messages with the per-sequence interpolation of non-zero offsets.
+The \emph{interpolated and bound-corrected} labels additionally move roadside-only labels on axes where the offset sits on a search bound to the label-median displacement of the frame (frames with at least three co-labelled objects).
+On the calibration split the first scored 67.91 and the second 66.66 \apseven (three seeds, four budgets), so the interpolated labels were selected before the validation and held-out splits were evaluated; \cref{tab:tierab} reports both.
+The calibration split has the highest share of saturated messages (77.7\%), on which the official ground truth favours predictions placed at the bound, which explains why the selection prefers the interpolated labels; we keep the variant selected in advance.
 
 \begin{table}[h]
   \centering
-  \caption{\textbf{Label variants A (selected) and B} minus retraining with online poses, TraF-Align, three seeds, 95\% intervals.}
+  \caption{\textbf{Label variants} minus retraining with online poses, TraF-Align, three seeds, 95\% intervals.}
   \label{tab:tierab}
   \small
   \setlength{\tabcolsep}{3pt}
@@ -150,9 +150,30 @@ The calibration split has the highest share of saturated messages (77.7\%), on w
 Before evaluating the validation split we required, for the selected variant, that the 95\% intervals of the difference to retraining with the online pose lie above zero for both \apseven and \apfive, and that the difference to \method{} without retraining be at least $+1.0$ \apfive with an interval above zero and no worse than $-0.30$ \apseven.
 All five conditions were met.
 
+\paragraph{Training budget.}
+\Cref{tab:budget} retrains the second-tier network for 2,000, 8,000 and 20,000 updates with otherwise identical settings.
+The calibration split selects 2,000 updates, and longer training lowers \apseven on every split, also for retraining with the online pose. A plausible reason is that the released weights were already trained on the training sequences, so additional updates over-fit the fit split.
+
 \begin{table}[h]
   \centering
-  \caption{\textbf{Second tier under the auxiliary references}: tier 2 minus retraining with online poses (TraF-Align, 95\% intervals).}
+  \caption{\textbf{Training budget of the second tier} (TraF-Align, three seeds, mean over the four latency budgets). Calibration \apseven is the selection criterion; the last column is retraining with the online pose for the same number of updates.}
+  \label{tab:budget}
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{l rrrr r}
+    \toprule
+    & calibration & \multicolumn{2}{c}{validation} & held-out & validation, online pose \\
+    \cmidrule(lr){2-2}\cmidrule(lr){3-4}\cmidrule(lr){5-5}\cmidrule(lr){6-6}
+    Updates & \apseven & \apseven & \apfive & \apseven & \apseven \\
+    \midrule
+    \tabinput{tables/budget.tex}
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \caption{\textbf{Second tier under the auxiliary references}: second tier minus retraining with online poses (TraF-Align, 95\% intervals).}
   \label{tab:tier2aux}
   \small
   \setlength{\tabcolsep}{2.5pt}
@@ -166,7 +187,19 @@ All five conditions were met.
   \end{tabular}}
 \end{table}
 
+\section{Criteria fixed in advance for the two additions}
+\label{app:criteria}
+\paragraph{Lock acquisition.}
+All parameters of \cref{sec:acq} were fixed before any result was computed.
+The step was to be adopted only if (i) without injected error, the mean change of validation \apseven over the five detectors was within $\pm0.05$ points and no detector lost more than 0.10, and likewise on the held-out split; and (ii) with an injected constant error of 3 and 5\,m on the validation split, for both TraF-Align detectors, it retained at least 90\% of the \apseven of \method without injected error and was better than \method under the same error with a paired interval above zero.
+Both conditions were met (\cref{sec:stress}); the response to drift and steps was reported without a criterion.
+
+\paragraph{Two-tier combination.}
+The four settings of \cref{sec:tier2} were compared on the calibration split only, where IoU 0.3 without isotonic calibration scored highest (69.44 \apseven, against 68.94--69.30 for the other three).
+The combination was to be adopted only if, on the validation split, its \apseven exceeded the better of the two tiers by at least 0.50 points with a paired interval above zero and its \apfive was at most 0.20 points below the second tier, and if its held-out \apseven exceeded both tiers.
+All conditions were met (\cref{tab:combo}).
+
 \section{Reproducibility}
 \label{app:repro}
-The repository contains (i) the stand-alone estimator with unit tests and a script that compares it with the reference per-message states; (ii) a snapshot of the research code that produced every reported result, with a SHA-256 manifest; (iii) every table of this paper in machine-readable form with the source of each number; and (iv) the scripts that generate the tables and figures of this manuscript from those files.
+The repository contains (i) the stand-alone estimator, the lock-acquisition step, the two-tier combination and the pose-error injection, with unit tests and scripts that compare them with the reference per-message states and detections; (ii) a snapshot of the research code that produced every reported result, with a SHA-256 manifest; (iii) every table of this paper in machine-readable form with the source of each number; and (iv) the scripts that generate the tables and figures of this manuscript from those files.
 No dataset content, per-frame annotation-derived data or model weights are redistributed.
